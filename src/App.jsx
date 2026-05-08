@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import SplashScreen from './components/layouts/SplashScreen'
+import SplashScreen from './components/UI/SplashScreen'
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
   const [loading, setLoading] = useState(() => {
@@ -28,7 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      aplicacion principal
+      <AppRoutes />
     </div>
   )
 }
