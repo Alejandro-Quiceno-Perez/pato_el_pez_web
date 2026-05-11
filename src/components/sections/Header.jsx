@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../styles/Header.css'
 import { Link } from 'react-router-dom'
 import logo from '/public/logo_letras_negro.png'
 
@@ -27,23 +28,25 @@ const Header = () => {
 
 
     return (
-        <header className='header-container'>
+        <header className='header'>
             {/* Lado Izquierdo  */}
-            <nav className='nav-left'>
-                <NavGroup items={leftNav} />
-            </nav>
+            <div className="container-header">
+                <nav className='nav-left'>
+                    <NavGroup items={leftNav} />
+                </nav>
 
-            {/* Logo */}
-            <div className='logo'>
-                <Link to="/">
-                    <img src={logo} alt="Pato el Pez logo" />
-                </Link>
+                {/* Logo */}
+                <div className='logo'>
+                    <Link to="/">
+                        <img className='logo-img' src={logo} alt="Pato el Pez logo" />
+                    </Link>
+                </div>
+
+                {/* Lado Derecho */}
+                <nav className='nav-right'>
+                    <NavGroup items={rightNav} />
+                </nav>
             </div>
-
-            {/* Lado Derecho */}
-            <nav className='nav-right'>
-                <NavGroup items={rightNav} />
-            </nav>
         </header>
     )
 }
