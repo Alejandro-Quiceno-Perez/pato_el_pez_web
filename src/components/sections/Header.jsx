@@ -1,7 +1,7 @@
 import React from 'react'
-import '../../styles/Header.css'
+import '../../styles/header.css'
 import { Link } from 'react-router-dom'
-import logo from '/public/logo_letras_negro.png'
+import logo from '/logo_letras_negro.png'
 
 const Header = () => {
     const leftNav = [
@@ -20,7 +20,7 @@ const Header = () => {
         return (
             <>
                 {items.map((item, index) => (
-                    <Link key={index} to={item.path}>{item.name}</Link>
+                    <Link className='nav-link' key={index} to={item.path}>{item.name}</Link>
                 ))}
             </>
         )
@@ -32,7 +32,7 @@ const Header = () => {
             {/* Lado Izquierdo  */}
             <div className="container-header">
                 <nav className='nav-left'>
-                    <NavGroup items={leftNav} />
+                    <NavGroup className='nav-link' items={leftNav} />
                 </nav>
 
                 {/* Logo */}
@@ -44,7 +44,7 @@ const Header = () => {
 
                 {/* Lado Derecho */}
                 <nav className='nav-right'>
-                    <NavGroup items={rightNav} />
+                    <NavGroup className='nav-link' items={rightNav} />
                 </nav>
             </div>
         </header>
