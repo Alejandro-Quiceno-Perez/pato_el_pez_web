@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../styles/header.css'
-import { Link } from 'react-router-dom'
-import logo from '/logo_letras_negro.png'
+import { Link, NavLink } from 'react-router-dom'
+import logo from '/logo_letras_blanco.png'
 
 const Header = () => {
     const leftNav = [
@@ -20,7 +20,17 @@ const Header = () => {
         return (
             <>
                 {items.map((item, index) => (
-                    <Link className='nav-link' key={index} to={item.path}>{item.name}</Link>
+                    // <Link className='nav-link' key={index} to={item.path}>{item.name}</Link>
+
+                    <NavLink
+                        key={index}
+                        to={item.path}
+                        className={({ isActive }) =>
+                            isActive ? "nav-link active-link" : "nav-link"
+                        }
+                    >
+                        {item.name}
+                    </NavLink>
                 ))}
             </>
         )
@@ -32,7 +42,7 @@ const Header = () => {
             {/* Lado Izquierdo  */}
             <div className="container-header">
                 <nav className='nav-left'>
-                    <NavGroup className='nav-link' items={leftNav} />
+                    <NavGroup items={leftNav} />
                 </nav>
 
                 {/* Logo */}
@@ -44,7 +54,7 @@ const Header = () => {
 
                 {/* Lado Derecho */}
                 <nav className='nav-right'>
-                    <NavGroup className='nav-link' items={rightNav} />
+                    <NavGroup items={rightNav} />
                 </nav>
             </div>
         </header>
