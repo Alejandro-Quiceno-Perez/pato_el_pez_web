@@ -6,7 +6,7 @@ import logo from '/logo_letras_blanco.png'
 const Header = () => {
     const leftNav = [
         { name: "Videos", path: "/videos" },
-        { name: "Musica", path: "/music" },
+        { name: "Música", path: "/music" },
         { name: "Recorrido", path: "/recorrido" },
     ];
 
