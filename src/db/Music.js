@@ -1,7 +1,7 @@
 const Music = [
     {
         "id": 1,
-        "title": "Nombre canción",
+        "title": "Mejor Que Esto",
         "cover": "/music/song.jpg",
         "spotify": "",
         "youtube": "",
