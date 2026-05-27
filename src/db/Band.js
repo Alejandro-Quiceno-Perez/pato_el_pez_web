@@ -3,12 +3,13 @@ const Band = {
   slogan: "No hacemos ruido. Creamos identidad.",
   description: "Banda alternativa influenciada por el punk rock californiano y la vida cotidiana.",
   city: "Colombia",
-  founded: 2022,
+  founded: 2020
+  ,
   genre: [
     "Punk Rock",
     "Pop Punk",
     "Neo Punk"
   ],
-  coverImage: "/images/cover.jpg",
-  logo: "/logos/logo.png"
+  coverImage: "/public/images/Members/Banda.JPG",
+  logo: "/public/logo_pato_el_pez.png"
 }
