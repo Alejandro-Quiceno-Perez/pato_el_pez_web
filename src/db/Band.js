@@ -2,12 +2,12 @@ const Band = {
   name: "Pato el Pez",
   slogan: "No hacemos ruido. Creamos identidad.",
   description: "Banda alternativa influenciada por el punk rock californiano y la vida cotidiana.",
-  city: "Medellín, Colombia",
+  city: "Colombia",
   founded: 2022,
   genre: [
     "Punk Rock",
     "Pop Punk",
-    "Alternative Rock"
+    "Neo Punk"
   ],
   coverImage: "/images/cover.jpg",
   logo: "/logos/logo.png"
