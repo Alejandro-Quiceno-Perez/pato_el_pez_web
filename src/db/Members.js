@@ -11,7 +11,7 @@ const Members = [
     {
         "id": 2,
         name: "Jaiver Restrepo",
-        nickname: "El Javi",
+        nickname: "Jai",
         role: "Bajo - Coros",
         description: `Soy una persona apasionada por la música, el arte y todo lo que transmite emociones reales. Vivo la musica no solo como un arte, sino como una forma de expresar lo que pienso y siento. Hago parte de Pato el Pez, una banda de punk rock  con la que busco conectar con la gente a través de canciones honestas, energía en tarima y momentos que se queden en la memoria
         También me gusta crear, organizar y mover ideas; desde eventos y shows hasta contenido para redes, siempre buscando que todo tenga identidad propia. Además, disfruto mucho jugar al volley, porque encuentro en el deporte la misma energía, disciplina y adrenalina que vivo en la música. Soy alguien creativo, directo y con ganas de crecer, aprender y hacer que los proyectos en los que creo lleguen cada vez más lejos. Entre ensayos, conciertos, diseño, parches, partidos y sueños, sigo construyendo mi camino a punta de música y pasión.`,
@@ -33,9 +33,34 @@ const Members = [
         name: "Alejandro Quiceno",
         nickname: "Acrux",
         role: "Bateria - Coros",
-        description: `oy Alejandro, aunque muchos me conocen como Acrux. Soy baterista de Pato el Pez y de otros proyectos musicales de la ciudad, donde he encontrado la forma perfecta de transmitir toda la energía, disciplina y pasión que llevo dentro desde que era un niño. La música llegó a mi vida muy temprano y, desde entonces, se convirtió en mucho más que un hobby: es mi manera de sentir, crear y conectar con las personas.
+        description: `Soy Alejandro, aunque muchos me conocen como Acrux. Soy baterista de Pato el Pez y de otros proyectos musicales de la ciudad, donde he encontrado la forma perfecta de transmitir toda la energía, disciplina y pasión que llevo dentro desde que era un niño. La música llegó a mi vida muy temprano y, desde entonces, se convirtió en mucho más que un hobby: es mi manera de sentir, crear y conectar con las personas.
         Sobre el escenario soy de los que creen que cada detalle cuenta. Me apasiona construir presentaciones sólidas, intensas y auténticas, cuidando cada aspecto musical y escénico para que todo ocurra con precisión y personalidad. Siempre estoy buscando evolucionar, aprender algo nuevo y llevar cada proyecto a un nivel más profesional.
         Pero mi creatividad no termina en la música. También soy amante de la programación de software y el diseño web, un mundo donde puedo transformar ideas en experiencias reales. Soy el creador de la página web de Pato el Pez y de otros proyectos digitales que mezclan arte, tecnología e identidad visual. Disfruto aprender constantemente, explorar nuevas herramientas y demostrar que la música y la tecnología pueden hablar el mismo idioma.`,
         image: "/public/images/Members/Alejo.JPG"
-    }
+    },
+    {
+        "id": 5,
+        name: "Lilth Henao",
+        nickname: "Acrux",
+        role: "Comunity Manager",
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.`,
+        image: "/public/images/Members/Alejo.JPG"
+    },
+    {
+        "id": 6,
+        name: "Brayan Hincapie",
+        nickname: "Acrux",
+        role: "Diseño Grafico",
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.`,
+        image: "/public/images/Members/Alejo.JPG"
+    },
+    {
+        "id": 7,
+        name: "Andres Rodriguez",
+        nickname: "Andres",
+        role: "Fotografia",
+        description: `lorem Impsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.`,
+        image: "/public/images/Members/Alejo.JPG"
+    },
 ]
