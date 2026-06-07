@@ -1,9 +1,10 @@
 import React from 'react'
+import BannerBienvenida from '../components/UI/BannerBienvenida'
 
 const Home = () => {
     return (
         <div>
-            Home
+            <BannerBienvenida />
         </div>
     )
 }
