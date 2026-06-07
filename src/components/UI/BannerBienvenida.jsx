@@ -28,6 +28,7 @@ const BannerBienvenida = () => {
                     className={index === currentSlide ? "imagesBanner active" : "imagesBanner"} 
                 />
             ))}
+        </div>
     )
 }
 
