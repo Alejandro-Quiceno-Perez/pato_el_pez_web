@@ -20,12 +20,12 @@ const AppRoutes = () => {
                     {/* Home */}
                     <Route index element={<Home />} />
                     {/* Paginas */}
-                    <Route path="/music" element={<Music />} />
-                    <Route path="/merch" element={<Merch />} />
-                    <Route path="/videos" element={<Videos />} />
-                    <Route path="/press-kit" element={<PressKit />} />
-                    <Route path="/subscribe" element={<Subscribe />} />
-                    <Route path="/recorrido" element={<Recorrido />} />
+                    <Route path="music" element={<Music />} />
+                    <Route path="merch" element={<Merch />} />
+                    <Route path="videos" element={<Videos />} />
+                    <Route path="press-kit" element={<PressKit />} />
+                    <Route path="subscribe" element={<Subscribe />} />
+                    <Route path="recorrido" element={<Recorrido />} />
                 </Route>
             </Routes>
         </Router>
