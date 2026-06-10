@@ -113,6 +113,20 @@ const timeline = [
     },
     {
         "id": 11,
+        "year": 2025,
+        "title": "FIESTA FRIKI",
+        "description": `Nuestra participación en Fiesta Friki fue una experiencia llena de energía, diversión y conexión con el público. El evento se realizó en el Parque de los Deseos, un escenario muy especial para nosotros, ya que fue el mismo lugar donde tuvimos la oportunidad de presentarnos durante Ciudad Altavoz 2024.
+
+        La temática del evento reunió a cientos de asistentes en un ambiente inspirado en la cultura geek, el cosplay y la creatividad. Desde temprano, el lugar se llenó de personajes, colores y expresiones artísticas que hicieron de la jornada una experiencia única tanto para los asistentes como para las bandas participantes.
+
+        Durante nuestra presentación vivimos una respuesta increíble por parte del público. La gente cantó, saltó, disfrutó cada canción y nos transmitió una energía que hizo del concierto un momento memorable. Ver a tantas personas compartiendo, celebrando y conectando con nuestra música en un entorno tan particular fue algo que nos dejó una gran satisfacción.
+
+        Fiesta Friki nos permitió encontrarnos con nuevos públicos y reafirmar lo que más nos motiva como banda: crear momentos auténticos a través de la música. Sin duda, fue una presentación que recordaremos con cariño por la gran acogida del público y la atmósfera única que se vivió durante toda la jornada.`,
+        "link": "",
+        "image": "/images/timeline/FiestaFriki.jpg"
+    },
+    {
+        "id": 12,
         "year": 2026,
         "title": "SEED FEST",
         "description": `Seed Fest quedará para siempre como uno de los conciertos más especiales en la historia de Pato el Pez. Fue nuestro concierto más reciente y una oportunidad increíble de tocar en el Teatro al Aire Libre Carlos Vieco, uno de esos escenarios con los que muchos músicos sueñan. Además, nos correspondió uno de los mejores horarios del festival, lo que hizo que la experiencia fuera aún más emocionante.

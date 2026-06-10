@@ -52,7 +52,7 @@ const Music = [
         "duration": "3:38"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Dejarte Ir",
         "cover": "/public/images/img_music/Dejarte_ir.jpg",
         "spotify": "https://open.spotify.com/track/0Tm2MhdoLyuAfbLAk1349v?si=cdf7306e54674a8f",
@@ -86,7 +86,7 @@ const Music = [
         "duration": "3:08"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "Rutina",
         "cover": "/public/images/img_music/Rutina.jpg",
         "spotify": "https://open.spotify.com/track/22PXqMI55HPDfYNEQX87RH?si=d5394edb7d004d8c",
@@ -117,7 +117,7 @@ const Music = [
         "duration": "4.26"
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Cuando Sea Grande",
         "cover": "/public/images/img_music/Cuando_sea_grande.jpg",
         "spotify": "https://open.spotify.com/track/1vDrhK6jS1XgPZ17vCov3t?si=5001fcda9e924810",
@@ -149,7 +149,7 @@ const Music = [
         "duration": "4:00"
     },
     {
-        "id": 6,
+        "id": 7,
         "title": "La Bestia",
         "cover": "/public/images/img_music/La_bestia.jpg",
         "spotify": "https://open.spotify.com/track/21jwBg0dbMEDrdLnCIYHdP?si=8efcf8cb5a2f43c2",
@@ -173,7 +173,7 @@ const Music = [
         "duration": "2:52"
     },
     {
-        "id": 7,
+        "id": 8,
         "title": "La Oveja Negra",
         "cover": "/public/images/img_music/La_oveja_negra.jpg",
         "spotify": "https://open.spotify.com/track/2UnhzBC1Ve0emTfBa92BxI?si=d6c62b91074c4eb5",
@@ -198,7 +198,7 @@ const Music = [
         "duration": "3:02"
     },
     {
-        "id": 8,
+        "id": 9,
         "title": "22",
         "cover": "/public/images/img_music/22.jpg",
         "spotify": "https://open.spotify.com/track/2dPxQMY4YflfkZC25IsnOP?si=98bfc5e54a9542d7",
@@ -239,7 +239,7 @@ const Music = [
         "duration": "3:11"
     },
     {
-        "id": 9,
+        "id": 10,
         "title": "Esto Es Pato",
         "cover": "/public/images/img_music/Esto_es_pato.jpg",
         "spotify": "https://open.spotify.com/track/6PldJmmHyKWFFBsmPLgOm4?si=54148df23a6f49e2",
@@ -264,7 +264,7 @@ const Music = [
         "duration": "1:47"
     },
     {
-        "id": 10,
+        "id": 3,
         "title": "El Pobre Sebas",
         "cover": "/public/images/img_music/El_pobre_sebas.jpg",
         "spotify": "https://open.spotify.com/track/6lTVZMXa4CPrZFj4G21kPg?si=7856a721ef4f488f",

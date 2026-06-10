@@ -40,19 +40,25 @@ const Members = [
     },
     {
         "id": 5,
-        name: "Lilth Henao",
-        nickname: "Acrux",
+        name: "Lilith Henao",
+        nickname: "Lil",
         role: "Comunity Manager",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.`,
+        description: `Soy la Community Manager y Manager de la banda. Mientras los demás hacen ruido sobre el escenario, yo trabajo detrás de él, encargándome de la organización, la comunicación y de encontrar nuevas oportunidades para que este proyecto siga creciendo.
+
+        Soy tecnóloga en Gestión del Diseño Textil y de Modas, tengo una media técnica en Gestión y Promoción Artística y actualmente estudio Administración de Empresas, conocimientos que aplico día a día para aportar al desarrollo de la banda. Además de mi trabajo y mis estudios, dedico gran parte de mi tiempo a crear contenido, coordinar ideas y convertir metas en acciones concretas.
+
+        Para mí, la banda es mucho más que un proyecto musical: es un espacio donde la pasión, la creatividad y el compromiso se unen para construir algo auténtico que conecte con las personas dentro y fuera del escenario.`,
         image: "/public/images/Members/Alejo.JPG"
     },
     {
         "id": 6,
         name: "Brayan Hincapie",
-        nickname: "Acrux",
-        role: "Diseño Grafico",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.`,
+        nickname: "Bray",
+        role: "Productor Multimedia",
+        description: `Diseño, Multimedia y Rock & Roll
+        Mi trabajo en el equipo creativo es simple, pero visceral: traducir el sonido en un impacto visual salvaje.
+        Como diseñador y productor multimedia apasionado por la música, entiendo que el punk rock no solo se escucha, se experimenta en el ser. Mi misión es romper la barrera entre el oído y la vista, plasmando la energía cruda, las distorsiones y la actitud de las canciones en imágenes, videos y estilos que hablen por sí solos.
+        No me interesa el diseño limpio o complaciente; busco crear identidades visuales con carácter, texturas y fuerza. Si un arte, un video o un concepto web no te hace sentir la vibración del bajo y la urgencia del mensaje antes de que le des al play, entonces no sirve. Se trata de que la música se pueda ver y que la gente perciba, de un solo golpe de vista, exactamente lo que queremos expresar.`,
         image: "/public/images/Members/Alejo.JPG"
     },
     {
