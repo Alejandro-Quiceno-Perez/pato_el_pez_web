@@ -1,0 +1,223 @@
+.about-section-container {
+    background-color: var(--black);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about-section-title-container,
+.about-section-slider-container {
+    width: 45%;
+    margin: 6rem 0 ;
+
+}
+
+.about-section-title{
+    /* background-color: #ff0000; */
+    width: 100%;
+    
+}
+
+
+.about-section-title img {
+    width: 100%;
+    filter:
+        drop-shadow(0 0 8px var(--red));
+}
+.about-section-title p {
+    font-size: var(--size-subtitle);
+    color: var(--white);
+    margin-top: 2rem;
+}
+
+
+
+/* SLIDER */
+
+.slider-container {
+    width: 100%;
+    /* background-color: #106dac; */
+}
+
+
+/*  CARDS MEMBER */
+/* ==========================
+   CARD
+========================== */
+
+.card-member-container{
+    width: 100%;
+    height: 550px;
+
+    display: flex;
+    gap: 4rem;
+
+    padding: 3rem;
+
+    background: rgba(255,255,255,.03);
+
+    border-radius: 2rem;
+
+    overflow: hidden;
+}
+
+
+/* ==========================
+   IMAGEN
+========================== */
+
+.member-image{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.member-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+
+/* ==========================
+   INFORMACIÓN
+========================== */
+
+.member-info{
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+}
+
+
+/* Nombre */
+.member-info h2{
+    color: var(--white);
+
+    font-size: 3.8rem;
+
+    text-transform: uppercase;
+
+    font-family: var(--font-title);
+
+    font-weight: 900;
+}
+
+
+/* Apodo */
+.member-info h3{
+    color: var(--red);
+
+    font-size: 2.2rem;
+
+    font-style: italic;
+}
+
+
+/* Rol */
+.member-info h4{
+    color: rgb(180,180,180);
+
+    font-size: 1.6rem;
+
+    letter-spacing: .2rem;
+
+    text-transform: uppercase;
+}
+
+
+/* Descripción */
+.member-info p{
+    flex: 1;
+
+    color: rgba(255,255,255,.85);
+
+    font-size: 1.5rem;
+
+    line-height: 1.8;
+
+    text-align: justify;
+
+    overflow-y: auto;
+
+    padding-right: 1rem;
+}
+
+/* SCROLL  */
+.member-info p::-webkit-scrollbar{
+    width: 1px;
+}
+
+.member-info p::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.member-info p::-webkit-scrollbar-thumb{
+    background: var(--red);
+
+    border-radius: 2rem;
+}
+
+
+/* IMAGENES MINIATURA */
+
+/* Contenedor de miniaturas */
+.slick-thumb {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    list-style: none;
+}
+
+
+/* Cada thumbnail */
+.slick-thumb li {
+    width: auto !important;
+    height: auto !important;
+
+}
+
+
+/* Imagen pequeña */
+.slick-thumb li img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center 0%;
+    filter: grayscale(100%);
+    transition: .3s ease;
+    cursor: pointer;
+    opacity: .6;
+}
+
+
+/* Hover */
+.slick-thumb li img:hover {
+    transform: scale(1.01);
+
+    opacity: 1;
+}
+
+
+/* Integrante seleccionado */
+.slick-thumb li.slick-active img {
+    filter: grayscale(0);
+    opacity: 1;
+    /* transform: scale(1.15); */
+    box-shadow:
+        0 0 10px var(--red);
+}
