@@ -16,6 +16,9 @@
 
 }
 
+/* DESCRIPCION DE LA BANDA  */
+
+
 .about-section-title{
     /* background-color: #ff0000; */
     width: 100%;
@@ -23,15 +26,96 @@
 }
 
 
-.about-section-title img {
-    width: 100%;
+.about-section-title {
+    margin: 0 auto;
+
+    padding: 8rem 0;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 3rem;
+
+}
+
+.about-section-logo {
+
+    width: 30rem;
+
+    object-fit: contain;
     filter:
         drop-shadow(0 0 8px var(--red));
 }
-.about-section-title p {
-    font-size: var(--size-subtitle);
+
+.about-section-slogan {
+
+    font-family: var(--font-title);
+
+    font-size: 2rem;
+
+    font-weight: var(--font-600);
+
+    color: var(--red);
+
+    text-align: center;
+
+    /* letter-spacing: .15rem; */
+
+    line-height: 1.4;
+
+    text-shadow:
+        0 0 15px rgba(136,16,20,.25);
+
+}
+
+.about-section-description {
+
+    max-width: 90rem;
+
+    text-align: justify;
+
     color: var(--white);
-    margin-top: 2rem;
+
+    font-family: var(--font-text);
+
+    font-size: var(--size-min);
+
+    line-height: 1.9;
+
+}
+
+.about-section-info {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 1.5rem;
+
+    flex-wrap: wrap;
+
+    color: rgba(255,255,255,.7);
+
+    font-size: 1.4rem;
+
+    font-family: var(--font-title);
+
+    text-transform: uppercase;
+
+    letter-spacing: .2rem;
+
+}
+
+.separator {
+
+    color: var(--red);
+
+    font-size: 1.8rem;
+
 }
 
 
