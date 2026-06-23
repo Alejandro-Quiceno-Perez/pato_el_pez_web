@@ -29,3 +29,8 @@ html {
   font-size: 62.5%;
   font-family: var(--font-title);
 }
+
+/* SCROLL  */
+html::-webkit-scrollbar{
+    width: 0;
+}
