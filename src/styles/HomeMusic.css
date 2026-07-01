@@ -1,0 +1,29 @@
+.home-music-container {
+    width: 100%;
+    background-image: url("../../public/images/Fondos/fondoCorrugado.jpg");
+    /* background-size: cover;
+        background-position: center; */
+    height: 100vh;
+}
+
+.container-info-musica {
+    display: flex;
+}
+
+.album-cover {
+    width: 50%;
+    height: 100%;
+    bnackground-color: #2a00e7;
+}
+
+.album-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.music-section-title {
+    background-color: #d0ff00;
+    width: 50%;
+    color: white;
+}
