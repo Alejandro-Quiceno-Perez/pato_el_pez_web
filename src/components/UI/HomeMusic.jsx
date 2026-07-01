@@ -13,7 +13,7 @@ const HomeMusic = () => {
             <div className="music-wrapper">
 
                 <div className="album-cover">
-                    <img src={imgAlbum} alt="" />
+                    <img src={imgAlbum} alt="" href="https://open.spotify.com/track/3amvCY9WRx4oRG75iqmjhH?si=d2d55072fac34677" />
                 </div>
 
                 <div className="music-section-title">
@@ -30,17 +30,18 @@ const HomeMusic = () => {
                         <a href="">Escuchar ahora</a>
                         <a href="/music">Ver más</a>
                     </div>
+                    <div className="songs-grid">
+                        {featuredSongs.map(song => (
+                            <SongCard
+                                key={song.id}
+                                song={song}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
 
-            <div className="songs-grid">
-                {featuredSongs.map(song => (
-                    <SongCard
-                        key={song.id}
-                        song={song}
-                    />
-                ))}
-            </div>
+
 
         </section >
     )
