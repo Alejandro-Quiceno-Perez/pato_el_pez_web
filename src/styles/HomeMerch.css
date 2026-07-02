@@ -1,0 +1,284 @@
+/* ==========================================
+   HOME MERCH SECTION
+========================================== */
+
+.home-merch-container {
+    width: 100%;
+    padding: 10rem 0;
+    background: var(--black);
+}
+
+.merch-wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.merch-wrapper h2 {
+    font-size: 6rem;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.merch-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 3rem;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.merch-card {
+    background:
+        rgba(255, 255, 255, .03);
+
+    border:
+        1px solid rgba(255, 255, 255, .08);
+
+    border-radius: 2rem;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    position: relative;
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease,
+        border-color .4s ease;
+}
+
+.merch-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: .4rem;
+
+    background: var(--red);
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: .4s;
+}
+
+.merch-card:hover {
+    /* transform:
+        translateY(-10px); */
+
+    border-color:
+        rgba(136, 16, 20, .5);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, .5);
+}
+
+/* .merch-card:hover::before {
+    transform: scaleX(1);
+} */
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.merch-image {
+    width: 100%;
+    height: 35rem;
+    overflow: hidden;
+}
+
+.merch-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition:
+        transform .6s ease,
+        filter .6s ease;
+}
+
+.merch-card:hover .merch-image img {
+    transform: scale(1.08);
+
+    filter:
+        brightness(1.05)
+        contrast(1.05);
+}
+
+/* ==========================================
+   INFO
+========================================== */
+
+.merch-info {
+    padding: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.merch-info h3 {
+    font-size: 2.2rem;
+    color: var(--white);
+    line-height: 1.3;
+}
+
+.merch-info p {
+    font-size: 2rem;
+    color: var(--red);
+    font-weight: 700;
+}
+
+/* ==========================================
+   PRICE
+========================================== */
+
+.merch-price {
+    font-size: 2rem;
+    color: var(--red);
+    font-weight: 700;
+}
+
+/* ==========================================
+   SIZES
+========================================== */
+
+.merch-sizes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sizes-label {
+    color: rgba(255,255,255,.7);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+}
+
+.sizes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+}
+
+.size-badge {
+    background: rgba(255,255,255,.08);
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    color: var(--white);
+
+    padding:
+        .6rem 1.2rem;
+
+    border-radius: 5rem;
+
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.size-badge:hover {
+    background: var(--red);
+
+    border-color: var(--red);
+
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.merch-btn {
+    margin-top: 1rem;
+
+    border: none;
+
+    background: var(--red);
+    color: var(--white);
+
+    padding: 1.4rem 2rem;
+
+    border-radius: 1rem;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+.merch-btn:hover {
+    transform:
+        translateY(-4px);
+
+    /* box-shadow:
+        0 10px 25px rgba(136, 16, 20, .4); */
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+    .merch-wrapper h2 {
+        font-size: 4.5rem;
+    }
+
+    .merch-image {
+        height: 30rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-merch-container {
+        padding: 7rem 0;
+    }
+
+    .merch-wrapper {
+        width: 90%;
+    }
+
+    .merch-wrapper h2 {
+        font-size: 3.5rem;
+    }
+
+    .merch-grid {
+        gap: 2rem;
+    }
+
+    .merch-image {
+        height: 28rem;
+    }
+
+    .merch-info h3 {
+        font-size: 2rem;
+    }
+
+    .merch-info p {
+        font-size: 1.8rem;
+    }
+}
