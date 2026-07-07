@@ -4,7 +4,17 @@ const MerchCard = ({ merch }) => {
     return (
         <article className="merch-card">
             <div className="merch-image">
-                <img src={merch.image} alt={merch.name} />
+                <img
+                    className="primary-image"
+                    src={merch.image}
+                    alt={merch.name}
+                />
+
+                <img
+                    className="secondary-image"
+                    src={merch.image2}
+                    alt={`${merch.name} Posterior`}
+                />
             </div>
 
             <div className="merch-info">

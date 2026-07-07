@@ -9,7 +9,7 @@ const BannerBienvenida = () => {
     return (
         <div className="bannerBienvenida-container">
             <img
-                src="/images/BannerBienvenida/collageTodos.jpeg"
+                src="/images/BannerBienvenida/portada2.jpg"
                 alt="Pato el Pez"
             />
         </div>
