@@ -34,7 +34,7 @@ const Merch = [
         "id": 5,
         "name": "Cadena",
         "price": 25000,
-        "image": "/public/images/Merch/Camisa_Negra.png",
+        "image": "/public/images/Merch/",
         "sizes": ["No Aplica"]
     },
     {
@@ -69,18 +69,20 @@ const Merch = [
         "id": 10,
         "name": "Camiseta Roja",
         "price": 35000,
-        "image": "/public/images/",
+        "image": "/public/images/Mejor_que_esto_camisa_roja.jpg",
+        "image2": "/public/images/Merch/posterior_camisa_rojo.jpg",
         "sizes": ["No Aplica"]
     },
     {
-        "id": 9,
-        "name": "Gorro Beanie",
-        "price": 35000,
-        "image": "/public/images/",
-        "sizes": ["No Aplica"]
+        "id": 11,
+        "name": "Chompa Roja",
+        "price": 80000,
+        "image": "/public/images/Merch/Mejor_que_esto_buso_rojo.jpg",
+        "image2": "/public/images/Merch/lat_rojo.jpg",
+        "sizes": ["S", "M", "L","XL"]
     },
     {
-        "id": 9,
+        "id": 12,
         "name": "Gorro Beanie",
         "price": 35000,
         "image": "/public/images/",
