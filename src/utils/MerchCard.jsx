@@ -1,4 +1,5 @@
 import React from 'react'
+import BtnButton from './BtnButton'
 
 const MerchCard = ({ merch }) => {
     return (
@@ -41,9 +42,12 @@ const MerchCard = ({ merch }) => {
                     </div>
                 </div>
 
-                <button className="merch-btn">
+                <BtnButton
+                    component="a"
+                    className="merch-btn"
+                    href={`http://wa.me/573126957657?text=!Hola%20Deseo%20adquirir%20este%20producto😎🤘%20${merch.name}`}>
                     Comprar
-                </button>
+                </BtnButton>
             </div>
         </article>
     )
