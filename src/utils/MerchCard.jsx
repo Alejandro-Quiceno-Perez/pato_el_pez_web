@@ -45,7 +45,9 @@ const MerchCard = ({ merch }) => {
                 <BtnButton
                     component="a"
                     className="merch-btn"
-                    href={`http://wa.me/573126957657?text=!Hola%20Deseo%20adquirir%20este%20producto😎🤘%20${merch.name}`}>
+                    href={`http://wa.me/573126957657?text=Hola!!%20Deseo%20adquirir%20este%20producto%20😎🤘%20${merch.name}`}
+                    target="_blank"
+                >
                     Comprar
                 </BtnButton>
             </div>

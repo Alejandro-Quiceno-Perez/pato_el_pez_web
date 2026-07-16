@@ -38,7 +38,7 @@ const Band = {
     {
       id: 1,
       nombre: "WhatsApp",
-      url: "http://wa.me/573126957657?text=!Hola%20Deseo%20contactar%20la%20Banda%20😎🤘"
+      url: "http://wa.me/573126957657?text=Hola!!%20Deseo%20contactar%20la%20Banda%20😎🤘"
     },
     {
       id: 2,

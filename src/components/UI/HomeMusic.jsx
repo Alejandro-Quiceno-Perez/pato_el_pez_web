@@ -2,6 +2,7 @@ import React from 'react'
 import Songs from '../../db/Music'
 import SongCard from '../../utils/SongCard'
 import '../../styles/HomeMusic.css'
+import BtnButton from '../../utils/BtnButton'
 
 const imgAlbum = '/img_music/Caratula_disco.jpg'
 
@@ -27,8 +28,19 @@ const HomeMusic = () => {
                     </p>
 
                     <div className="music-section-link">
-                        <a href="">Escuchar ahora</a>
-                        <a href="/music">Ver más</a>
+                        <BtnButton 
+                            component="a"
+                            href="https://open.spotify.com/artist/4pbnupXCtNilC05RqeFrCO?si=ENr9i_a8Royd1osd2oJseQ"
+                            target="_blank"
+                        >
+                            Escuchar ahora
+                        </BtnButton>
+                        <BtnButton 
+                            component="a"
+                            href="/music"
+                        >
+                            Ver más
+                        </BtnButton>
                     </div>
                     <div className="songs-grid">
                         {featuredSongs.map(song => (
