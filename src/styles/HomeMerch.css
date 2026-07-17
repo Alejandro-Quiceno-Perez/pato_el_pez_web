@@ -159,7 +159,9 @@
 
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
     gap: 1.5rem;
+    text-align: center;
 }
 
 .merch-info h3 {
@@ -184,11 +186,24 @@
     font-weight: 700;
 }
 
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.merch-description {
+    color: rgba(255,255,255,.7) !important;
+    font-size: 1.3rem !important;
+    /* text-transform: uppercase; */
+    letter-spacing: .15rem;
+}
+
+
 /* ==========================================
    SIZES
 ========================================== */
 
-.merch-sizes {
+/* .merch-sizes {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -232,7 +247,7 @@
     border-color: var(--red);
 
     transform: translateY(-2px);
-}
+} */
 
 /* ==========================================
    BUTTON

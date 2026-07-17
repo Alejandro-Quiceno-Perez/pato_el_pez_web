@@ -21,11 +21,16 @@ const MerchCard = ({ merch }) => {
             <div className="merch-info">
                 <h3>{merch.name}</h3>
 
+                <p className='merch-description'>
+                    {merch.descripcion}
+                </p>
+
                 <p className="merch-price">
                     ${merch.price.toLocaleString()}
                 </p>
 
-                <div className="merch-sizes">
+
+                {/* <div className="merch-sizes">
                     <span className="sizes-label">
                         Tallas:
                     </span>
@@ -40,12 +45,14 @@ const MerchCard = ({ merch }) => {
                             </span>
                         ))}
                     </div>
-                </div>
+                </div> */}
+
+
 
                 <BtnButton
                     component="a"
                     className="merch-btn"
-                    href={`http://wa.me/573126957657?text=Hola!!%20Deseo%20adquirir%20este%20producto%20😎🤘%20${merch.name}`}
+                    href={`http://wa.me/573126957657?text=Hola!!%20Deseo%20adquirir%20este%20producto%20😎🤘%20${merch.name}%20${merch.descripcion}`}
                     target="_blank"
                 >
                     Comprar
