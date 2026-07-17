@@ -1,0 +1,160 @@
+/* ============================
+   PÁGINA
+============================ */
+
+.merch-page{
+    background: var(--black);
+    width: 100%;
+    margin: 0 auto;
+    padding: 8rem 0;
+}
+
+.container-merch{
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ============================
+   CABECERA
+============================ */
+
+.merch-header{
+    margin-bottom: 3rem;
+}
+
+.merch-header h1{
+    font-size: 6rem;
+    color: var(--white);
+}
+
+.merch-header p{
+    font-size: 1.8rem;
+    color: rgba(255,255,255,.65);
+    margin: 1rem 0 3rem;
+}
+
+.merch-span {
+    color: var(--red);
+    font-weight: 700;
+}
+
+/* ============================
+   SEARCH
+============================ */
+
+.merch-search-container{
+
+    width:100%;
+    max-width:650px;
+    margin:0 auto;
+
+    position:relative;
+
+}
+
+/* Icono */
+
+.merch-search-icon{
+
+    position:absolute;
+
+    left:2rem;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    font-size:2rem;
+
+    color:rgba(255,255,255,.35);
+
+    transition:.3s;
+
+}
+
+/* Input */
+
+.merch-search{
+
+    width:100%;
+
+    padding:1.8rem 2rem 1.8rem 6rem;
+
+    background:#0d0d0d;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:5rem;
+
+    color:var(--white);
+
+    font-size:1.6rem;
+
+    transition:
+        border-color .35s,
+        box-shadow .35s,
+        background .35s;
+
+}
+
+/* Placeholder */
+
+.merch-search::placeholder{
+
+    color:rgba(255,255,255,.35);
+
+    letter-spacing:.08rem;
+
+}
+
+/* Hover */
+
+.merch-search:hover{
+
+    border-color:
+        rgba(136,16,20,.35);
+
+}
+
+/* Focus */
+
+.merch-search:focus{
+
+    outline:none;
+
+    background:#121212;
+
+    border-color:var(--red);
+
+    box-shadow:
+        0 0 0 4px rgba(136,16,20,.12);
+
+}
+
+/* Cambiar color del icono */
+
+.merch-search:focus
++ .merch-search-icon{
+
+    color:var(--red);
+
+}
+
+/* ============================
+   MENSAJE
+============================ */
+
+.no-results{
+
+    color:white;
+    font-size:1.8rem;
+    text-align:center;
+    margin-top:4rem;
+
+}
+
+
+/* .merch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+} */

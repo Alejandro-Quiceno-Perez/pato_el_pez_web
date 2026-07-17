@@ -24,7 +24,7 @@ const Merch = [
     },
     {
         "id": 4,
-        "name": "Chompa Negra",
+        "name": "Buso Negro",
         "price": 80000,
         "image": "/public/images/Merch/Mejor_que_esto_buso_negro.jpg",
         "image2": "/public/images/Merch/lat_negro.jpg",
@@ -69,30 +69,32 @@ const Merch = [
         "id": 10,
         "name": "Camiseta Roja",
         "price": 35000,
-        "image": "/public/images/",
+        "image": "/public/images/Merch/Camisa_rojo.jpg",
+        "image2": "/public/images/Merch/posterior_camisa_rojo.jpg",
         "sizes": ["No Aplica"]
     },
     {
-        "id": 9,
-        "name": "Gorro Beanie",
-        "price": 35000,
-        "image": "/public/images/",
-        "sizes": ["No Aplica"]
+        "id": 11,
+        "name": "Buso Rojo",
+        "price": 80000,
+        "image": "/public/images/Merch/Mejor_que_esto_buso_rojo.jpg",
+        "image2": "/public/images/Merch/lat_rojo.jpg",
+        "sizes": ["S", "M", "L","XL"]
     },
-    {
-        "id": 9,
-        "name": "Gorro Beanie",
-        "price": 35000,
-        "image": "/public/images/",
-        "sizes": ["No Aplica"]
-    },
-    {
-        "id": 9,
-        "name": "Gorro Beanie",
-        "price": 35000,
-        "image": "/public/images/",
-        "sizes": ["No Aplica"]
-    },
+    // {
+    //     "id": 9,
+    //     "name": "Gorro Beanie",
+    //     "price": 35000,
+    //     "image": "/public/images/",
+    //     "sizes": ["No Aplica"]
+    // },
+    // {
+    //     "id": 9,
+    //     "name": "Gorro Beanie",
+    //     "price": 35000,
+    //     "image": "/public/images/",
+    //     "sizes": ["No Aplica"]
+    // },
 ]
 
 export default Merch

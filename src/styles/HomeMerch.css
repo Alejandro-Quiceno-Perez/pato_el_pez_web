@@ -26,11 +26,13 @@
 ========================================== */
 
 .merch-grid {
-    display: grid;
-    grid-template-columns:
-        repeat(auto-fit, minmax(280px, 1fr));
+    display:flex;
 
-    gap: 3rem;
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:3rem;
 }
 
 /* ==========================================
@@ -45,6 +47,7 @@
         1px solid rgba(255, 255, 255, .08);
 
     border-radius: 2rem;
+    width: 300px;
 
     overflow: hidden;
 
