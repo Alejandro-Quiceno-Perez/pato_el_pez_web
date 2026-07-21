@@ -6,7 +6,46 @@ const Band = {
   founded: 2020,
   genre: "Punk Rock",
   coverImage: "/public/images/Members/Banda.JPG",
-  logo: "/public/logo_letras_blanco.png"
+  logo: "/public/logo_letras_blanco.png",
+  redes: [
+    {
+      id: 1,
+      nombre: "Instagram",
+      url: "https://www.instagram.com/pato_el_pez_punkrock/",
+    },
+    {
+      id: 2,
+      nombre: "Facebook",
+      url: "https://www.facebook.com/patoelpezpunkrock",
+    },
+    {
+      id: 3,
+      nombre: "YouTube",
+      url: "https://www.youtube.com/channel/UCmrqhSYGFmJxfGDpwyoj_EQ",
+    },
+    {
+      id: 4,
+      nombre: "Spotify",
+      url: "https://open.spotify.com/artist/4pbnupXCtNilC05RqeFrCO?si=ENr9i_a8Royd1osd2oJseQ",
+    },
+    {
+      id: 5,
+      nombre: "TikTok",
+      url: "https://www.tiktok.com/@patoelpezpunkrock"
+    }
+  ],
+  contact: [
+    {
+      id: 1,
+      nombre: "WhatsApp",
+      url: "http://wa.me/573126957657?text=Hola!!%20Deseo%20contactar%20la%20Banda%20😎🤘"
+    },
+    {
+      id: 2,
+      nombre: "patodelpez@gmail.com",
+      url: "mailto:patodelpez@gmail.com"
+    }
+  ]
 }
 
 export default Band

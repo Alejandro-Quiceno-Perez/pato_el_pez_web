@@ -236,6 +236,8 @@
 ========================================== */
 
 .merch-btn {
+    text-decoration: none;
+    text-align: center;
     margin-top: 1rem;
 
     border: none;

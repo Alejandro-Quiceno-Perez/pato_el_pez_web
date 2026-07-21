@@ -1,9 +1,20 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import '../../styles/footer.css'
+import Band from '../../db/Band'
 import FotoPato from '../../../public/logo_letras_blanco.png'
+import BtnButton from '../../utils/BtnButton';
 
 const Footer = () => {
+
+    const navLinks = [
+        { name: "Música", path: "/music" },
+        { name: "Videos", path: "/videos" },
+        { name: "Recorrido", path: "/recorrido" },
+        { name: "Merch", path: "/merch" },
+        { name: "Press Kit", path: "/press-kit" },
+    ];
+
     return (
         <div className="footer">
 
@@ -32,15 +43,17 @@ const Footer = () => {
 
                     <h3>Navegación</h3>
 
-                    <Link to="/music">Música</Link>
-
-                    <Link to="/videos">Videos</Link>
-
-                    <Link to="/recorrido">Recorrido</Link>
-
-                    <Link to="/merch">Merch</Link>
-
-                    <Link to="/press-kit">Press Kit</Link>
+                    {
+                        navLinks.map((link) => (
+                            <BtnButton 
+                                key={link.name}
+                                component="a"
+                                href={link.path}
+                            >
+                                {link.name}
+                            </BtnButton>
+                        ))
+                    }
 
                 </div>
 
@@ -50,13 +63,18 @@ const Footer = () => {
 
                     <h3>Síguenos</h3>
 
-                    <a href="#">Instagram</a>
+                    {Band.redes.map((red) => (
+                        <BtnButton
+                            key={red.nombre}
+                            component="a"
+                            href={red.url}
+                            target="_blank"
+                        >
+                            {red.nombre}
+                        </BtnButton>
+                    ))
+                    }
 
-                    <a href="#">Spotify</a>
-
-                    <a href="#">YouTube</a>
-
-                    <a href="#">TikTok</a>
 
                 </div>
 
@@ -66,9 +84,16 @@ const Footer = () => {
 
                     <h3>Contacto</h3>
 
-                    <a href="#">WhatsApp</a>
-
-                    <a href="#">patodelpez@gmail.com</a>
+                    {Band.contact.map((contact) => (
+                        <BtnButton
+                            key={contact.nombre}
+                            component="a"
+                            href={contact.url}
+                            target="_blank"
+                        >
+                            {contact.nombre}
+                        </BtnButton>
+                    ))}
 
                     <span>Medellín, Colombia</span>
 
