@@ -1,0 +1,512 @@
+/* ======================================================
+   MUSIC PAGE
+====================================================== */
+
+.music-page {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--black);
+    padding-top: 5rem;
+}
+
+.music-container {
+    width: 85%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+/* ======================================================
+   TITULO
+====================================================== */
+
+.music-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.music-title span {
+
+    display: block;
+
+    color: var(--red);
+
+    text-transform: uppercase;
+
+    letter-spacing: .45rem;
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    margin-bottom: 1.5rem;
+
+}
+
+/* .music-title h1 {
+
+    font-size: 6rem;
+
+    color: white;
+
+    text-transform: uppercase;
+
+    margin-bottom: 2rem;
+
+}
+
+.music-title p {
+
+    width: min(750px,100%);
+
+    margin: auto;
+
+    color: rgba(255,255,255,.65);
+
+    font-size: 1.8rem;
+
+    line-height: 1.9;
+
+} */
+
+
+/* =====================================================
+   ALBUM SECTION
+===================================================== */
+
+.album-section {
+    /* background: pink; */
+    width: 100%;
+
+    display: flex;
+    /* flex-direction: column; */
+    gap: 5rem;
+
+    padding-bottom: rem;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.album-header {
+    /* background-color: aqua; */
+    width: 60%;
+/* 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem; */
+}
+
+/* =====================================================
+   COVER
+===================================================== */
+
+.album-cover {
+    width: 30%;
+    height: 60rem;
+}
+
+.album-cover img {
+    width: 100%;
+    height: 100%;
+
+    /* border-radius: 2rem; */
+
+
+
+    transition: .45s ease;
+}
+
+.album-cover img:hover {
+    transform: scale(1.03);
+}
+
+/* =====================================================
+   INFO
+===================================================== */
+
+.album-info {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* =====================================================
+   YEAR
+===================================================== */
+
+.album-year {
+
+    color: var(--red);
+
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .35rem;
+}
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.album-title {
+
+    color: var(--white);
+
+    font-size: clamp(3.5rem,5vw,6rem);
+
+    text-transform: uppercase;
+
+    line-height: 1;
+}
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.album-description {
+
+    max-width: 750px;
+
+    color: rgba(255,255,255,.75);
+
+    font-size: 1.8rem;
+
+    line-height: 1.8;
+
+}
+
+/* =====================================================
+   DETAILS
+===================================================== */
+
+.album-details {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    margin-top: 1rem;
+
+}
+
+.album-details span{
+
+    padding: .9rem 1.6rem;
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,.05);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    color: rgba(255,255,255,.8);
+
+    font-size: 1.3rem;
+
+    transition: .3s;
+
+}
+
+.album-details span:hover{
+
+    background: rgba(136,16,20,.25);
+
+    border-color: rgba(136,16,20,.6);
+
+    color: var(--white);
+
+}
+
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.song-actions, .album-buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.song-actions a, .album-buttons a {
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+.song-actions a:first-child, .album-buttons a:first-child {
+    background: var(--red);
+    color: white;
+}
+
+.song-actions a:first-child:hover, .album-buttons a:first-child:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 30px rgba(136, 16, 20, .4);
+}
+
+.song-actions a:last-child, .album-buttons a:last-child {
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: white;
+}
+
+.song-actions a:last-child:hover, .album-buttons a:last-child:hover {
+    border-color: var(--red);
+    color: var(--red);
+    transform: translateY(-5px);
+}
+
+/* =====================================================
+   SONGS
+===================================================== */
+
+.album-songs{
+    /* background-color: aqua; */
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.2rem;
+    margin-bottom: 5rem;
+
+}
+
+
+/* =====================================================
+   SONG CARD
+===================================================== */
+
+.song-card {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 70px 90px 1fr auto;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 1.8rem 2rem;
+
+    border-radius: 1.6rem;
+
+    background: rgba(255,255,255,.02);
+
+    border: 1px solid rgba(255,255,255,.06);
+
+    transition:
+        background .35s ease,
+        border-color .35s ease,
+        transform .35s ease,
+        box-shadow .35s ease;
+
+    overflow: hidden;
+    position: relative;
+}
+
+/* Línea lateral */
+
+.song-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:4px;
+    height:100%;
+
+    background:var(--red);
+
+    transform:scaleY(0);
+
+    transition:.35s;
+
+}
+
+.song-card:hover{
+
+    background:rgba(255,255,255,.05);
+
+    border-color:rgba(136,16,20,.45);
+
+    transform:translateX(8px);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.song-card:hover::before{
+
+    transform:scaleY(1);
+
+}
+
+/* =====================================================
+   NUMBER
+===================================================== */
+
+.song-number{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.song-number span{
+
+    color:rgba(255,255,255,.35);
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    transition:.3s;
+
+}
+
+.song-card:hover .song-number span{
+
+    color:var(--red);
+
+}
+
+/* =====================================================
+   COVER
+===================================================== */
+
+.song-cover{
+
+    width:90px;
+    height:90px;
+
+    overflow:hidden;
+
+    border-radius:1.4rem;
+
+    flex-shrink:0;
+
+}
+
+.song-cover img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:
+        transform .45s ease,
+        filter .45s ease;
+
+}
+
+.song-card:hover .song-cover img{
+
+    transform:scale(1.08);
+
+    filter:brightness(1.08);
+
+}
+
+/* =====================================================
+   INFO
+===================================================== */
+
+.song-info{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:1rem;
+
+}
+
+.song-info h3{
+
+    color:var(--white);
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.song-card:hover .song-info h3{
+
+    color:var(--red);
+
+}
+
+/* =====================================================
+   META
+===================================================== */
+
+.song-meta{
+
+    display:flex;
+    flex-wrap:wrap;
+
+    gap:2rem;
+
+}
+
+.song-meta span{
+
+    color:rgba(255,255,255,.6);
+
+    font-size:1.4rem;
+
+}
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.song-actions{
+
+    display:flex;
+
+    gap:1rem;
+
+    opacity:0;
+
+    transform:translateX(20px);
+
+    transition:.35s;
+
+}
+
+.song-card:hover .song-actions{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
