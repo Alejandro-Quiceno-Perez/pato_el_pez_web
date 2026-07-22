@@ -1,12 +1,29 @@
 const Music = [
     {
-        "id": 1,
-        "title": "Mejor Que Esto",
-        "cover": "/public/img_music/Mejor_que_esto.png",
-        "spotify": "https://open.spotify.com/track/4D08jaNalP8Gly6OTE3nT1?si=8f60008101cf42d9",
-        "youtube": "https://www.youtube.com/watch?v=DXW0O16KTOM&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4",
-        "releaseDate": "2025-09-06",
-        "lyrics": `Quizás no exista alguna razón Para querer hacer las cosas mejor
+        id:1,
+
+        title:"La Oveja Negra",
+
+        year:2025,
+
+        genre:"Punk Rock",
+
+        cover:"../public/img_music/Caratula_disco.jpg",
+
+        spotify:"https://open.spotify.com/artist/4pbnupXCtNilC05RqeFrCO?si=ENr9i_a8Royd1osd2oJseQ",
+
+        youtube:"https://www.youtube.com/channel/UCmrqhSYGFmJxfGDpwyoj_EQ",
+
+        description:"Nuestro primer álbum de estudio...",
+        songs: [
+            {
+                "id": 1,
+                "title": "Mejor Que Esto",
+                "cover": "/public/img_music/Mejor_que_esto.png",
+                "spotify": "https://open.spotify.com/track/4D08jaNalP8Gly6OTE3nT1?si=8f60008101cf42d9",
+                "youtube": "https://www.youtube.com/watch?v=DXW0O16KTOM&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4",
+                "releaseDate": "2025-09-06",
+                "lyrics": `Quizás no exista alguna razón Para querer hacer las cosas mejor
         Siempre me he fijado metas mi vida Tratando de buscarle un sentido a la misma
         Siempre pierdo mi tiempo pensando Las cosas malas que me están pasando Suelo ser muy negativo
         Y no ver nada positivo
@@ -17,16 +34,16 @@ const Music = [
         Y aunque me resulte difícil Espero poder soportar
         Siempre me preguntan por mis adicciones Mis adicciones son las malas decisiones Suelo cometer muchos errores
         Y hundirme en un mar de contradicciones.`,
-        "duration": "3:24"
-    },
-    {
-        "id": 2,
-        "title": "Xiomi",
-        "cover": "/public/img_music/Xiomi.png",
-        "spotify": "https://open.spotify.com/track/4Pey9BUhHCDsPosPSNDTSU?si=5209791ff64f4042",
-        "youtube": "https://www.youtube.com/watch?v=0NT6QWsMQhQ&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=2",
-        "releaseDate": "2025-09-06",
-        "lyrics": `No puedo olvidar
+                "duration": "3:24"
+            },
+            {
+                "id": 2,
+                "title": "Xiomi",
+                "cover": "/public/img_music/Xiomi.png",
+                "spotify": "https://open.spotify.com/track/4Pey9BUhHCDsPosPSNDTSU?si=5209791ff64f4042",
+                "youtube": "https://www.youtube.com/watch?v=0NT6QWsMQhQ&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=2",
+                "releaseDate": "2025-09-06",
+                "lyrics": `No puedo olvidar
             La vez que mis ojos te vieron pasar En aquel lugar
             Donde el destino nos quiso juntar
 
@@ -49,16 +66,16 @@ const Music = [
             La mujer perfecta para esta ocasión Y se que te iras
             Si en este momento no empiezo a actuar
             ¿Por qué? (no te vuelvo a ver) `,
-        "duration": "3:38"
-    },
-    {
-        "id": 4,
-        "title": "Dejarte Ir",
-        "cover": "/public/img_music/Dejarte_ir.png",
-        "spotify": "https://open.spotify.com/track/0Tm2MhdoLyuAfbLAk1349v?si=cdf7306e54674a8f",
-        "youtube": "https://www.youtube.com/watch?v=25qJ1sfA0zE&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=3",
-        "releaseDate": "2025-09-06",
-        "lyrics": `Quizás hoy no esté bien Aun sufrir por ti
+                "duration": "3:38"
+            },
+            {
+                "id": 4,
+                "title": "Dejarte Ir",
+                "cover": "/public/img_music/Dejarte_ir.png",
+                "spotify": "https://open.spotify.com/track/0Tm2MhdoLyuAfbLAk1349v?si=cdf7306e54674a8f",
+                "youtube": "https://www.youtube.com/watch?v=25qJ1sfA0zE&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=3",
+                "releaseDate": "2025-09-06",
+                "lyrics": `Quizás hoy no esté bien Aun sufrir por ti
             Quizás sea mejor Dejarlo todo así
 
             Si tal vez todo fue Un caos para ti Entonces es mejor Solo dejarte ir
@@ -83,16 +100,16 @@ const Music = [
             Ya vos alguna vez Pasaste esa oportunidad
 
             Creíste que siempre iba a sufrir por vos Y nunca te imaginaste que…`,
-        "duration": "3:08"
-    },
-    {
-        "id": 5,
-        "title": "Rutina",
-        "cover": "/public/img_music/Rutina.png",
-        "spotify": "https://open.spotify.com/track/22PXqMI55HPDfYNEQX87RH?si=d5394edb7d004d8c",
-        "youtube": "https://www.youtube.com/watch?v=tmuRKaiJDMM&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=4",
-        "releaseDate": "2025-09-06",
-        "lyrics": `
+                "duration": "3:08"
+            },
+            {
+                "id": 5,
+                "title": "Rutina",
+                "cover": "/public/img_music/Rutina.png",
+                "spotify": "https://open.spotify.com/track/22PXqMI55HPDfYNEQX87RH?si=d5394edb7d004d8c",
+                "youtube": "https://www.youtube.com/watch?v=tmuRKaiJDMM&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=4",
+                "releaseDate": "2025-09-06",
+                "lyrics": `
             Me levanto de mi cama a trabajar Empieza un nuevo día laboral
             Tal vez esta rutina alguna vez me va a matar Me va a matar
 
@@ -114,16 +131,16 @@ const Music = [
             De hacerme olvidar todo este dolor
 
             Aburrida como cualquiera Y así… la volvi`,
-        "duration": "4.26"
-    },
-    {
-        "id": 6,
-        "title": "Cuando Sea Grande",
-        "cover": "/public/img_music/Cuando_sea_grande.png",
-        "spotify": "https://open.spotify.com/track/1vDrhK6jS1XgPZ17vCov3t?si=5001fcda9e924810",
-        "youtube": "https://www.youtube.com/watch?v=GoTvxAWzrFk&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=5",
-        "releaseDate": "2025-09-06",
-        "lyrics": `Cuando crezca quiero tener una moto
+                "duration": "4.26"
+            },
+            {
+                "id": 6,
+                "title": "Cuando Sea Grande",
+                "cover": "/public/img_music/Cuando_sea_grande.png",
+                "spotify": "https://open.spotify.com/track/1vDrhK6jS1XgPZ17vCov3t?si=5001fcda9e924810",
+                "youtube": "https://www.youtube.com/watch?v=GoTvxAWzrFk&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=5",
+                "releaseDate": "2025-09-06",
+                "lyrics": `Cuando crezca quiero tener una moto
             La que tengo colgada en mi pieza en fotos Y también quiero tener dinero
             Para comprarme siempre lo que quiero.
 
@@ -146,16 +163,16 @@ const Music = [
 
             Cuando crezca quiero tener pelo largo Y parecer todo un metacho
             Que nadie se meta con mi estilo Es un estilo único sencillo`,
-        "duration": "4:00"
-    },
-    {
-        "id": 7,
-        "title": "La Bestia",
-        "cover": "/public/img_music/La_bestia.png",
-        "spotify": "https://open.spotify.com/track/21jwBg0dbMEDrdLnCIYHdP?si=8efcf8cb5a2f43c2",
-        "youtube": "https://www.youtube.com/watch?v=CmDb8bRmaRs&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=6",
-        "releaseDate": "2025-09-06",
-        "lyrics": `
+                "duration": "4:00"
+            },
+            {
+                "id": 7,
+                "title": "La Bestia",
+                "cover": "/public/img_music/La_bestia.png",
+                "spotify": "https://open.spotify.com/track/21jwBg0dbMEDrdLnCIYHdP?si=8efcf8cb5a2f43c2",
+                "youtube": "https://www.youtube.com/watch?v=CmDb8bRmaRs&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=6",
+                "releaseDate": "2025-09-06",
+                "lyrics": `
             Ha despertado, se paró de la cama va al espejo y mira su reflejo
             ve las marcas, su rostro maltratado
             la herida está abierta y la sangre no ha parado
@@ -170,16 +187,16 @@ const Music = [
             Se ve su cuerpo tendido en el suelo
             Hay mucha sangre y ha acabado el ruedo La bestia duerme no sabe que paso
             Por una borrachera SU MUJER ASESINÓ`,
-        "duration": "2:52"
-    },
-    {
-        "id": 8,
-        "title": "La Oveja Negra",
-        "cover": "/public/img_music/La_oveja_negra.png",
-        "spotify": "https://open.spotify.com/track/2UnhzBC1Ve0emTfBa92BxI?si=d6c62b91074c4eb5",
-        "youtube": "https://www.youtube.com/watch?v=2BpG4y_Xr-s&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=7",
-        "releaseDate": "2025-09-06",
-        "lyrics": `Si alguna vez te has sentido como yo Quizás valga la pena cantar esta canción Fui alguien marginado por ser un chico raro
+                "duration": "2:52"
+            },
+            {
+                "id": 8,
+                "title": "La Oveja Negra",
+                "cover": "/public/img_music/La_oveja_negra.png",
+                "spotify": "https://open.spotify.com/track/2UnhzBC1Ve0emTfBa92BxI?si=d6c62b91074c4eb5",
+                "youtube": "https://www.youtube.com/watch?v=2BpG4y_Xr-s&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=7",
+                "releaseDate": "2025-09-06",
+                "lyrics": `Si alguna vez te has sentido como yo Quizás valga la pena cantar esta canción Fui alguien marginado por ser un chico raro
             Por mi forma de vestir y mis gustos extraños
 
             Soy aquel personaje
@@ -195,16 +212,16 @@ const Music = [
 
 
             pero nos gusta poguear esta música disfrutar para conciertos andar y podernos parchar`,
-        "duration": "3:02"
-    },
-    {
-        "id": 9,
-        "title": "22",
-        "cover": "/public/img_music/22.png",
-        "spotify": "https://open.spotify.com/track/2dPxQMY4YflfkZC25IsnOP?si=98bfc5e54a9542d7",
-        "youtube": "https://www.youtube.com/watch?v=cRLwvtleWq8&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=8",
-        "releaseDate": "2025-09-06",
-        "lyrics": `Recuerdo ese dia 
+                "duration": "3:02"
+            },
+            {
+                "id": 9,
+                "title": "22",
+                "cover": "/public/img_music/22.png",
+                "spotify": "https://open.spotify.com/track/2dPxQMY4YflfkZC25IsnOP?si=98bfc5e54a9542d7",
+                "youtube": "https://www.youtube.com/watch?v=cRLwvtleWq8&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=8",
+                "releaseDate": "2025-09-06",
+                "lyrics": `Recuerdo ese dia 
         En que todo sucedió Recuerdo aquel 22
 
         Un dia, cualquiera Común y corriente Esta historia Comenzó
@@ -236,16 +253,16 @@ const Music = [
 
         Y aunque me duela tu frialdad Es algo que algún día
         Tendré que aceptar`,
-        "duration": "3:11"
-    },
-    {
-        "id": 10,
-        "title": "Esto Es Pato",
-        "cover": "/public/img_music/Esto_es_pato.png",
-        "spotify": "https://open.spotify.com/track/6PldJmmHyKWFFBsmPLgOm4?si=54148df23a6f49e2",
-        "youtube": "https://www.youtube.com/watch?v=m5Rm3QE2dFE&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=9",
-        "releaseDate": "2025-09-06",
-        "lyrics": `Esto es pato el pez Tu como la vez
+                "duration": "3:11"
+            },
+            {
+                "id": 10,
+                "title": "Esto Es Pato",
+                "cover": "/public/img_music/Esto_es_pato.png",
+                "spotify": "https://open.spotify.com/track/6PldJmmHyKWFFBsmPLgOm4?si=54148df23a6f49e2",
+                "youtube": "https://www.youtube.com/watch?v=m5Rm3QE2dFE&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=9",
+                "releaseDate": "2025-09-06",
+                "lyrics": `Esto es pato el pez Tu como la vez
         Con un ritmo pegajoso Una y otra vez
         Con el loko en la guitarra Y en la voz también
         Pide a gritos que le traigan (algo de beber)
@@ -261,16 +278,16 @@ const Music = [
 
         No somos rockstar ni lo queremos ser Mejor pase una cerveza que quiero beber Un trago de ron de ese garrafón
         Dendele un trago de cerveza a este pobre weon`,
-        "duration": "1:47"
-    },
-    {
-        "id": 3,
-        "title": "El Pobre Sebas",
-        "cover": "/public/img_music/El_pobre_sebas.png",
-        "spotify": "https://open.spotify.com/track/6lTVZMXa4CPrZFj4G21kPg?si=7856a721ef4f488f",
-        "youtube": "https://www.youtube.com/watch?v=7ydRMuSXzNo",
-        "releaseDate": "2025-09-06",
-        "lyrics": `Esta es la historia que les quiero contar Una anécdota pesada una anécdota ideal
+                "duration": "1:47"
+            },
+            {
+                "id": 3,
+                "title": "El Pobre Sebas",
+                "cover": "/public/img_music/El_pobre_sebas.png",
+                "spotify": "https://open.spotify.com/track/6lTVZMXa4CPrZFj4G21kPg?si=7856a721ef4f488f",
+                "youtube": "https://www.youtube.com/watch?v=7ydRMuSXzNo",
+                "releaseDate": "2025-09-06",
+                "lyrics": `Esta es la historia que les quiero contar Una anécdota pesada una anécdota ideal
         La historia de este chico les quiero comentar Sebastián era su nombre, las drogas y el alcohol lo querían acabar
 
         Un tipo frío solía su ser Su timidez lo iba a acabar
@@ -294,8 +311,17 @@ const Music = [
         Por lo que él pasaba En su dia a dia
         Su madre lo abandonó para siempre
         Y ahora con su abuela él solo se entiende`,
-        "duration": "2:21"
+                "duration": "2:21"
+            },
+        ]
     },
+    // {
+    //     album: "Nuevo Disco",
+    //     songs: [
+            
+    //     ]
+    // }
+
 ]
 
 export default Music
