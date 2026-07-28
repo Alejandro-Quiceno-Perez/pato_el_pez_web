@@ -6,9 +6,9 @@ import Music from "../pages/Music";
 import Merch from "../pages/Merch";
 import Videos from "../pages/Videos";
 import PressKit from "../pages/PressKit";
-import Subscribe from "../pages/Subscribe";
 import Recorrido from '../pages/Recorrido';
 import Layout from '../components/layouts/layout';
+import Fans from '../pages/Fans';
 
 
 const AppRoutes = () => {
@@ -24,7 +24,7 @@ const AppRoutes = () => {
                     <Route path="merch" element={<Merch />} />
                     <Route path="videos" element={<Videos />} />
                     <Route path="press-kit" element={<PressKit />} />
-                    <Route path="subscribe" element={<Subscribe />} />
+                    <Route path="fans" element={<Fans />} />
                     <Route path="recorrido" element={<Recorrido />} />
                 </Route>
             </Routes>

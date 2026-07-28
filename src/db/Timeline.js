@@ -6,7 +6,7 @@ const timeline = [
         "description": `
         El C7 Festival fue uno de esos conciertos que nos recordó por qué amamos tocar. Veníamos de la pandemia y apenas era nuestro tercer toque como banda. Todo se armó de manera rápida: la batería, los amplificadores, la consola y el PA llevados a una cancha de Robledo, sin tarima y cara a cara con la gente.
         Al principio teníamos nervios porque no sabíamos cómo iba a recibirnos el público, pero los parceros de la Comuna 7 nos hicieron sentir en casa desde el primer acorde. El calor humano, la energía y ver a la gente pogueando cada canción hicieron de esa tarde un recuerdo inolvidable`,
-        "link": "",
+        "link": "https://www.instagram.com/p/CTKv-xiHLce/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
         "image": "/images/timeline/C7Festival.jpg"
     },
     {
