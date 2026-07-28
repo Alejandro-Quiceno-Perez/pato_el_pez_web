@@ -18,16 +18,18 @@ const PressKit = {
             id: 1,
             title: "Brochure",
             description: "Información general de la banda.",
-            file: "/public/pdf/Brochure.pdf"
+            file: "/public/documents/brochure_pato_el_pez.pdf"
         },
 
         {
             id: 2,
             title: "Rider Técnico",
             description: "Requerimientos técnicos para presentaciones.",
-            file: "/public/pdf/RiderTecnico.pdf"
+            file: "/public/documents/rider_tecnico_pato_el_pez.pdf"
         }
 
     ]
 
 }
+
+export default PressKit
