@@ -12,7 +12,7 @@ const Header = () => {
 
     const rightNav = [
         { name: "Tienda", path: "/merch" },
-        { name: "Fans", path: "/subscribe" },
+        { name: "Fans", path: "/fans" },
         { name: "Press Kit", path: "/press-kit" },
     ];
 

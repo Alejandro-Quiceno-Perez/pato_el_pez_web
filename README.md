@@ -42,3 +42,8 @@ npm run dev
 - Payment gateway
 - Newsletter
 - Fan community
+
+ID de implementacion 
+AKfycbwMOKLn8NNjSQxXjQJUKFkpOu-3f3ZQmWhVxKQ7GfY3SpAKtQAIzJoLOtKeTtjDjwcdOQ
+
+URL 
