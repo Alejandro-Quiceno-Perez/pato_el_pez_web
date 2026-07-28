@@ -1,5 +1,5 @@
 import React from 'react'
-import Songs from '../../db/Music'
+import Albums from '../../db/Music'
 import SongCard from '../../utils/SongCard'
 import '../../styles/HomeMusic.css'
 import BtnButton from '../../utils/BtnButton'
@@ -7,7 +7,9 @@ import BtnButton from '../../utils/BtnButton'
 const imgAlbum = '/img_music/Caratula_disco.jpg'
 
 const HomeMusic = () => {
-    const featuredSongs = Songs.slice(0, 5) // Get the first 5 songs as featured songs
+    const album = Albums[0];
+
+    const featuredSongs = album.songs.slice(0, 5); // Get the first 5 songs as featured songs
     return (
         < section className="home-music-container" >
 

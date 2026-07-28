@@ -314,13 +314,7 @@ const Music = [
                 "duration": "2:21"
             },
         ]
-    },
-    // {
-    //     album: "Nuevo Disco",
-    //     songs: [
-            
-    //     ]
-    // }
+    }
 
 ]
 
