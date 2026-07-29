@@ -110,6 +110,8 @@ const JourneyModal = ({ event, onClose }) => {
                                 href={event.instagram}
 
                                 target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn-ver-publicacion"
 
                             >
 

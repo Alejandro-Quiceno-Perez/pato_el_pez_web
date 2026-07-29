@@ -17,7 +17,7 @@ const Recorrido = [
 
         image: "/images/Recorrido/C7Festival.jpeg",
 
-        instagram: "https://www.instagram.com/p/CTKv-xiHLce/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        instagram: "https://www.instagram.com/p/CTKv-xiHLce/?img_index=1",
 
         description: `
         El C7 Festival fue uno de esos conciertos que nos recordó por qué amamos tocar. Veníamos de la pandemia y apenas era nuestro tercer toque como banda. Todo se armó de manera rápida: la batería, los amplificadores, la consola y el PA fueron llevados a una cancha de Robledo, sin tarima y cara a cara con la gente.
@@ -43,7 +43,7 @@ const Recorrido = [
 
         image: "/images/Recorrido/ShamaFest.jpeg",
 
-        instagram: "",
+        instagram: "https://www.instagram.com/p/CVwk97psHJy/?img_index=2",
 
         description: `
         Con apenas un año de conformación como banda, tuvimos la enorme alegría de ser seleccionados por primera vez en una convocatoria para tocar en un festival. Para nosotros era mucho más que una presentación: era la oportunidad de demostrar que todo el esfuerzo, los ensayos, las canciones y los sueños que habíamos construido durante ese primer año estaban dando sus primeros frutos.
@@ -73,7 +73,7 @@ const Recorrido = [
 
         image: "/images/Recorrido/ToquePuesParce.jpeg",
 
-        instagram: "",
+        instagram: "https://www.instagram.com/p/Ci_R5fvJTYh/?img_index=1",
 
         description: `
         Fue una fecha muy especial para Pato el Pez. No solo fue la primera vez que tocábamos de locales en un evento tan grande en Itagüí, sino también el primer pago que recibió la banda por hacer música. Son de esos momentos que, sin importar cuánto tiempo pase, jamás se olvidan.
@@ -99,7 +99,7 @@ const Recorrido = [
 
         image: "/images/Recorrido/FinDeAno3DC.jpeg",
 
-        instagram: "",
+        instagram: "https://www.instagram.com/p/C02SCxtRGCm/?img_index=1",
 
         description: `
         Hay conciertos que marcan etapas, y este fue uno de ellos para Pato el Pez. Compartir escenario con Tr3s de Corazón en su tradicional concierto de fin de año fue una experiencia increíble. Más especial aún porque fue una invitación directa de una banda que ha sido referente del punk rock en Medellín y cuya música nos acompañó mucho antes de que existiera Pato el Pez.
@@ -125,7 +125,7 @@ const Recorrido = [
 
         image: "/images/Recorrido/RockNBirthday.jpeg",
 
-        instagram: "",
+        instagram: "https://www.instagram.com/p/C2NiXU2RF9U/?img_index=1",
 
         description: `
         Rock N' Birthday fue mucho más que un concierto para Pato el Pez. Fue una celebración de nuestros primeros cuatro años como banda y también de los cumpleaños de nuestro vocalista y nuestra community manager. Además, fue uno de los primeros eventos organizados por nosotros mismos, demostrando que poco a poco podíamos construir nuestros propios espacios para la música.
@@ -151,7 +151,7 @@ const Recorrido = [
 
         image: "/images/Recorrido/DiaDeLaPereza.jpeg",
 
-        instagram: "",
+        instagram: "https://www.instagram.com/p/C--0J8zR7Lj/?img_index=1",
 
         description: `
         Las Fiestas de la Industria y el Comercio nos regalaron uno de los conciertos más especiales que hemos vivido como banda. Volver a tocar en casa, en la tarima principal del parque de Itagüí durante el Día de la Pereza, fue una experiencia difícil de describir. Ver el parque lleno a su máxima capacidad y saber que estábamos representando nuestra música frente a nuestra gente fue algo que nos llenó de orgullo.
@@ -176,7 +176,7 @@ const Recorrido = [
 
         image: "/images/Recorrido/Altavoz2024.jpeg",
 
-        instagram: "",
+        instagram: "https://www.instagram.com/p/DBZGMy7uqmb/?img_index=1",
 
         description: `
         Hay momentos que cambian la historia de una banda, y para Pato el Pez, Altavoz 2024 fue uno de ellos.
@@ -208,7 +208,7 @@ const Recorrido = [
 
         image: "/images/Recorrido/LaOvejaNegra.jpeg",
 
-        instagram: "",
+        instagram: "https://www.instagram.com/p/DPaEHCjjLqH/?img_index=1",
 
         description: `
         Uno de los momentos más especiales que hemos vivido como banda. Detrás de ese disco hubo horas interminables de trabajo, sacrificios, aprendizajes, errores, aciertos y toda la pasión que hemos puesto en Pato el Pez desde el primer día. Como dicen por ahí, fue un proyecto hecho con sangre, sudor y lágrimas.
@@ -236,7 +236,7 @@ const Recorrido = [
 
         image: "/images/Recorrido/BoulevardAsorock.jpeg",
 
-        instagram: "",
+        instagram: "https://www.instagram.com/p/DPfH20Ckh2Y/?img_index=1",
 
         description: `
         Boulevard Asorock fue una experiencia muy especial para Pato el Pez. Haber sido seleccionados por convocatoria para participar en este evento fue una gran alegría y otro paso importante en nuestro recorrido como banda.
@@ -264,7 +264,7 @@ const Recorrido = [
 
         image: "/images/Recorrido/AltavistaRockFest.jpeg",
 
-        instagram: "",
+        instagram: "https://www.instagram.com/p/DQaViFfEoI9/?img_index=1",
 
         description: `
         Hacer parte de Altavista Rock Fest fue una experiencia muy bonita para Pato el Pez. Fue una de esas oportunidades que nos permitieron salir de nuestra zona de confort y llevar nuestra música a un lugar donde muchas personas nos escuchaban por primera vez.
@@ -290,9 +290,9 @@ const Recorrido = [
 
         featured: false,
 
-        image: "/images/Recorrido/FiestaFriki.jpeg",
+        image: "/images/Recorrido/FiestaFriki.png",
 
-        instagram: "",
+        instagram: "https://www.instagram.com/p/DQu6xwXkpqj/?img_index=1",
 
         description: `
         Nuestra participación en Fiesta Friki fue una experiencia llena de energía, diversión y conexión con el público. El evento se realizó en el Parque de los Deseos, un escenario muy especial para nosotros, ya que fue el mismo lugar donde tuvimos la oportunidad de presentarnos durante Ciudad Altavoz 2024.
@@ -322,7 +322,7 @@ const Recorrido = [
 
         image: "/images/Recorrido/SeedFest.jpeg",
 
-        instagram: "",
+        instagram: "https://www.instagram.com/p/DYz4TTlliya/?img_index=1",
 
         description: `
         Seed Fest quedará para siempre como uno de los conciertos más especiales en la historia de Pato el Pez. Fue nuestro concierto más reciente y una oportunidad increíble de tocar en el Teatro al Aire Libre Carlos Vieco, uno de esos escenarios con los que muchos músicos sueñan.
