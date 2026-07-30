@@ -28,6 +28,9 @@ const Footer = () => {
                         src={FotoPato}
                         alt="Pato el Pez"
                         className="footer-logo"
+                        loading="lazy"
+
+                        decoding="async"
                     />
 
                     <p>
@@ -45,7 +48,7 @@ const Footer = () => {
 
                     {
                         navLinks.map((link) => (
-                            <BtnButton 
+                            <BtnButton
                                 key={link.name}
                                 component="a"
                                 href={link.path}

@@ -5,7 +5,8 @@ const CardMember = ({ member }) => {
         <div className="card-member-container">
             <div className="member-image">
 
-                <img src={member.gif} alt={member.name}  />
+                <img src={member.gif} alt={member.name} loading="lazy"
+                decoding="async" />
 
             </div>
             <div className="member-info">

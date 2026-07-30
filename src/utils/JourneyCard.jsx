@@ -33,7 +33,8 @@ const JourneyCard = ({ event, onOpen }) => {
                     src={event.image}
 
                     alt={event.title}
-
+                    loading="lazy"
+                    decoding="async"
                 />
 
             </div>

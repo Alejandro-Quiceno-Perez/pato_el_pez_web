@@ -48,7 +48,9 @@ const Header = () => {
                 {/* Logo */}
                 <div className='logo'>
                     <Link to="/">
-                        <img className='logo-img' src={logo} alt="Pato el Pez logo" />
+                        <img className='logo-img' src={logo} alt="Pato el Pez logo"
+                            loading="lazy"
+                            decoding="async" />
                     </Link>
                 </div>
 

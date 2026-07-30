@@ -6,7 +6,7 @@ const SongCard = ({ song }) => {
     return (
         <article className="song-card">
             <a href={song.spotify} target="_blank" rel="noreferrer" className="song-image">
-                <img src={song.cover} alt={song.title} />
+                <img src={song.cover} alt={song.title} loading="lazy" decoding="async" />
             </a>
         </article>
     )

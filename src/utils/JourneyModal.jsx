@@ -50,8 +50,9 @@ const JourneyModal = ({ event, onClose }) => {
                     <img
 
                         src={event.image}
-
                         alt={event.title}
+                        loading="lazy"
+                        decoding="async"
 
                     />
 

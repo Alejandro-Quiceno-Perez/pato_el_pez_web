@@ -1,7 +1,7 @@
 import React from 'react'
 import BtnButton from './BtnButton'
 
-const MusicCard = ({ song, number}) => {
+const MusicCard = ({ song, number }) => {
     return (
         <article className="song-card">
 
@@ -22,6 +22,8 @@ const MusicCard = ({ song, number}) => {
                 <img
                     src={song.cover}
                     alt={song.title}
+                    loading="lazy"
+                    decoding="async"
                 />
 
             </div>

@@ -10,6 +10,8 @@ const AboutSectionTitle = () => {
                 src={Datos.logo}
                 alt={Datos.name}
                 className="about-section-logo"
+                loading="lazy"
+                decoding="async"
             />
 
             <h2 className="about-section-slogan">
