@@ -1,5 +1,5 @@
 import React from 'react'
-import FotoBandota from '/public/images/BannerBienvenida/portada3.jpg'
+import FotoBandota from '/public/images/BannerBienvenida/portada3.webp'
 import '../../styles/FotoBannerBanda.css'
 
 const FotoBannerBanda = () => {

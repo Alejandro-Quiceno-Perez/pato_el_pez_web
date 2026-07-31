@@ -5,7 +5,7 @@ const Band = {
   city: "Colombia",
   founded: 2020,
   genre: "Punk Rock",
-  coverImage: "/public/images/Members/Banda.JPG",
+  coverImage: "/public/images/Members/Banda.jpg",
   logo: "/public/logo_letras_blanco.png",
   redes: [
     {

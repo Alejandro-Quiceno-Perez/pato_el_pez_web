@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '/logo_letras_blanco.png'
+import logo from '/public/logo_letras_blanco.webp'
 import Datos from '../db/Band.js'
 
 const AboutSectionTitle = () => {

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import '../../styles/footer.css'
 import Band from '../../db/Band'
-import FotoPato from '../../../public/logo_letras_blanco.png'
+import FotoPato from '../../../public/logo_letras_blanco.webp'
 import BtnButton from '../../utils/BtnButton';
 
 const Footer = () => {

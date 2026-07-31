@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../styles/header.css'
 import { Link, NavLink } from 'react-router-dom'
-import logo from '/logo_letras_blanco.png'
+import logo from '/logo_letras_blanco.webp'
 
 const Header = () => {
     const leftNav = [

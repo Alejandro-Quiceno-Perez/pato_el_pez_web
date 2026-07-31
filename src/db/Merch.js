@@ -4,8 +4,8 @@ const Merch = [
         "name": "Camiseta Negra",
         "descripcion": "Diseño Clasico",
         "price": 35000,
-        "image": "/public/images/Merch/Camisa_Negra.jpg",
-        "image2": "/public/images/Merch/Posterior_camisa.jpg",
+        "image": "/public/images/Merch/Camisa_Negra.webp",
+        "image2": "/public/images/Merch/Posterior_camisa.webp",
         "sizes": ["S", "M", "L","XL"]
     },
     {
@@ -13,8 +13,8 @@ const Merch = [
         "name": "Camiseta Negra OS",
         "descripcion": "Diseño Mejor Que esto",
         "price": 55000,
-        "image": "/public/images/Merch/mejor_que_esto_camisa.jpg",
-        "image2": "/public/images/Merch/Posterior_camisa.jpg",
+        "image": "/public/images/Merch/mejor_que_esto_camisa.webp",
+        "image2": "/public/images/Merch/Posterior_camisa.webp",
         "sizes": ["S", "M", "L","XL"]
     },
     {
@@ -30,8 +30,8 @@ const Merch = [
         "name": "Buso Negro",
         "descripcion": "Diseño Mejor Que esto",
         "price": 80000,
-        "image": "/public/images/Merch/Mejor_que_esto_buso_negro.jpg",
-        "image2": "/public/images/Merch/lat_negro.jpg",
+        "image": "/public/images/Merch/Mejor_que_esto_buso_negro.webp",
+        "image2": "/public/images/Merch/lat_negro.webp",
         "sizes": ["S", "M", "L","XL"]
     },
     {
@@ -39,8 +39,8 @@ const Merch = [
         "name": "Camiseta Roja OS",
         "descripcion": "Diseño Mejor Que esto",
         "price": 55000,
-        "image": "/public/images/Merch/Camisa_rojo.jpg",
-        "image2": "/public/images/Merch/posterior_camisa_rojo.jpg",
+        "image": "/public/images/Merch/Camisa_rojo.webp",
+        "image2": "/public/images/Merch/posterior_camisa_rojo.webp",
         "sizes": ["No Aplica"]
     },
     {
@@ -80,8 +80,8 @@ const Merch = [
         "name": "Camiseta Roja",
         "descripcion": "Diseño Mejor Que esto",
         "price": 35000,
-        "image": "/public/images/Merch/Camisa_rojo.jpg",
-        "image2": "/public/images/Merch/posterior_camisa_rojo.jpg",
+        "image": "/public/images/Merch/Camisa_rojo.webp",
+        "image2": "/public/images/Merch/posterior_camisa_rojo.webp",
         "sizes": ["No Aplica"]
     },
     {
@@ -89,8 +89,8 @@ const Merch = [
         "name": "Buso Rojo",
         "descripcion": "Diseño Mejor Que esto",
         "price": 80000,
-        "image": "/public/images/Merch/Mejor_que_esto_buso_rojo.jpg",
-        "image2": "/public/images/Merch/lat_rojo.jpg",
+        "image": "/public/images/Merch/Mejor_que_esto_buso_rojo.webp",
+        "image2": "/public/images/Merch/lat_rojo.webp",
         "sizes": ["S", "M", "L","XL"]
     },
     {
@@ -98,8 +98,8 @@ const Merch = [
         "name": "Camiseta Negra OS",
         "descripcion": "Diseño Clasico",
         "price": 35000,
-        "image": "/public/images/Merch/Camisa_Negra.jpg",
-        "image2": "/public/images/Merch/Posterior_camisa.jpg",
+        "image": "/public/images/Merch/Camisa_Negra.webp",
+        "image2": "/public/images/Merch/Posterior_camisa.webp",
         "sizes": ["S", "M", "L","XL"]
     },
     {
@@ -107,8 +107,8 @@ const Merch = [
         "name": "Camiseta Negra",
         "descripcion": "Diseño Mejor Que esto",
         "price": 55000,
-        "image": "/public/images/Merch/mejor_que_esto_camisa.jpg",
-        "image2": "/public/images/Merch/Posterior_camisa.jpg",
+        "image": "/public/images/Merch/mejor_que_esto_camisa.webp",
+        "image2": "/public/images/Merch/Posterior_camisa.webp",
         "sizes": ["S", "M", "L","XL"]
     },
     {
@@ -116,8 +116,8 @@ const Merch = [
         "name": "Buso Negro",
         "descripcion": "Diseño Clasico",
         "price": 80000,
-        "image": "/public/images/Merch/Buso_negro_pato.jpg",
-        "image2": "/public/images/Merch/lat_negro.jpg",
+        "image": "/public/images/Merch/Buso_negro_pato.webp",
+        "image2": "/public/images/Merch/lat_negro.webp",
         "sizes": ["S", "M", "L","XL"]
     },
     {
@@ -125,8 +125,8 @@ const Merch = [
         "name": "Buso Rojo",
         "descripcion": "Diseño Clasico",
         "price": 80000,
-        "image": "/public/images/Merch/Buso_rojo_pato.jpg",
-        "image2": "/public/images/Merch/lat_rojo.jpg",
+        "image": "/public/images/Merch/Buso_rojo_pato.webp",
+        "image2": "/public/images/Merch/lat_rojo.webp",
         "sizes": ["S", "M", "L","XL"]
     },
     {
