@@ -1,58 +1,51 @@
-import React from 'react'
 import '../../styles/header.css'
 import { Link, NavLink } from 'react-router-dom'
-import logo from '/logo_letras_blanco.png'
+import logo from '/logo_letras_blanco.webp'
+
+const leftNav = [
+    { name: "Videos", path: "/videos" },
+    { name: "Música", path: "/music" },
+    { name: "Recorrido", path: "/recorrido" },
+];
+
+const rightNav = [
+    { name: "Tienda", path: "/merch" },
+    { name: "Fans", path: "/fans" },
+    { name: "Press Kit", path: "/press-kit" },
+];
+
+const NavGroup = ({ items }) => (
+    <>
+        {items.map((item) => (
+            <NavLink
+                key={item.path}
+                to={item.path}
+                className={({ isActive }) =>
+                    isActive ? "nav-link active-link" : "nav-link"
+                }
+            >
+                {item.name}
+            </NavLink>
+        ))}
+    </>
+)
 
 const Header = () => {
-    const leftNav = [
-        { name: "Videos", path: "/videos" },
-        { name: "Música", path: "/music" },
-        { name: "Recorrido", path: "/recorrido" },
-    ];
-
-    const rightNav = [
-        { name: "Tienda", path: "/merch" },
-        { name: "Fans", path: "/fans" },
-        { name: "Press Kit", path: "/press-kit" },
-    ];
-
-    const NavGroup = ({ items }) => {
-        return (
-            <>
-                {items.map((item, index) => (
-                    // <Link className='nav-link' key={index} to={item.path}>{item.name}</Link>
-
-                    <NavLink
-                        key={index}
-                        to={item.path}
-                        className={({ isActive }) =>
-                            isActive ? "nav-link active-link" : "nav-link"
-                        }
-                    >
-                        {item.name}
-                    </NavLink>
-                ))}
-            </>
-        )
-    }
-
-
     return (
         <header className='header'>
-            {/* Lado Izquierdo  */}
             <div className="container-header">
                 <nav className='nav-left'>
                     <NavGroup items={leftNav} />
                 </nav>
 
-                {/* Logo */}
                 <div className='logo'>
                     <Link to="/">
-                        <img className='logo-img' src={logo} alt="Pato el Pez logo" />
+                        <img className='logo-img' src={logo} alt="Pato el Pez logo"
+                            loading="lazy"
+                            decoding="async" />
                     </Link>
                 </div>
 
-                {/* Lado Derecho */}
                 <nav className='nav-right'>
                     <NavGroup items={rightNav} />
                 </nav>

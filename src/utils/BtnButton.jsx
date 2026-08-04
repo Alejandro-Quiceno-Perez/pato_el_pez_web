@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 /*
@@ -51,10 +50,14 @@ const BtnButton = ({
     */
 
     if (component === "a") {
+        const { target, rel, ...anchorProps } = props
+
         return (
             <a
                 className={className}
-                {...props}
+                rel={target === '_blank' ? rel ?? 'noopener noreferrer' : rel}
+                {...anchorProps}
+                target={target}
             >
                 {children}
             </a>

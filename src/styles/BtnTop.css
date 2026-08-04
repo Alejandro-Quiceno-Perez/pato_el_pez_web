@@ -34,7 +34,7 @@
         right: 20px;
         width: 40px;
         height: 40px;
-        font-size: var(--font-size-extra-large);
+        font-size: var(--size-icon-large);
     }
 
     .back-to-top:hover {

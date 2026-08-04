@@ -1,18 +1,28 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import "../../styles/SplashScreem.css"
 
-const SplashScreen = () => {
+const DISPLAY_DURATION = 7200;
+const FADE_DURATION = 800;
+
+const SplashScreen = ({ onFinish }) => {
     const splashScreem = '/videos/splashScreem.mp4';
 
     const [fadeOut, setFadeOut] = useState(false);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
+        const fadeTimer = setTimeout(() => {
             setFadeOut(true);
-        }, 8000); // 8 seconds
+        }, DISPLAY_DURATION);
 
-        return () => clearTimeout(timer);
-    }, []);
+        const finishTimer = setTimeout(() => {
+            onFinish?.();
+        }, DISPLAY_DURATION + FADE_DURATION);
+
+        return () => {
+            clearTimeout(fadeTimer);
+            clearTimeout(finishTimer);
+        };
+    }, [onFinish]);
 
     return (
         <div className={`splash-container ${fadeOut ? 'fade-out' : ''}`}>

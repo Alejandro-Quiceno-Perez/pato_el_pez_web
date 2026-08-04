@@ -23,6 +23,8 @@ const VideoCard = ({ video, onSelect }) => {
                     src={`https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`}
 
                     alt={video.title}
+                    loading="lazy"
+                    decoding="async"
 
                 />
 

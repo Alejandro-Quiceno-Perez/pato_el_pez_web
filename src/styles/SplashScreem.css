@@ -1,7 +1,7 @@
 .splash-container {
     position: fixed;
     inset: 0;
-    background-color: var(--blanco);
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;

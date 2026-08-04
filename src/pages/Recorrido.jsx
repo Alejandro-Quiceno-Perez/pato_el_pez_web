@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import RecorridoDB from "../db/Timeline.js";
 
@@ -7,9 +7,65 @@ import JourneyModal from "../utils/JourneyModal.jsx";
 
 import "../styles/Timeline.css";
 
+const ITEMS_PER_LOAD = 8;
+
 const Recorrido = () => {
 
     const [selectedEvent, setSelectedEvent] = useState(null);
+
+    const [visibleItems, setVisibleItems] = useState(ITEMS_PER_LOAD);
+
+    const loaderRef = useRef(null);
+
+    // ==========================================
+    // CARGA PROGRESIVA DE TARJETAS
+    // ==========================================
+
+    useEffect(() => {
+
+        const observer = new IntersectionObserver(
+
+            ([entry]) => {
+
+                if (
+
+                    entry.isIntersecting &&
+
+                    visibleItems < RecorridoDB.length
+
+                ) {
+
+                    setVisibleItems((prev) =>
+
+                        Math.min(prev + ITEMS_PER_LOAD, RecorridoDB.length)
+
+                    );
+
+                }
+
+            },
+
+            {
+
+                threshold: 0.2
+
+            }
+
+        );
+
+        if (loaderRef.current) {
+
+            observer.observe(loaderRef.current);
+
+        }
+
+        return () => observer.disconnect();
+
+    }, [visibleItems]);
+
+    // ==========================================
+    // RENDER
+    // ==========================================
 
     return (
 
@@ -54,27 +110,55 @@ const Recorrido = () => {
 
                     {
 
-                        RecorridoDB.map(event => (
+                        RecorridoDB
 
-                            <JourneyCard
+                            .slice(0, visibleItems)
 
-                                key={event.id}
+                            .map(event => (
 
-                                event={event}
+                                <JourneyCard
 
-                                onOpen={() =>
+                                    key={event.id}
 
-                                    setSelectedEvent(event)
+                                    event={event}
 
-                                }
+                                    onOpen={() =>
 
-                            />
+                                        setSelectedEvent(event)
 
-                        ))
+                                    }
+
+                                />
+
+                            ))
 
                     }
 
                 </section>
+
+                {/* ==========================
+                    OBSERVER
+                ========================== */}
+
+                {
+
+                    visibleItems < RecorridoDB.length && (
+
+                        <div
+
+                            ref={loaderRef}
+
+                            className="journey-loader"
+
+                        >
+
+                            Cargando más eventos...
+
+                        </div>
+
+                    )
+
+                }
 
             </section>
 
@@ -84,19 +168,21 @@ const Recorrido = () => {
 
             {
 
-                selectedEvent &&
+                selectedEvent && (
 
-                <JourneyModal
+                    <JourneyModal
 
-                    event={selectedEvent}
+                        event={selectedEvent}
 
-                    onClose={() =>
+                        onClose={() =>
 
-                        setSelectedEvent(null)
+                            setSelectedEvent(null)
 
-                    }
+                        }
 
-                />
+                    />
+
+                )
 
             }
 
@@ -104,6 +190,6 @@ const Recorrido = () => {
 
     );
 
-}
+};
 
 export default Recorrido;
