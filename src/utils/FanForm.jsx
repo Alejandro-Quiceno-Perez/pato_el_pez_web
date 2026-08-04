@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BtnButton from "./BtnButton";
-import { registerFan } from "../services/fanService";
+import { registerFan } from "../services/FanService";
 
 const FanForm = ({ showModal }) => {
 

@@ -48,7 +48,8 @@ const Merch = [
         "name": "Gorras",
         "descripcion": "Gorra Plana Logo Pato El Pez",
         "price": 45000,
-        "image": "/public/images/Merch/Gorra.png",
+        "image": "/public/images/Merch/Gorra.webp",
+        "image2": "/public/images/Merch/Gorra.webp",
         "sizes": ["No Aplica"]
     },
     {
@@ -134,7 +135,8 @@ const Merch = [
         "name": "Cadena",
         "descripcion": "Cadena Logo de Pato El Pez",
         "price": 25000,
-        "image": "/public/images/Merch/Camisa_Negra.png",
+        "image": "/public/images/Merch/Camisa_Negra.web",
+        "image2": "/public/images/Merch/Camisa_Negra.web",
         "sizes": ["No Aplica"]
     },
 ]

@@ -1,64 +1,225 @@
-import React from 'react'
-import Albums from '../../db/Music'
-import SongCard from '../../utils/SongCard'
-import '../../styles/HomeMusic.css'
-import BtnButton from '../../utils/BtnButton'
+import { motion } from 'framer-motion';
 
-const imgAlbum = '/img_music/Caratula_disco.jpg'
+import Albums from '../../db/Music';
+import SongCard from '../../utils/SongCard';
+import '../../styles/HomeMusic.css';
+import BtnButton from '../../utils/BtnButton';
+
+const imgAlbum = '/img_music/Caratula_disco.jpg';
+
+const container = {
+    hidden: {},
+    visible: {
+        transition: {
+            staggerChildren: 0.15
+        }
+    }
+};
+
+const left = {
+    hidden: {
+        opacity: 0,
+        x: -80
+    },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            duration: .8,
+            ease: "easeOut"
+        }
+    }
+};
+
+const right = {
+    hidden: {
+        opacity: 0,
+        x: 80
+    },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            duration: .8,
+            ease: "easeOut"
+        }
+    }
+};
+
+const item = {
+    hidden: {
+        opacity: 0,
+        y: 25
+    },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: .5
+        }
+    }
+};
 
 const HomeMusic = () => {
-    const album = Albums[0];
 
-    const featuredSongs = album.songs.slice(0, 5); // Get the first 5 songs as featured songs
+    const album = Albums[0];
+    const featuredSongs = album?.songs?.slice(0, 5) ?? [];
+
     return (
-        < section className="home-music-container" >
+
+        <motion.section
+
+            className="home-music-container"
+
+            variants={container}
+
+            initial="hidden"
+
+            whileInView="visible"
+
+            viewport={{
+
+                once: true,
+
+                amount: .25
+
+            }}
+
+        >
 
             <div className="music-wrapper">
 
-                <div className="album-cover">
-                    <img src={imgAlbum} alt="" href="https://open.spotify.com/track/3amvCY9WRx4oRG75iqmjhH?si=d2d55072fac34677" />
-                </div>
+                {/* ===============================
+                    ALBUM
+                =============================== */}
 
-                <div className="music-section-title">
-                    <span>Último lanzamiento</span>
+                <motion.div
 
-                    <h2>La Oveja Negra</h2>
+                    className="album-cover"
 
-                    <p>
+                    variants={left}
+
+                >
+
+                    <img
+
+                        src={imgAlbum}
+
+                        alt="La Oveja Negra"
+
+                    />
+
+                </motion.div>
+
+                {/* ===============================
+                    CONTENT
+                =============================== */}
+
+                <motion.div
+
+                    className="music-section-title"
+
+                    variants={right}
+
+                >
+
+                    <motion.span variants={item}>
+
+                        Último lanzamiento
+
+                    </motion.span>
+
+                    <motion.h2 variants={item}>
+
+                        La Oveja Negra
+
+                    </motion.h2>
+
+                    <motion.p variants={item}>
+
                         Nuestro primer álbum de estudio, 10 canciones que son el
                         reflejo de todo lo que somos y de todo lo que hemos vivido.
-                    </p>
 
-                    <div className="music-section-link">
-                        <BtnButton 
+                    </motion.p>
+
+                    <motion.div
+
+                        className="music-section-link"
+
+                        variants={item}
+
+                    >
+
+                        <BtnButton
+
                             component="a"
+
                             href="https://open.spotify.com/artist/4pbnupXCtNilC05RqeFrCO?si=ENr9i_a8Royd1osd2oJseQ"
+
                             target="_blank"
+
                         >
+
                             Escuchar ahora
+
                         </BtnButton>
-                        <BtnButton 
-                            component="a"
-                            href="/music"
+
+                        <BtnButton
+
+                            component="link"
+
+                            to="/music"
+
                         >
+
                             Ver más
+
                         </BtnButton>
-                    </div>
-                    <div className="songs-grid">
-                        {featuredSongs.map(song => (
-                            <SongCard
-                                key={song.id}
-                                song={song}
-                            />
-                        ))}
-                    </div>
-                </div>
+
+                    </motion.div>
+
+                    <motion.div
+
+                        className="songs-grid"
+
+                        variants={container}
+
+                    >
+
+                        {
+
+                            featuredSongs.map(song => (
+
+                                <motion.div
+
+                                    key={song.id}
+
+                                    variants={item}
+
+                                >
+
+                                    <SongCard
+
+                                        song={song}
+
+                                    />
+
+                                </motion.div>
+
+                            ))
+
+                        }
+
+                    </motion.div>
+
+                </motion.div>
+
             </div>
 
+        </motion.section>
 
+    );
 
-        </section >
-    )
-}
+};
 
-export default HomeMusic
+export default HomeMusic;

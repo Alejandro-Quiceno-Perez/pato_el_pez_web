@@ -1,20 +1,16 @@
-import React from 'react'
-import { Link } from "react-router-dom";
 import '../../styles/footer.css'
 import Band from '../../db/Band'
-import FotoPato from '../../../public/logo_letras_blanco.webp'
 import BtnButton from '../../utils/BtnButton';
 
+const navLinks = [
+    { name: "Música", path: "/music" },
+    { name: "Videos", path: "/videos" },
+    { name: "Recorrido", path: "/recorrido" },
+    { name: "Merch", path: "/merch" },
+    { name: "Press Kit", path: "/press-kit" },
+];
+
 const Footer = () => {
-
-    const navLinks = [
-        { name: "Música", path: "/music" },
-        { name: "Videos", path: "/videos" },
-        { name: "Recorrido", path: "/recorrido" },
-        { name: "Merch", path: "/merch" },
-        { name: "Press Kit", path: "/press-kit" },
-    ];
-
     return (
         <div className="footer">
 
@@ -25,7 +21,7 @@ const Footer = () => {
                 <div className="footer-column footer-brand">
 
                     <img
-                        src={FotoPato}
+                        src={Band.logo}
                         alt="Pato el Pez"
                         className="footer-logo"
                         loading="lazy"
@@ -50,8 +46,8 @@ const Footer = () => {
                         navLinks.map((link) => (
                             <BtnButton
                                 key={link.name}
-                                component="a"
-                                href={link.path}
+                                component="link"
+                                to={link.path}
                             >
                                 {link.name}
                             </BtnButton>

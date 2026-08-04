@@ -1,4 +1,3 @@
-import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from '../sections/Header'
 import Footer from '../sections/Footer'
@@ -9,7 +8,6 @@ const Layout = () => {
         <>
             <Header />
             <main>
-                {/* Aquí va el contenido principal de cada página */}
                 <Outlet />
             </main>
             <Footer />

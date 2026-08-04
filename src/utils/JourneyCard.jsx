@@ -1,10 +1,39 @@
+import { motion } from "framer-motion";
 import BtnButton from "./BtnButton";
 
 const JourneyCard = ({ event, onOpen }) => {
 
     return (
 
-        <article className="journey-card">
+        <motion.article
+
+            className="journey-card"
+
+            initial={{
+                opacity: 0,
+                y: 12,
+                scale: 0.99
+            }}
+
+            whileInView={{
+                opacity: 1,
+                y: 0,
+                scale: 1
+            }}
+
+            transition={{
+                duration: 0.3,
+                ease: "easeOut"
+            }}
+
+            viewport={{
+                once: true,
+                amount: .25
+            }}
+
+
+
+        >
 
             {/* ==========================
                 DESTACADO
@@ -33,8 +62,11 @@ const JourneyCard = ({ event, onOpen }) => {
                     src={event.image}
 
                     alt={event.title}
+
                     loading="lazy"
+
                     decoding="async"
+
                 />
 
             </div>
@@ -101,10 +133,10 @@ const JourneyCard = ({ event, onOpen }) => {
 
             </div>
 
-        </article>
+        </motion.article>
 
     );
 
-}
+};
 
 export default JourneyCard;

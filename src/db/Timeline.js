@@ -290,7 +290,7 @@ const Recorrido = [
 
         featured: false,
 
-        image: "/images/Recorrido/FiestaFriki.png",
+        image: "/images/Recorrido/FiestaFriki.webp",
 
         instagram: "https://www.instagram.com/p/DQu6xwXkpqj/?img_index=1",
 

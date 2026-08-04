@@ -1,7 +1,6 @@
-import React from 'react'
 import Albums from "../db/Music"
 import AlbumSection from '../utils/AlbumSection'
-import '../../src/styles/MusicSection.css'
+import '../styles/MusicSection.css'
 
 const Music = () => {
     return (
@@ -12,13 +11,6 @@ const Music = () => {
                 <div className="music-title">
 
                     <span>Discografía</span>
-
-                    {/* <h1>Nuestra Música</h1>
-
-                    <p>
-                        Cada álbum representa una etapa de nuestra historia.
-                        Explora nuestras canciones y escúchalas en tu plataforma favorita.
-                    </p> */}
 
                 </div>
 

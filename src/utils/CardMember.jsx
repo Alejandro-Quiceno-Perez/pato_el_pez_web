@@ -1,5 +1,3 @@
-import React from 'react'
-
 const CardMember = ({ member }) => {
     return (
         <div className="card-member-container">

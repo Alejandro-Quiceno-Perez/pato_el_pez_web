@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import '../styles/btnTop.css'
 
 const BtnTop = () => {
@@ -13,7 +13,7 @@ const BtnTop = () => {
             }
         };
 
-        window.addEventListener('scroll', toggleEventVisibility);
+        window.addEventListener('scroll', toggleEventVisibility, { passive: true });
         return () => {
             window.removeEventListener('scroll', toggleEventVisibility);
         };
@@ -27,10 +27,14 @@ const BtnTop = () => {
     };
 
     return (
-        <div>
-            <button onClick={scrollToTop}
-                className={`back-to-top ${isVisible ? 'show' : ''}`}><i class="bi bi-arrow-up-short"></i></button>
-        </div>
+        <button
+            type="button"
+            aria-label="Volver arriba"
+            onClick={scrollToTop}
+            className={`back-to-top ${isVisible ? 'show' : ''}`}
+        >
+            <i className="bi bi-arrow-up-short"></i>
+        </button>
     )
 }
 

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './App.css'
 import SplashScreen from './components/UI/SplashScreen'
 import AppRoutes from './routes/AppRoutes';
@@ -15,17 +15,7 @@ function App() {
     return false;
   });
 
-  useEffect(() => {
-    if (!loading) return;
-
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 8000);
-
-    return () => clearTimeout(timer);
-  }, [loading]);
-
-  if (loading) return <SplashScreen />;
+  if (loading) return <SplashScreen onFinish={() => setLoading(false)} />;
 
   return (
     <div className="App">

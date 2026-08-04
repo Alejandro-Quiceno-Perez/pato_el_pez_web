@@ -1,4 +1,3 @@
-import React from 'react'
 import BtnButton from './BtnButton'
 
 const MusicCard = ({ song, number }) => {
