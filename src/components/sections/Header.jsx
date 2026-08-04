@@ -1,6 +1,10 @@
-import '../../styles/header.css'
-import { Link, NavLink } from 'react-router-dom'
-import logo from '/logo_letras_blanco.webp'
+import { useEffect, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { HiOutlineBars3, HiOutlineXMark } from "react-icons/hi2";
+
+import "../../styles/header.css";
+
+import logo from "/logo_letras_blanco.webp";
 
 const leftNav = [
     { name: "Videos", path: "/videos" },
@@ -14,44 +18,262 @@ const rightNav = [
     { name: "Press Kit", path: "/press-kit" },
 ];
 
-const NavGroup = ({ items }) => (
-    <>
-        {items.map((item) => (
-            <NavLink
-                key={item.path}
-                to={item.path}
-                className={({ isActive }) =>
-                    isActive ? "nav-link active-link" : "nav-link"
-                }
-            >
-                {item.name}
-            </NavLink>
-        ))}
-    </>
-)
+const mobileNav = [...leftNav, ...rightNav];
+
+const NavGroup = ({ items, onClick }) => {
+
+    return (
+
+        <>
+
+            {
+
+                items.map((item) => (
+
+                    <NavLink
+
+                        key={item.path}
+
+                        to={item.path}
+
+                        onClick={onClick}
+
+                        className={({ isActive }) =>
+
+                            isActive
+
+                                ? "nav-link active-link"
+
+                                : "nav-link"
+
+                        }
+
+                    >
+
+                        {item.name}
+
+                    </NavLink>
+
+                ))
+
+            }
+
+        </>
+
+    );
+
+};
 
 const Header = () => {
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const location = useLocation();
+
+    // ============================
+    // CERRAR AL CAMBIAR DE PÁGINA
+    // ============================
+
+    useEffect(() => {
+
+        setMenuOpen(false);
+
+    }, [location]);
+
+    // ============================
+    // CERRAR CON ESC
+    // ============================
+
+    useEffect(() => {
+
+        const handleKeyDown = (e) => {
+
+            if (e.key === "Escape") {
+
+                setMenuOpen(false);
+
+            }
+
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+
+            window.removeEventListener("keydown", handleKeyDown);
+
+        };
+
+    }, []);
+
+    // ============================
+    // BLOQUEAR SCROLL
+    // ============================
+
+    useEffect(() => {
+
+        document.body.style.overflow = menuOpen
+
+            ? "hidden"
+
+            : "auto";
+
+    }, [menuOpen]);
+
     return (
-        <header className='header'>
+
+        <header className="header">
+
             <div className="container-header">
-                <nav className='nav-left'>
+
+                {/* ==========================
+                    NAV IZQUIERDO
+                ========================== */}
+
+                <nav className="nav-left">
+
                     <NavGroup items={leftNav} />
+
                 </nav>
 
-                <div className='logo'>
+                {/* ==========================
+                    LOGO
+                ========================== */}
+
+                <div className="logo">
+
                     <Link to="/">
-                        <img className='logo-img' src={logo} alt="Pato el Pez logo"
+
+                        <img
+
+                            className="logo-img"
+
+                            src={logo}
+
+                            alt="Pato el Pez"
+
                             loading="lazy"
-                            decoding="async" />
+
+                            decoding="async"
+
+                        />
+
                     </Link>
+
                 </div>
 
-                <nav className='nav-right'>
-                    <NavGroup items={rightNav} />
-                </nav>
-            </div>
-        </header>
-    )
-}
+                {/* ==========================
+                    NAV DERECHO
+                ========================== */}
 
-export default Header
+                <nav className="nav-right">
+
+                    <NavGroup items={rightNav} />
+
+                </nav>
+
+                {/* ==========================
+                    BOTÓN HAMBURGUESA
+                ========================== */}
+
+                <button
+
+                    className="menu-toggle"
+
+                    onClick={() => setMenuOpen(!menuOpen)}
+
+                    aria-label="Abrir menú"
+
+                >
+
+                    {
+
+                        menuOpen
+
+                            ? <HiOutlineXMark />
+
+                            : <HiOutlineBars3 />
+
+                    }
+
+                </button>
+
+            </div>
+
+            {/* ==========================
+                OVERLAY
+            ========================== */}
+
+            {
+
+                menuOpen && (
+
+                    <div
+
+                        className="menu-overlay"
+
+                        onClick={() => setMenuOpen(false)}
+
+                    />
+
+                )
+
+            }
+
+            {/* ==========================
+                MENÚ MÓVIL
+            ========================== */}
+
+            <aside
+
+                className={
+
+                    menuOpen
+
+                        ? "mobile-menu open"
+
+                        : "mobile-menu"
+
+                }
+
+            >
+
+                <div className="mobile-header">
+
+                    <img
+
+                        src={logo}
+
+                        alt="Pato el Pez"
+
+                    />
+
+                    <p>
+
+                        Punk Rock Colombiano
+
+                    </p>
+
+                </div>
+
+                <nav className="mobile-nav">
+
+                    <NavGroup
+
+                        items={mobileNav}
+
+                        onClick={() => setMenuOpen(false)}
+
+                    />
+
+                </nav>
+
+            </aside>
+
+        </header>
+
+    );
+
+};
+
+export default Header;

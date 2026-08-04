@@ -1,37 +1,48 @@
+/* ======================================================
+   ABOUT SECTION
+====================================================== */
+
 .about-section-container {
-    background-color: var(--black);
+
     width: 100%;
-    height: 100%;
+
+    background: var(--black);
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     flex-wrap: wrap;
+
     gap: 2rem;
+
+    padding: 6rem 0;
+
 }
+
+/* ======================================================
+   COLUMNAS
+====================================================== */
 
 .about-section-title-container,
 .about-section-slider-container {
+
     width: 45%;
-    margin: 6rem 0 ;
 
 }
 
-/* DESCRIPCION DE LA BANDA  */
-
-
-.about-section-title{
-    /* background-color: #ff0000; */
-    width: 100%;
-    
-}
-
+/* ======================================================
+   ABOUT TITLE
+====================================================== */
 
 .about-section-title {
-    margin: 0 auto;
 
-    padding: 8rem 0;
+    width: 100%;
 
     display: flex;
+
     flex-direction: column;
 
     align-items: center;
@@ -40,16 +51,31 @@
 
 }
 
+/* ======================================================
+   LOGO
+====================================================== */
+
 .about-section-logo {
 
     width: 30rem;
 
+    max-width: 100%;
+
     object-fit: contain;
-    filter:
-        drop-shadow(0 0 8px var(--red));
+
+    filter: drop-shadow(0 0 8px var(--red));
+
 }
 
+/* ======================================================
+   SLOGAN
+====================================================== */
+
 .about-section-slogan {
+
+    color: var(--red);
+
+    text-align: center;
 
     font-family: var(--font-title);
 
@@ -57,26 +83,25 @@
 
     font-weight: var(--font-600);
 
-    color: var(--red);
-
-    text-align: center;
-
-    /* letter-spacing: .15rem; */
-
     line-height: 1.4;
 
-    text-shadow:
-        0 0 15px rgba(136,16,20,.25);
+    text-shadow: 0 0 15px rgba(136,16,20,.25);
 
 }
 
+/* ======================================================
+   DESCRIPTION
+====================================================== */
+
 .about-section-description {
+
+    width: 100%;
 
     max-width: 90rem;
 
-    text-align: justify;
-
     color: var(--white);
+
+    text-align: justify;
 
     font-family: var(--font-text);
 
@@ -86,6 +111,10 @@
 
 }
 
+/* ======================================================
+   INFO
+====================================================== */
+
 .about-section-info {
 
     display: flex;
@@ -94,19 +123,19 @@
 
     align-items: center;
 
-    gap: 1.5rem;
-
     flex-wrap: wrap;
+
+    gap: 1.5rem;
 
     color: var(--white);
 
-    font-size: 1.4rem;
-
     font-family: var(--font-title);
 
-    text-transform: uppercase;
+    font-size: 1.4rem;
 
     letter-spacing: .2rem;
+
+    text-transform: uppercase;
 
 }
 
@@ -118,26 +147,28 @@
 
 }
 
-
-
-/* SLIDER */
+/* ======================================================
+   SLIDER
+====================================================== */
 
 .slider-container {
+
     width: 100%;
-    /* background-color: #106dac; */
+
 }
 
+/* ======================================================
+   CARD MEMBER
+====================================================== */
 
-/*  CARDS MEMBER */
-/* ==========================
-   CARD
-========================== */
+.card-member-container {
 
-.card-member-container{
     width: 100%;
+
     height: 550px;
 
     display: flex;
+
     gap: 4rem;
 
     padding: 3rem;
@@ -147,71 +178,91 @@
     border-radius: 2rem;
 
     overflow: hidden;
+
 }
 
+/* ======================================================
+   IMAGE
+====================================================== */
 
-/* ==========================
-   IMAGEN
-========================== */
+.member-image {
 
-.member-image{
     width: 40%;
-    height: 100%;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
 }
 
+.member-image img {
 
-.member-image img{
     width: 100%;
+
     height: 100%;
+
     object-fit: cover;
+
     border-radius: 1.5rem;
+
 }
 
+/* ======================================================
+   INFO
+====================================================== */
 
-/* ==========================
-   INFORMACIÓN
-========================== */
+.member-info {
 
-.member-info{
     width: 60%;
-    height: 100%;
 
     display: flex;
+
     flex-direction: column;
 
     gap: 1.5rem;
+
 }
 
+/* ======================================================
+   NAME
+====================================================== */
 
-/* Nombre */
-.member-info h2{
+.member-info h2 {
+
     color: var(--white);
 
     font-size: 3.8rem;
 
-    text-transform: uppercase;
-
     font-family: var(--font-title);
 
     font-weight: 900;
+
+    text-transform: uppercase;
+
 }
 
+/* ======================================================
+   NICKNAME
+====================================================== */
 
-/* Apodo */
-.member-info h3{
+.member-info h3 {
+
     color: var(--red);
 
     font-size: 2.2rem;
 
     font-style: italic;
+
 }
 
+/* ======================================================
+   ROLE
+====================================================== */
 
-/* Rol */
-.member-info h4{
+.member-info h4 {
+
     color: rgb(180,180,180);
 
     font-size: 1.6rem;
@@ -219,11 +270,15 @@
     letter-spacing: .2rem;
 
     text-transform: uppercase;
+
 }
 
+/* ======================================================
+   DESCRIPTION
+====================================================== */
 
-/* Descripción */
-.member-info p{
+.member-info p {
+
     flex: 1;
 
     color: rgba(255,255,255,.85);
@@ -237,71 +292,420 @@
     overflow-y: auto;
 
     padding-right: 1rem;
+
 }
 
-/* SCROLL  */
-.member-info p::-webkit-scrollbar{
-    width: 1px;
+/* ======================================================
+   SCROLL
+====================================================== */
+
+.member-info p::-webkit-scrollbar {
+
+    width: 2px;
+
 }
 
-.member-info p::-webkit-scrollbar-track{
+.member-info p::-webkit-scrollbar-track {
+
     background: transparent;
+
 }
 
-.member-info p::-webkit-scrollbar-thumb{
+.member-info p::-webkit-scrollbar-thumb {
+
     background: var(--red);
 
     border-radius: 2rem;
+
 }
 
+/* ======================================================
+   MINIATURAS DEL SLIDER
+====================================================== */
 
-/* IMAGENES MINIATURA */
-
-/* Contenedor de miniaturas */
 .slick-thumb {
+
     display: flex !important;
+
     justify-content: center;
+
     align-items: center;
+
     gap: 1rem;
+
     margin-top: 2rem;
+
     list-style: none;
+
 }
 
-
-/* Cada thumbnail */
 .slick-thumb li {
+
     width: auto !important;
+
     height: auto !important;
 
 }
 
-
-/* Imagen pequeña */
 .slick-thumb li img {
+
     width: 100%;
+
     height: 150px;
+
     object-fit: cover;
-    object-position: center 0%;
+
+    object-position: center top;
+
     filter: grayscale(100%);
-    transition: .3s ease;
-    cursor: pointer;
+
     opacity: .6;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
 }
 
-
-/* Hover */
 .slick-thumb li img:hover {
-    transform: scale(1.01);
 
     opacity: 1;
+
+    transform: scale(1.02);
+
 }
 
-
-/* Integrante seleccionado */
 .slick-thumb li.slick-active img {
+
     filter: grayscale(0);
+
     opacity: 1;
-    /* transform: scale(1.15); */
-    box-shadow:
-        0 0 10px var(--red);
+
+    box-shadow: 0 0 10px var(--red);
+
+}
+
+/* ======================================================
+   LAPTOP
+====================================================== */
+
+@media (max-width:1400px){
+
+    .about-section-title-container,
+    .about-section-slider-container{
+
+        width:47%;
+
+    }
+
+    .card-member-container{
+
+        gap:3rem;
+
+    }
+
+    .member-info h2{
+
+        font-size:3.2rem;
+
+    }
+
+}
+
+/* ======================================================
+   TABLET HORIZONTAL
+====================================================== */
+
+@media (max-width:1200px){
+
+    .about-section-container{
+
+        width:90%;
+
+        margin:auto;
+
+    }
+
+    .about-section-title-container,
+    .about-section-slider-container{
+
+        width:100%;
+
+    }
+
+    .about-section-title{
+
+        padding:2rem 0;
+
+    }
+
+}
+
+/* ======================================================
+   TABLET
+====================================================== */
+
+@media (max-width:992px){
+
+    .about-section-container{
+
+        flex-direction:column;
+
+    }
+
+    .about-section-title-container,
+    .about-section-slider-container{
+
+        width:100%;
+
+    }
+
+    .card-member-container{
+
+        height:auto;
+
+    }
+
+}
+
+/* ======================================================
+   TABLET VERTICAL
+====================================================== */
+
+@media (max-width:768px){
+
+    .about-section-container{
+
+        width:92%;
+
+        margin:auto;
+
+        padding:5rem 0;
+
+    }
+
+    .about-section-logo{
+
+        width:22rem;
+
+    }
+
+    .about-section-slogan{
+
+        font-size:1.8rem;
+
+    }
+
+    .about-section-description{
+
+        text-align:center;
+
+    }
+
+    .about-section-info{
+
+        justify-content:center;
+
+    }
+
+    .card-member-container{
+
+        flex-direction:column;
+
+        padding:2rem;
+
+        gap:2rem;
+
+    }
+
+    .member-image{
+
+        width:100%;
+
+        height:380px;
+
+    }
+
+    .member-info{
+
+        width:100%;
+
+    }
+
+    .member-info h2{
+
+        text-align:center;
+
+    }
+
+    .member-info h3{
+
+        text-align:center;
+
+    }
+
+    .member-info h4{
+
+        text-align:center;
+
+    }
+
+    .member-info p{
+
+        overflow:visible;
+
+        padding-right:0;
+
+    }
+
+    .slick-thumb{
+
+        gap:.7rem;
+
+        flex-wrap:wrap;
+
+    }
+
+    .slick-thumb li img{
+
+        height:90px;
+
+    }
+
+}
+
+/* ======================================================
+   CELULAR
+====================================================== */
+
+@media (max-width:576px){
+
+    .about-section-container{
+
+        width:94%;
+
+    }
+
+    .about-section-logo{
+
+        width:18rem;
+
+    }
+
+    .about-section-slogan{
+
+        font-size:1.6rem;
+
+    }
+
+    .about-section-description{
+
+        font-size:1.4rem;
+
+        line-height:1.8;
+
+    }
+
+    .about-section-info{
+
+        font-size:1.2rem;
+
+        gap:1rem;
+
+    }
+
+    .separator{
+
+        display:none;
+
+    }
+
+    .member-image{
+
+        height:320px;
+
+    }
+
+    .member-info h2{
+
+        font-size:2.8rem;
+
+    }
+
+    .member-info h3{
+
+        font-size:1.8rem;
+
+    }
+
+    .member-info h4{
+
+        font-size:1.3rem;
+
+    }
+
+    .member-info p{
+
+        font-size:1.4rem;
+
+    }
+
+    .slick-thumb li img{
+
+        height:70px;
+
+    }
+
+}
+
+/* ======================================================
+   CELULAR PEQUEÑO
+====================================================== */
+
+@media (max-width:400px){
+
+    .about-section-logo{
+
+        width:15rem;
+
+    }
+
+    .member-image{
+
+        height:260px;
+
+    }
+
+    .member-info h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .member-info h3{
+
+        font-size:1.6rem;
+
+    }
+
+    .member-info p{
+
+        font-size:1.35rem;
+
+        line-height:1.7;
+
+    }
+
+    .slick-thumb{
+
+        gap:.5rem;
+
+    }
+
+    .slick-thumb li img{
+
+        height:58px;
+
+    }
+
 }
