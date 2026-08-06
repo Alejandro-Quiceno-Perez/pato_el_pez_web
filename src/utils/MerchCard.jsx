@@ -1,4 +1,5 @@
 import BtnButton from './BtnButton'
+import '../styles/MerchCard.css'
 
 const MerchCard = ({ merch }) => {
     return (

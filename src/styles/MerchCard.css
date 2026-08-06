@@ -1,0 +1,468 @@
+/* ==========================================
+   CARD
+========================================== */
+
+.merch-card {
+    background:
+        rgba(255, 255, 255, .03);
+
+    border:
+        1px solid rgba(255, 255, 255, .08);
+
+    border-radius: 2rem;
+    width: 300px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    position: relative;
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease,
+        border-color .4s ease;
+}
+
+.merch-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: .4rem;
+
+    background: var(--red);
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: .4s;
+}
+
+.merch-card:hover {
+    /* transform:
+        translateY(-10px); */
+
+    border-color:
+        rgba(136, 16, 20, .5);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, .5);
+}
+
+/* .merch-card:hover::before {
+    transform: scaleX(1);
+} */
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.merch-image {
+    width: 100%;
+    height: 35rem;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #111;
+}
+
+.merch-image img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        opacity .35s ease,
+        transform .45s ease;
+}
+
+/* Imagen principal */
+
+.primary-image {
+    opacity: 1;
+    z-index: 2;
+}
+
+/* Imagen secundaria */
+
+.secondary-image {
+    opacity: 0;
+    z-index: 1;
+}
+
+/* Hover */
+
+.merch-card:hover .primary-image {
+    opacity: 0;
+    /* transform: scale(1.05); */
+}
+
+.merch-card:hover .secondary-image {
+    opacity: 1;
+    /* transform: scale(1.05); */
+}
+
+/* ==========================================
+   INFO
+========================================== */
+
+.merch-info {
+    padding: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.merch-info h3 {
+    font-size: 2.2rem;
+    color: var(--white);
+    line-height: 1.3;
+}
+
+.merch-info p {
+    font-size: 2rem;
+    color: var(--red);
+    font-weight: 700;
+}
+
+/* ==========================================
+   PRICE
+========================================== */
+
+.merch-price {
+    font-size: 2rem;
+    color: var(--red);
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.merch-description {
+    color: rgba(255,255,255,.7) !important;
+    font-size: 1.3rem !important;
+    /* text-transform: uppercase; */
+    letter-spacing: .15rem;
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.merch-btn {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 1rem;
+
+    border: none;
+
+    background: var(--red);
+    color: var(--white);
+
+    padding: 1.4rem 2rem;
+
+    border-radius: 1rem;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+.merch-btn:hover {
+    transform:
+        translateY(-4px);
+
+    /* box-shadow:
+        0 10px 25px rgba(136, 16, 20, .4); */
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+/* ==========================
+   LAPTOP
+========================== */
+
+@media (max-width:1200px){
+
+    .merch-card{
+
+        width:270px;
+
+    }
+
+    .merch-image{
+
+        height:31rem;
+
+    }
+
+    .merch-info{
+
+        padding:2rem;
+
+        gap:1.2rem;
+
+    }
+
+    .merch-info h3{
+
+        font-size:2rem;
+
+    }
+
+    .merch-description{
+
+        font-size:1.2rem !important;
+
+        letter-spacing:.08rem;
+
+    }
+
+    .merch-price{
+
+        font-size:1.8rem;
+
+    }
+
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width:992px){
+
+    .merch-card{
+
+        width:220px;
+
+    }
+
+    .merch-image{
+
+        height:24rem;
+
+    }
+
+    .merch-info{
+
+        padding:1.6rem;
+
+        gap:1rem;
+
+    }
+
+    .merch-info h3{
+
+        font-size:1.8rem;
+
+    }
+
+    .merch-description{
+
+        font-size:1.1rem !important;
+
+        letter-spacing:.06rem;
+
+    }
+
+    .merch-price{
+
+        font-size:1.6rem;
+
+    }
+
+    .merch-btn{
+
+        padding:1rem;
+
+        font-size:1.2rem;
+
+    }
+
+}
+
+/* ==========================
+   TABLET VERTICAL
+========================== */
+
+@media (max-width:768px){
+
+    .merch-card{
+
+        width:190px;
+
+    }
+
+    .merch-image{
+
+        height:21rem;
+
+    }
+
+    .merch-info{
+
+        padding:1.4rem;
+
+        gap:.8rem;
+
+    }
+
+    .merch-info h3{
+
+        font-size:1.6rem;
+
+    }
+
+    .merch-description{
+
+        font-size:1rem !important;
+
+    }
+
+    .merch-price{
+
+        font-size:1.5rem;
+
+    }
+
+    .merch-btn{
+
+        padding:.9rem;
+
+        font-size:1.1rem;
+
+    }
+
+}
+
+/* ==========================
+   CELULAR
+========================== */
+
+@media (max-width:576px){
+
+    .merch-card{
+
+        width:100%;
+
+        max-width:180px;
+
+    }
+
+    .merch-image{
+
+        height:19rem;
+
+    }
+
+    .merch-info{
+
+        padding:1.3rem;
+
+        gap:.8rem;
+
+    }
+
+    .merch-info h3{
+
+        font-size:1.5rem;
+
+    }
+
+    .merch-description{
+
+        font-size:.95rem !important;
+
+        letter-spacing:.05rem;
+
+    }
+
+    .merch-price{
+
+        font-size:1.4rem;
+
+    }
+
+    .merch-btn{
+
+        width:100%;
+
+        padding:.9rem;
+
+        font-size:1.1rem;
+
+    }
+
+}
+
+/* ==========================
+   CELULARES PEQUEÑOS
+========================== */
+
+@media (max-width:400px){
+
+    .merch-card{
+
+        max-width:160px;
+
+    }
+
+    .merch-image{
+
+        height:17rem;
+
+    }
+
+    .merch-info h3{
+
+        font-size:1.3rem;
+
+    }
+
+    .merch-description{
+
+        font-size:.9rem !important;
+
+    }
+
+    .merch-price{
+
+        font-size:1.3rem;
+
+    }
+
+    .merch-btn{
+
+        font-size:1rem;
+
+        padding:.8rem;
+
+    }
+
+}
