@@ -1,65 +1,91 @@
-/* ============================
-   PÁGINA
-============================ */
+/* ======================================================
+   MERCH PAGE
+====================================================== */
 
 .merch-page{
-    background: var(--black);
-    width: 100%;
-    margin: 0 auto;
-    padding: 8rem 0;
+
+    width:100%;
+
+    padding:8rem 0;
+
+    background:var(--black);
+
 }
+
+/* ======================================================
+   CONTAINER
+====================================================== */
 
 .container-merch{
-    width: 95%;
-    margin: 0 auto;
-    text-align: center;
+
+    width:95%;
+
+    margin:0 auto;
+
+    text-align:center;
+
 }
 
-/* ============================
-   CABECERA
-============================ */
+/* ======================================================
+   HEADER
+====================================================== */
 
 .merch-header{
-    margin-bottom: 3rem;
+
+    margin-bottom:3rem;
+
 }
 
 .merch-header h1{
-    font-size: 6rem;
-    color: var(--white);
+
+    color:var(--white);
+
+    font-size:6rem;
+
 }
 
 .merch-header p{
-    font-size: 1.8rem;
-    color: rgba(255,255,255,.65);
-    margin: 1rem 0 3rem;
+
+    margin:1rem 0 3rem;
+
+    color:rgba(255,255,255,.65);
+
+    font-size:1.8rem;
+
+    line-height:1.8;
+
 }
 
-.merch-span {
-    color: var(--red);
-    font-weight: 700;
+.merch-span{
+
+    color:var(--red);
+
+    font-weight:700;
+
 }
 
-/* ============================
+/* ======================================================
    SEARCH
-============================ */
+====================================================== */
 
 .merch-search-container{
 
     width:100%;
+
     max-width:650px;
+
     margin:0 auto;
 
     position:relative;
 
 }
 
-/* Icono */
-
 .merch-search-icon{
 
     position:absolute;
 
     left:2rem;
+
     top:50%;
 
     transform:translateY(-50%);
@@ -71,8 +97,6 @@
     transition:.3s;
 
 }
-
-/* Input */
 
 .merch-search{
 
@@ -97,8 +121,6 @@
 
 }
 
-/* Placeholder */
-
 .merch-search::placeholder{
 
     color:rgba(255,255,255,.35);
@@ -107,16 +129,11 @@
 
 }
 
-/* Hover */
-
 .merch-search:hover{
 
-    border-color:
-        rgba(136,16,20,.35);
+    border-color:rgba(136,16,20,.35);
 
 }
-
-/* Focus */
 
 .merch-search:focus{
 
@@ -126,33 +143,51 @@
 
     border-color:var(--red);
 
-    box-shadow:
-        0 0 0 4px rgba(136,16,20,.12);
+    box-shadow:0 0 0 4px rgba(136,16,20,.12);
 
 }
 
-/* Cambiar color del icono */
-
-.merch-search:focus
-+ .merch-search-icon{
+.merch-search:focus + .merch-search-icon{
 
     color:var(--red);
 
 }
 
-/* ============================
-   MENSAJE
-============================ */
+/* ======================================================
+   GRID
+====================================================== */
 
-.no-results{
+.merch-grid{
 
-    color:white;
-    font-size:1.8rem;
-    text-align:center;
-    margin-top:4rem;
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    flex-wrap:wrap;
+
+    gap:3rem;
 
 }
 
+/* ======================================================
+   NO RESULTS
+====================================================== */
+
+.no-results{
+
+    width:100%;
+
+    margin-top:4rem;
+
+    color:var(--white);
+
+    font-size:1.8rem;
+
+    text-align:center;
+
+}
 
 /* ======================================================
    RESPONSIVE
@@ -185,6 +220,12 @@
     .merch-search-container{
 
         max-width:600px;
+
+    }
+
+    .merch-grid{
+
+        gap:2.5rem;
 
     }
 
@@ -224,11 +265,11 @@
 
     .merch-header p{
 
-        font-size:1.5rem;
+        max-width:650px;
 
         margin:1rem auto 2.5rem;
 
-        max-width:650px;
+        font-size:1.5rem;
 
     }
 
@@ -245,6 +286,12 @@
         left:1.8rem;
 
         font-size:1.8rem;
+
+    }
+
+    .merch-grid{
+
+        gap:2rem;
 
     }
 
@@ -272,8 +319,6 @@
 
         font-size:1.4rem;
 
-        line-height:1.8;
-
     }
 
     .merch-search-container{
@@ -295,6 +340,12 @@
         left:1.5rem;
 
         font-size:1.6rem;
+
+    }
+
+    .merch-grid{
+
+        gap:1.5rem;
 
     }
 
@@ -332,9 +383,9 @@
 
     .merch-header p{
 
-        font-size:1.3rem;
-
         margin:1rem auto 2rem;
+
+        font-size:1.3rem;
 
     }
 
@@ -351,6 +402,20 @@
         left:1.4rem;
 
         font-size:1.5rem;
+
+    }
+
+    .merch-grid{
+
+        display:grid;
+
+        grid-template-columns:repeat(2,1fr);
+
+        justify-items:center;
+
+        justify-content:center;
+
+        gap:1.5rem;
 
     }
 
@@ -391,6 +456,12 @@
     .merch-search-icon{
 
         font-size:1.4rem;
+
+    }
+
+    .merch-grid{
+
+        gap:1rem;
 
     }
 
