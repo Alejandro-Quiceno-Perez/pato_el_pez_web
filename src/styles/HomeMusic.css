@@ -7,16 +7,7 @@
     padding: 5rem 0;
     background: #000;
 
-    /* background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.966),
-            rgba(0, 0, 0, 0.966)
-        ),
-        url("../../public/images/Fondos/fondoCorrugado.jpg");
 
-    background-size: cover;
-    background-position: center; */
-    /* background-attachment: fixed; */
 }
 
 /* ==========================================
@@ -152,7 +143,7 @@
     /* background: #09ff00;   */
     margin-top: 5rem;
 
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     gap: 2rem;
 }
@@ -162,14 +153,7 @@
     height: 15rem;
 
     border-radius: 50%;
-    /* overflow: hidden;
-
-    transition: all .4s ease; */
 }
-
-/* .song-card:hover {
-    transform: translateY(-5px);
-} */
 
 .song-card a img {
     width: 100%;
@@ -189,7 +173,215 @@
 .song-card:hover img {
     transform: scale(1.08);
 }
-       
 
+/* ==========================================
+   RESPONSIVE
+========================================== */
 
+/* LAPTOP */
 
+@media (max-width:1200px) {
+
+    .music-wrapper {
+
+        width: 90%;
+
+        gap: 3rem;
+
+    }
+
+    .album-cover {
+
+        width: 28%;
+
+        height: 48rem;
+
+    }
+
+    .music-section-title {
+
+        width: 65%;
+
+    }
+
+}
+
+/* TABLET */
+
+@media (max-width:992px) {
+
+    .album-cover {
+
+        display: none;
+
+    }
+
+    .music-section-title {
+
+        width: 100%;
+
+    }
+
+    .music-wrapper {
+
+        width: 92%;
+
+    }
+
+}
+
+/* TABLET VERTICAL */
+
+@media (max-width:768px) {
+
+    .home-music-container {
+
+        padding: 4rem 0;
+
+    }
+
+    .music-wrapper {
+
+        width: 94%;
+
+    }
+
+    .music-section-title h2 {
+
+        font-size: 4.5rem;
+
+    }
+
+    .music-section-title p {
+
+        font-size: 1.6rem;
+
+    }
+
+    .music-section-link {
+
+        gap: 1.2rem;
+
+        margin-top: .5rem;
+
+    }
+
+    .music-section-link a {
+
+        padding: 1.1rem 2rem;
+
+        font-size: 1.2rem;
+
+        border-radius: .8rem;
+
+    }
+
+    .songs-grid {
+
+        justify-content: center;
+
+        gap: 1.5rem;
+
+    }
+
+    .song-card {
+
+        width: 13rem;
+
+        height: 13rem;
+
+    }
+
+}
+
+/* CELULAR */
+
+@media (max-width:576px) {
+
+    .music-section-title {
+
+        gap: 1.5rem;
+
+    }
+
+    .music-section-title span {
+
+        font-size: 1.2rem;
+
+        letter-spacing: .3rem;
+
+    }
+
+    .music-section-title h2 {
+
+        font-size: 3.5rem;
+
+    }
+
+    .music-section-title p {
+
+        font-size: 1.5rem;
+
+        line-height: 1.7;
+
+    }
+
+    .music-section-link {
+
+        flex-direction: column;
+
+        gap: .8rem;
+
+        width: 100%;
+
+    }
+
+    .music-section-link a {
+
+        width: 100%;
+
+        text-align: center;
+
+        padding: 1rem 1.5rem;
+
+        font-size: 1.1rem;
+
+        border-radius: .8rem;
+
+    }
+
+    .songs-grid {
+
+        gap: 1rem;
+
+    }
+
+    .song-card {
+
+        width: 11rem;
+
+        height: 11rem;
+
+    }
+
+}
+
+/* CELULARES PEQUEÑOS */
+
+@media (max-width:400px) {
+
+    .music-section-title h2 {
+
+        font-size: 3rem;
+
+    }
+
+    .song-card {
+
+        width: 9rem;
+
+        height: 9rem;
+
+    }
+
+}

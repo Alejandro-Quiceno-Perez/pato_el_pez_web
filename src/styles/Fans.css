@@ -828,3 +828,564 @@
     }
 
 }
+
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+/* ==========================
+   LAPTOP
+========================== */
+
+@media (max-width:1200px){
+
+    .fans-container{
+
+        width:92%;
+
+        gap:5rem;
+
+    }
+
+    .fans-content{
+
+        width:50%;
+
+    }
+
+    .fans-form-container{
+
+        width:45%;
+
+    }
+
+    .fans-content h1{
+
+        font-size:4.8rem;
+
+    }
+
+    .fans-content p{
+
+        font-size:1.6rem;
+
+    }
+
+    .fans-benefits li{
+
+        font-size:1.5rem;
+
+    }
+
+    .fan-form{
+
+        padding:3rem;
+
+    }
+
+    .form-header h2{
+
+        font-size:3rem;
+
+    }
+
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width:992px){
+
+    .fans-page{
+
+        padding:4rem 0;
+
+    }
+
+    .fans-container{
+
+        width:94%;
+
+        gap:3rem;
+
+    }
+
+    .fans-content{
+
+        width:52%;
+
+    }
+
+    .fans-form-container{
+
+        width:48%;
+
+    }
+
+    .fans-subtitle{
+
+        font-size:1.2rem;
+
+        letter-spacing:.3rem;
+
+    }
+
+    .fans-content h1{
+
+        font-size:3.8rem;
+
+    }
+
+    .fans-content p{
+
+        font-size:1.5rem;
+
+        line-height:1.8;
+
+    }
+
+    .fans-benefits{
+
+        gap:1.2rem;
+
+    }
+
+    .fans-benefits li{
+
+        font-size:1.4rem;
+
+    }
+
+    .fans-benefits li::before{
+
+        width:2.5rem;
+
+        height:2.5rem;
+
+        font-size:1.2rem;
+
+    }
+
+    .fan-form{
+
+        padding:2.8rem;
+
+        gap:1.6rem;
+
+    }
+
+    .form-header h2{
+
+        font-size:2.7rem;
+
+    }
+
+    .form-group input{
+
+        padding:1.5rem;
+
+        font-size:1.4rem;
+
+    }
+
+    .checkbox-text{
+
+        font-size:1.3rem;
+
+    }
+
+    .btn-register{
+
+        padding:1.1rem;
+
+        font-size:1.2rem;
+
+    }
+
+}
+
+/* ==========================
+   TABLET VERTICAL
+========================== */
+
+@media (max-width:768px){
+
+    .fans-page{
+
+        padding:5rem 0;
+
+    }
+
+    .fans-container{
+
+        width:92%;
+
+        flex-direction:column;
+
+        gap:4rem;
+
+    }
+
+    .fans-content{
+
+        width:100%;
+
+        text-align:center;
+
+        align-items:center;
+
+    }
+
+    .fans-form-container{
+
+        width:100%;
+
+        max-width:600px;
+
+    }
+
+    .fans-content h1{
+
+        font-size:3.3rem;
+
+    }
+
+    .fans-content p{
+
+        font-size:1.4rem;
+
+    }
+
+    .fans-benefits{
+
+        width:100%;
+
+        align-items:flex-start;
+
+    }
+
+    .fans-benefits li{
+
+        font-size:1.35rem;
+
+    }
+
+    .fan-form{
+
+        padding:2.5rem;
+
+    }
+
+    .form-header{
+
+        text-align:center;
+
+    }
+
+    .form-header h2{
+
+        font-size:2.5rem;
+
+    }
+
+    .form-group input{
+
+        padding:1.4rem;
+
+        font-size:1.35rem;
+
+    }
+
+    .checkbox-text{
+
+        font-size:1.25rem;
+
+    }
+
+    .btn-register{
+
+        width:100%;
+
+        padding:1.2rem;
+
+        font-size:1.2rem;
+
+    }
+
+}
+
+
+/* ==========================
+   CELULAR
+========================== */
+
+@media (max-width:576px){
+
+    .fans-container{
+
+        width:92%;
+
+    }
+
+    .fans-subtitle{
+
+        font-size:1.1rem;
+
+    }
+
+    .fans-content h1{
+
+        font-size:2.8rem;
+
+    }
+
+    .fans-content p{
+
+        font-size:1.3rem;
+
+        line-height:1.8;
+
+    }
+
+    .fans-benefits{
+
+        gap:1rem;
+
+    }
+
+    .fans-benefits li{
+
+        font-size:1.25rem;
+
+        gap:1rem;
+
+    }
+
+    .fans-benefits li::before{
+
+        width:2.2rem;
+
+        height:2.2rem;
+
+        font-size:1rem;
+
+    }
+
+    .fan-form{
+
+        padding:2rem 1.8rem;
+
+        border-radius:1.5rem;
+
+    }
+
+    .form-header span{
+
+        font-size:1.1rem;
+
+    }
+
+    .form-header h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .form-group input{
+
+        padding:1.2rem 1.4rem;
+
+        font-size:1.25rem;
+
+    }
+
+    .checkbox-group{
+
+        gap:1rem;
+
+    }
+
+    .custom-checkbox{
+
+        width:20px;
+
+        height:20px;
+
+    }
+
+    .checkbox-text{
+
+        font-size:1.15rem;
+
+    }
+
+    .privacy-text{
+
+        padding:1.2rem;
+
+        font-size:1.05rem;
+
+        line-height:1.7;
+
+    }
+
+    .btn-register{
+
+        padding:1.1rem;
+
+        font-size:1.1rem;
+
+    }
+
+}
+
+
+/* ==========================
+   MODAL
+========================== */
+
+@media (max-width:768px){
+
+    .success-modal{
+
+        width:92%;
+
+        padding:3rem 2.2rem;
+
+        gap:2rem;
+
+    }
+
+    .success-icon{
+
+        width:7rem;
+
+        height:7rem;
+
+        font-size:3.4rem;
+
+    }
+
+    .success-modal h2{
+
+        font-size:2.8rem;
+
+    }
+
+    .success-modal p{
+
+        font-size:1.45rem;
+
+    }
+
+    .btn-whatsapp,
+
+    .btn-close{
+
+        padding:1.2rem;
+
+        font-size:1.2rem;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .success-modal{
+
+        width:92%;
+
+        padding:2.5rem 1.8rem;
+
+    }
+
+    .success-icon{
+
+        width:6rem;
+
+        height:6rem;
+
+        font-size:3rem;
+
+    }
+
+    .success-modal h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .success-modal p{
+
+        font-size:1.3rem;
+
+        line-height:1.7;
+
+    }
+
+    .success-buttons{
+
+        gap:1rem;
+
+    }
+
+    .btn-whatsapp,
+
+    .btn-close{
+
+        padding:1rem;
+
+        font-size:1.1rem;
+
+    }
+
+}
+
+@media (max-width:400px){
+
+    .fans-content h1{
+
+        font-size:2.4rem;
+
+    }
+
+    .fans-content p{
+
+        font-size:1.2rem;
+
+    }
+
+    .form-header h2{
+
+        font-size:2rem;
+
+    }
+
+    .form-group input{
+
+        font-size:1.2rem;
+
+    }
+
+    .checkbox-text{
+
+        font-size:1.05rem;
+
+    }
+
+    .success-modal h2{
+
+        font-size:2rem;
+
+    }
+
+    .success-modal p{
+
+        font-size:1.2rem;
+
+    }
+
+}

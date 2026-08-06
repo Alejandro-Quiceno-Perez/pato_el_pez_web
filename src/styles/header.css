@@ -151,8 +151,9 @@
 }
 
 .logo-img {
+    /* background: pink; */
 
-    width: auto;
+    /* width: auto; */
 
     max-width: 100%;
 
@@ -387,6 +388,11 @@
 
         width: auto;
 
+    }
+
+    .logo-img:hover {
+
+        transform: scale(1);
     }
 
 }

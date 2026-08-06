@@ -459,9 +459,388 @@
     text-align: center;
 }
 
+/* ======================================================
+   RESPONSIVE
+====================================================== */
 
+/* ==========================
+   LAPTOP
+========================== */
 
+@media (max-width:1200px){
 
+    .presskit-container{
 
+        width:90%;
 
+        gap:6rem;
 
+    }
+
+    .video-wrapper{
+
+        max-width:1000px;
+
+    }
+
+    .documents-grid{
+
+        gap:2.5rem;
+
+    }
+
+    .document-card{
+
+        width:34rem;
+
+        min-height:30rem;
+
+        padding:2.5rem;
+
+    }
+
+    .document-icon{
+
+        width:7rem;
+        height:7rem;
+
+        font-size:3.3rem;
+
+    }
+
+    .document-info h3{
+
+        font-size:2rem;
+
+    }
+
+    .document-info p{
+
+        font-size:1.5rem;
+
+    }
+
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width:992px){
+
+    .presskit-page{
+
+        padding:4rem 0;
+
+    }
+
+    .presskit-container{
+
+        width:92%;
+
+        gap:5rem;
+
+    }
+
+    .presskit-header span{
+
+        font-size:1.3rem;
+
+        letter-spacing:.3rem;
+
+    }
+
+    .presskit-header h1{
+
+        font-size:4.5rem;
+
+    }
+
+    .presskit-header p{
+
+        font-size:1.6rem;
+
+    }
+
+    .video-wrapper{
+
+        border-radius:1.5rem;
+
+    }
+
+    .documents-grid{
+
+        gap:2rem;
+
+    }
+
+    .document-card{
+
+        width:calc(50% - 1rem);
+
+        min-height:28rem;
+
+        padding:2.2rem;
+
+    }
+
+    .document-icon{
+
+        width:6rem;
+        height:6rem;
+
+        font-size:3rem;
+
+    }
+
+    .document-info h3{
+
+        font-size:1.9rem;
+
+    }
+
+    .document-info p{
+
+        font-size:1.4rem;
+
+    }
+
+    .btn-documents{
+
+        padding:1.2rem 2rem;
+
+        font-size:1.2rem;
+
+    }
+
+}
+
+/* ==========================
+   TABLET VERTICAL
+========================== */
+
+@media (max-width:768px){
+
+    .presskit-page{
+
+        padding:4rem 0;
+
+    }
+
+    .presskit-container{
+
+        width:94%;
+
+        gap:4rem;
+
+    }
+
+    .presskit-header{
+
+        gap:1.5rem;
+
+    }
+
+    .presskit-header span{
+
+        font-size:1.2rem;
+
+    }
+
+    .presskit-header h1{
+
+        font-size:3.8rem;
+
+    }
+
+    .presskit-header p{
+
+        font-size:1.45rem;
+
+        line-height:1.8;
+
+    }
+
+    .video-wrapper{
+
+        border-radius:1.3rem;
+
+    }
+
+    .documents-grid{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .document-card{
+
+        width:100%;
+
+        max-width:550px;
+
+        min-height:auto;
+
+    }
+
+    .document-info h3{
+
+        font-size:1.8rem;
+
+    }
+
+    .document-info p{
+
+        font-size:1.35rem;
+
+    }
+
+    .btn-documents{
+
+        width:100%;
+
+        padding:1.1rem;
+
+        font-size:1.15rem;
+
+    }
+
+}
+
+/* ==========================
+   CELULAR
+========================== */
+
+@media (max-width:576px){
+
+    .presskit-container{
+
+        width:92%;
+
+    }
+
+    .presskit-header span{
+
+        font-size:1.1rem;
+
+        letter-spacing:.2rem;
+
+    }
+
+    .presskit-header h1{
+
+        font-size:3rem;
+
+    }
+
+    .presskit-header p{
+
+        font-size:1.3rem;
+
+    }
+
+    .documents-section h2{
+
+        font-size:2.5rem;
+
+    }
+
+    .document-card{
+
+        padding:2rem;
+
+        border-radius:1.5rem;
+
+    }
+
+    .document-icon{
+
+        width:5.5rem;
+
+        height:5.5rem;
+
+        font-size:2.7rem;
+
+    }
+
+    .document-info h3{
+
+        font-size:1.7rem;
+
+    }
+
+    .document-info p{
+
+        font-size:1.25rem;
+
+        line-height:1.7;
+
+    }
+
+    .btn-documents{
+
+        width:100%;
+
+        padding:1rem;
+
+        font-size:1.05rem;
+
+    }
+
+}
+
+/* ==========================
+   CELULARES PEQUEÑOS
+========================== */
+
+@media (max-width:400px){
+
+    .presskit-header h1{
+
+        font-size:2.5rem;
+
+    }
+
+    .presskit-header p{
+
+        font-size:1.2rem;
+
+    }
+
+    .document-card{
+
+        padding:1.8rem;
+
+    }
+
+    .document-icon{
+
+        width:5rem;
+
+        height:5rem;
+
+        font-size:2.4rem;
+
+    }
+
+    .document-info h3{
+
+        font-size:1.5rem;
+
+    }
+
+    .document-info p{
+
+        font-size:1.15rem;
+
+    }
+
+    .btn-documents{
+
+        font-size:1rem;
+
+    }
+
+}
