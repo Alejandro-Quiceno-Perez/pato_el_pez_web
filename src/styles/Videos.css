@@ -457,3 +457,413 @@
     font-size:1.3rem;
 
 }
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+/* ==========================
+   LAPTOP
+========================== */
+
+@media (max-width:1200px){
+
+    .videos-container{
+
+        width:90%;
+
+    }
+
+    .video-frame{
+
+        width:80%;
+
+    }
+
+    .video-info{
+
+        width:80%;
+
+    }
+
+    .videos-grid{
+
+        grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+
+        gap:2.5rem;
+
+    }
+
+}
+
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width:992px){
+
+    .videos-page{
+
+        padding:6rem 0;
+
+    }
+
+    .videos-container{
+
+        width:92%;
+
+    }
+
+    .videos-header{
+
+        margin-bottom:5rem;
+
+    }
+
+    .videos-header span{
+
+        font-size:1.2rem;
+
+    }
+
+    .videos-header h1{
+
+        font-size:4.2rem;
+
+    }
+
+    .videos-header p{
+
+        font-size:1.6rem;
+
+    }
+
+    .video-frame{
+
+        width:100%;
+
+    }
+
+    .video-info{
+
+        width:100%;
+
+    }
+
+    .video-info h2{
+
+        font-size:3rem;
+
+    }
+
+    .video-subtitle{
+
+        font-size:1.6rem;
+
+    }
+
+    .video-description{
+
+        font-size:1.5rem;
+
+    }
+
+    .videos-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+        gap:2rem;
+
+    }
+
+    .video-card-content{
+
+        padding:1.6rem;
+
+    }
+
+    .video-card-content h3{
+
+        font-size:1.8rem;
+
+    }
+
+}
+
+
+/* ==========================
+   TABLET VERTICAL
+========================== */
+
+@media (max-width:768px){
+
+    .videos-page{
+
+        padding:5rem 0;
+
+    }
+
+    .videos-container{
+
+        width:94%;
+
+    }
+
+    .videos-header{
+
+        margin-bottom:4rem;
+
+    }
+
+    .videos-header h1{
+
+        font-size:3.5rem;
+
+    }
+
+    .videos-header p{
+
+        font-size:1.45rem;
+
+    }
+
+    .video-player{
+
+        gap:2rem;
+
+    }
+
+    .video-info h2{
+
+        font-size:2.5rem;
+
+    }
+
+    .video-subtitle{
+
+        font-size:1.5rem;
+
+    }
+
+    .video-description{
+
+        font-size:1.4rem;
+
+        line-height:1.8;
+
+    }
+
+    .videos-list h2{
+
+        font-size:2.5rem;
+
+    }
+
+    .videos-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:1.5rem;
+
+    }
+
+    .video-card-content{
+
+        padding:1.4rem;
+
+    }
+
+    .video-card-content h3{
+
+        font-size:1.6rem;
+
+    }
+
+    .video-play{
+
+        font-size:3.5rem;
+
+    }
+
+}
+
+
+/* ==========================
+   CELULAR
+========================== */
+
+@media (max-width:576px){
+
+    .videos-page{
+
+        padding:4rem 0;
+
+    }
+
+    .videos-container{
+
+        width:92%;
+
+    }
+
+    .videos-header{
+
+        margin-bottom:3rem;
+
+    }
+
+    .videos-header span{
+
+        font-size:1.1rem;
+
+        letter-spacing:.2rem;
+
+    }
+
+    .videos-header h1{
+
+        font-size:2.8rem;
+
+    }
+
+    .videos-header p{
+
+        font-size:1.35rem;
+
+    }
+
+    .video-meta{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:.5rem;
+
+    }
+
+    .video-category{
+
+        font-size:1.2rem;
+
+    }
+
+    .video-year{
+
+        font-size:1.2rem;
+
+    }
+
+    .video-info h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .video-subtitle{
+
+        font-size:1.4rem;
+
+    }
+
+    .video-description{
+
+        font-size:1.3rem;
+
+        line-height:1.7;
+
+    }
+
+    .videos-list h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .videos-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:1rem;
+
+    }
+
+    .video-card-content{
+
+        padding:1.2rem;
+
+    }
+
+    .video-card-category{
+
+        font-size:1rem;
+
+    }
+
+    .video-card-content h3{
+
+        font-size:1.35rem;
+
+        margin:.8rem 0;
+
+    }
+
+    .video-card-year{
+
+        font-size:1.1rem;
+
+    }
+
+    .video-play{
+
+        font-size:3rem;
+
+    }
+
+}
+
+
+/* ==========================
+   CELULARES PEQUEÑOS
+========================== */
+
+@media (max-width:400px){
+
+    .videos-container{
+
+        width:95%;
+
+    }
+
+    .videos-header h1{
+
+        font-size:2.4rem;
+
+    }
+
+    .videos-header p{
+
+        font-size:1.25rem;
+
+    }
+
+    .videos-grid{
+
+        gap:.8rem;
+
+    }
+
+    .video-card-content{
+
+        padding:1rem;
+
+    }
+
+    .video-card-content h3{
+
+        font-size:1.2rem;
+
+    }
+
+}

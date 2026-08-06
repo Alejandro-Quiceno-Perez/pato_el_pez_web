@@ -291,42 +291,257 @@
    RESPONSIVE
 ========================================== */
 
-@media (max-width: 992px) {
-    .merch-wrapper h2 {
-        font-size: 4.5rem;
+/* ==========================
+   LAPTOP
+========================== */
+
+@media (max-width:1200px){
+
+    .merch-wrapper{
+        width:90%;
     }
 
-    .merch-image {
-        height: 30rem;
+    .merch-wrapper h2{
+        font-size:5rem;
     }
+
+    .merch-grid{
+        gap:2.5rem;
+    }
+
+    .merch-card{
+        width:270px;
+    }
+
+    .merch-image{
+        height:31rem;
+    }
+
+    .merch-info{
+        padding:2rem;
+    }
+
+    .merch-info h3{
+        font-size:2rem;
+    }
+
+    .merch-description{
+        font-size:1.2rem !important;
+    }
+
+    .merch-price{
+        font-size:1.8rem;
+    }
+
 }
 
-@media (max-width: 768px) {
-    .home-merch-container {
-        padding: 7rem 0;
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width:992px){
+
+    .home-merch-container{
+        padding:7rem 0;
     }
 
-    .merch-wrapper {
-        width: 90%;
+    .merch-wrapper{
+        width:94%;
     }
 
-    .merch-wrapper h2 {
-        font-size: 3.5rem;
+    .merch-wrapper h2{
+        font-size:4.2rem;
     }
 
-    .merch-grid {
-        gap: 2rem;
+    .merch-grid{
+        gap:2rem;
     }
 
-    .merch-image {
-        height: 28rem;
+    .merch-card{
+        width:220px;
     }
 
-    .merch-info h3 {
-        font-size: 2rem;
+    .merch-image{
+        height:24rem;
     }
 
-    .merch-info p {
-        font-size: 1.8rem;
+    .merch-info{
+        padding:1.6rem;
+        gap:1rem;
     }
+
+    .merch-info h3{
+        font-size:1.8rem;
+    }
+
+    .merch-description{
+        font-size:1.1rem !important;
+        letter-spacing:.08rem;
+    }
+
+    .merch-price{
+        font-size:1.6rem;
+    }
+
+    .merch-btn{
+        font-size:1.2rem;
+        padding:1rem;
+    }
+
+}
+
+/* ==========================
+   TABLET VERTICAL
+========================== */
+
+@media (max-width:768px){
+
+    .home-merch-container{
+        padding:6rem 0;
+    }
+
+    .merch-wrapper{
+        width:95%;
+    }
+
+    .merch-wrapper h2{
+        font-size:3.6rem;
+    }
+
+    .merch-grid{
+        gap:1.5rem;
+    }
+
+    .merch-card{
+        width:190px;
+    }
+
+    .merch-image{
+        height:21rem;
+    }
+
+    .merch-info{
+        padding:1.4rem;
+        gap:.8rem;
+    }
+
+    .merch-info h3{
+        font-size:1.6rem;
+    }
+
+    .merch-description{
+        font-size:1rem !important;
+    }
+
+    .merch-price{
+        font-size:1.5rem;
+    }
+
+    .merch-btn{
+        padding:.9rem;
+        font-size:1.1rem;
+    }
+
+}
+/* ==========================
+   CELULAR
+========================== */
+
+@media (max-width:576px){
+
+    .merch-wrapper{
+
+        width:95%;
+
+    }
+
+    .merch-wrapper h2{
+
+        font-size:3rem;
+
+    }
+
+    .merch-grid{
+
+        display:grid;
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:1.5rem;
+
+        justify-items:center;
+
+    }
+
+    .merch-card{
+
+        width:100%;
+
+        max-width:180px;
+
+    }
+
+    .merch-image{
+
+        height:19rem;
+
+    }
+
+    .merch-info{
+
+        padding:1.3rem;
+
+        gap:.8rem;
+
+    }
+
+    .merch-info h3{
+
+        font-size:1.5rem;
+
+    }
+
+    .merch-description{
+
+        font-size:.95rem !important;
+
+        letter-spacing:.05rem;
+
+    }
+
+    .merch-price{
+
+        font-size:1.5rem;
+
+    }
+
+    .merch-btn{
+
+        width:100%;
+
+        font-size:1.1rem;
+
+        padding:.9rem;
+
+    }
+
+}
+/* ==========================
+   CELULARES PEQUEÑOS
+========================== */
+
+@media (max-width:400px){
+
+    .merch-card{
+        width:250px;
+    }
+
+    .merch-image{
+        height:26rem;
+    }
+
+    .merch-wrapper h2{
+        font-size:2.6rem;
+    }
+
 }
