@@ -13,7 +13,7 @@ const Merch = [
         "name": "Camiseta Negra OS",
         "descripcion": "Diseño Mejor Que esto",
         "price": 55000,
-        "image": "/public/images/Merch/mejor_que_esto_camisa.webp",
+        "image": "/public/images/Merch/camisa_mejor_negro_frente.webp",
         "image2": "/public/images/Merch/Posterior_camisa.webp",
         "sizes": ["S", "M", "L","XL"]
     },
@@ -22,7 +22,8 @@ const Merch = [
         "name": "Mug",
         "descripcion": "Taza con diseño de pato el pez",
         "price": 25000,
-        "image": "/public/images/Merch/",
+        "image": "/public/images/Merch/mug.webp",
+        "image2": "/public/images/Merch/mug.webp",
         "sizes": ["No Aplica"]
     },
     {
@@ -39,7 +40,7 @@ const Merch = [
         "name": "Camiseta Roja OS",
         "descripcion": "Diseño Mejor Que esto",
         "price": 55000,
-        "image": "/public/images/Merch/Camisa_rojo.webp",
+        "image": "/public/images/Merch/camisa_mejor_rojo_frente.webp",
         "image2": "/public/images/Merch/posterior_camisa_rojo.webp",
         "sizes": ["No Aplica"]
     },
@@ -57,7 +58,8 @@ const Merch = [
         "name": "Termo",
         "descripcion": "Termo Diseño Pato El Pez",
         "price": 30000,
-        "image": "/public/images/",
+        "image": "/public/images/Merch/Termo.webp",
+        "image2": "/public/images/Merch/Termo.webp",
         "sizes": ["No Aplica"]
     },
     {
@@ -73,7 +75,8 @@ const Merch = [
         "name": "Gorro Beanie",
         "descripcion": "Gorro Logo Pato El Pez",
         "price": 35000,
-        "image": "/public/images/",
+        "image": "/public/images/Merch/beanie.webp",
+        "image2": "/public/images/Merch/beanie.webp",
         "sizes": ["No Aplica"]
     },
     {
@@ -81,7 +84,7 @@ const Merch = [
         "name": "Camiseta Roja",
         "descripcion": "Diseño Mejor Que esto",
         "price": 35000,
-        "image": "/public/images/Merch/Camisa_rojo.webp",
+        "image": "/public/images/Merch/camisa_mejor_rojo_frente.webp",
         "image2": "/public/images/Merch/posterior_camisa_rojo.webp",
         "sizes": ["No Aplica"]
     },
@@ -108,7 +111,7 @@ const Merch = [
         "name": "Camiseta Negra",
         "descripcion": "Diseño Mejor Que esto",
         "price": 55000,
-        "image": "/public/images/Merch/mejor_que_esto_camisa.webp",
+        "image": "/public/images/Merch/camisa_mejor_negro_frente.webp",
         "image2": "/public/images/Merch/Posterior_camisa.webp",
         "sizes": ["S", "M", "L","XL"]
     },
@@ -135,8 +138,8 @@ const Merch = [
         "name": "Cadena",
         "descripcion": "Cadena Logo de Pato El Pez",
         "price": 25000,
-        "image": "/public/images/Merch/Camisa_Negra.web",
-        "image2": "/public/images/Merch/Camisa_Negra.web",
+        "image": "/public/images/Merch/cadena.png",
+        "image2": "/public/images/Merch/cadena.png",
         "sizes": ["No Aplica"]
     },
 ]

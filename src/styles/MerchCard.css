@@ -83,8 +83,8 @@
     object-fit: cover;
 
     transition:
-        opacity .35s ease,
-        transform .45s ease;
+        /* opacity .35s ease, */
+        transform .1s ;
 }
 
 /* Imagen principal */
