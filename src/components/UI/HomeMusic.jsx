@@ -16,35 +16,35 @@ const container = {
     }
 };
 
-const left = {
-    hidden: {
-        opacity: 0,
-        x: -80
-    },
-    visible: {
-        opacity: 1,
-        x: 0,
-        transition: {
-            duration: .8,
-            ease: "easeOut"
-        }
-    }
-};
+// const left = {
+//     hidden: {
+//         opacity: 0,
+//         x: -80
+//     },
+//     visible: {
+//         opacity: 1,
+//         x: 0,
+//         transition: {
+//             duration: .8,
+//             ease: "easeOut"
+//         }
+//     }
+// };
 
-const right = {
-    hidden: {
-        opacity: 0,
-        x: 80
-    },
-    visible: {
-        opacity: 1,
-        x: 0,
-        transition: {
-            duration: .8,
-            ease: "easeOut"
-        }
-    }
-};
+// const right = {
+//     hidden: {
+//         opacity: 0,
+//         x: 80
+//     },
+//     visible: {
+//         opacity: 1,
+//         x: 0,
+//         transition: {
+//             duration: .8,
+//             ease: "easeOut"
+//         }
+//     }
+// };
 
 const item = {
     hidden: {
@@ -97,7 +97,7 @@ const HomeMusic = () => {
 
                     className="album-cover"
 
-                    variants={left}
+                    // variants={left}
 
                 >
 
@@ -119,7 +119,7 @@ const HomeMusic = () => {
 
                     className="music-section-title"
 
-                    variants={right}
+                    // variants={right}
 
                 >
 
