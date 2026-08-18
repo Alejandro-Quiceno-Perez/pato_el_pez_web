@@ -58,8 +58,8 @@ const Merch = [
         "name": "Termo",
         "descripcion": "Termo Diseño Pato El Pez",
         "price": 30000,
-        "image": "/public/images/Merch/Termo.webp",
-        "image2": "/public/images/Merch/Termo.webp",
+        "image": "/public/images/Merch/termo.webp",
+        "image2": "/public/images/Merch/termo2.webp",
         "sizes": ["No Aplica"]
     },
     {
@@ -140,6 +140,24 @@ const Merch = [
         "price": 25000,
         "image": "/public/images/Merch/cadena.png",
         "image2": "/public/images/Merch/cadena.png",
+        "sizes": ["No Aplica"]
+    },
+    {
+        "id": 17,
+        "name": "Camiseta Roja",
+        "descripcion": "Diseño Clasico",
+        "price": 35000,
+        "image": "/public/images/Merch/camisa_pato_rojo_frente.webp",
+        "image2": "/public/images/Merch/posterior_camisa_rojo.webp",
+        "sizes": ["No Aplica"]
+    },
+    {
+        "id": 18,
+        "name": "Camiseta Roja OS",
+        "descripcion": "Diseño Mejor Que esto",
+        "price": 35000,
+        "image": "/public/images/Merch/camisa_pato_rojo_frente.webp",
+        "image2": "/public/images/Merch/posterior_camisa_rojo.webp",
         "sizes": ["No Aplica"]
     },
 ]
