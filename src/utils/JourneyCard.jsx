@@ -1,11 +1,11 @@
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import BtnButton from "./BtnButton";
 
 const JourneyCard = ({ event, onOpen }) => {
 
     return (
 
-        <motion.article
+        <Motion.article
 
             className="journey-card"
 
@@ -133,7 +133,7 @@ const JourneyCard = ({ event, onOpen }) => {
 
             </div>
 
-        </motion.article>
+        </Motion.article>
 
     );
 

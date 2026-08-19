@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 
 import AboutSectionTitle from '../../utils/AboutSectionTitle';
 import MemberSlider from '../../utils/MemberSlider';
@@ -9,7 +9,7 @@ const AboutSection = () => {
 
     return (
 
-        <motion.section
+        <Motion.section
 
             className="about-section-container"
 
@@ -49,7 +49,7 @@ const AboutSection = () => {
 
             </div>
 
-        </motion.section>
+        </Motion.section>
 
     );
 

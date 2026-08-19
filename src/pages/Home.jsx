@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 
 import { pageTransition } from '../animations/PageAnimations';
 
@@ -12,7 +12,7 @@ const Home = () => {
 
     return (
 
-        <motion.main
+        <Motion.main
 
             variants={pageTransition}
 
@@ -36,7 +36,7 @@ const Home = () => {
 
             <FotoBannerBanda />
 
-        </motion.main>
+        </Motion.main>
 
     );
 

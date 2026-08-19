@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import MerchPato from '../db/Merch'
 import MerchCard from '../utils/MerchCard'
 import { FaSearch } from 'react-icons/fa'

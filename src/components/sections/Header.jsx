@@ -76,9 +76,13 @@ const Header = () => {
 
     useEffect(() => {
 
-        setMenuOpen(false);
+        const closeMenuFrame = requestAnimationFrame(() => {
+            setMenuOpen(false);
+        });
 
-    }, [location]);
+        return () => cancelAnimationFrame(closeMenuFrame);
+
+    }, [location.pathname]);
 
     // ============================
     // CERRAR CON ESC

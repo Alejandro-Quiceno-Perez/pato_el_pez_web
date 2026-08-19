@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 
 import Albums from '../../db/Music';
 import SongCard from '../../utils/SongCard';
@@ -15,36 +15,6 @@ const container = {
         }
     }
 };
-
-// const left = {
-//     hidden: {
-//         opacity: 0,
-//         x: -80
-//     },
-//     visible: {
-//         opacity: 1,
-//         x: 0,
-//         transition: {
-//             duration: .8,
-//             ease: "easeOut"
-//         }
-//     }
-// };
-
-// const right = {
-//     hidden: {
-//         opacity: 0,
-//         x: 80
-//     },
-//     visible: {
-//         opacity: 1,
-//         x: 0,
-//         transition: {
-//             duration: .8,
-//             ease: "easeOut"
-//         }
-//     }
-// };
 
 const item = {
     hidden: {
@@ -67,7 +37,7 @@ const HomeMusic = () => {
 
     return (
 
-        <motion.section
+        <Motion.section
 
             className="home-music-container"
 
@@ -93,11 +63,9 @@ const HomeMusic = () => {
                     ALBUM
                 =============================== */}
 
-                <motion.div
+                <Motion.div
 
                     className="album-cover"
-
-                    // variants={left}
 
                 >
 
@@ -109,40 +77,38 @@ const HomeMusic = () => {
 
                     />
 
-                </motion.div>
+                </Motion.div>
 
                 {/* ===============================
                     CONTENT
                 =============================== */}
 
-                <motion.div
+                <Motion.div
 
                     className="music-section-title"
 
-                    // variants={right}
-
                 >
 
-                    <motion.span variants={item}>
+                    <Motion.span variants={item}>
 
                         Último lanzamiento
 
-                    </motion.span>
+                    </Motion.span>
 
-                    <motion.h2 variants={item}>
+                    <Motion.h2 variants={item}>
 
                         La Oveja Negra
 
-                    </motion.h2>
+                    </Motion.h2>
 
-                    <motion.p variants={item}>
+                    <Motion.p variants={item}>
 
                         Nuestro primer álbum de estudio, 10 canciones que son el
                         reflejo de todo lo que somos y de todo lo que hemos vivido.
 
-                    </motion.p>
+                    </Motion.p>
 
-                    <motion.div
+                    <Motion.div
 
                         className="music-section-link"
 
@@ -176,9 +142,9 @@ const HomeMusic = () => {
 
                         </BtnButton>
 
-                    </motion.div>
+                    </Motion.div>
 
-                    <motion.div
+                    <Motion.div
 
                         className="songs-grid"
 
@@ -190,7 +156,7 @@ const HomeMusic = () => {
 
                             featuredSongs.map(song => (
 
-                                <motion.div
+                                <Motion.div
 
                                     key={song.id}
 
@@ -204,19 +170,19 @@ const HomeMusic = () => {
 
                                     />
 
-                                </motion.div>
+                                </Motion.div>
 
                             ))
 
                         }
 
-                    </motion.div>
+                    </Motion.div>
 
-                </motion.div>
+                </Motion.div>
 
             </div>
 
-        </motion.section>
+        </Motion.section>
 
     );
 

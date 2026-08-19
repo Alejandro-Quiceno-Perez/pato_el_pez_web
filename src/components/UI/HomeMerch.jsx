@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 
 import Merch from '../../db/Merch';
 import MerchCard from '../../utils/MerchCard';
@@ -50,7 +50,7 @@ const HomeMerch = () => {
 
     return (
 
-        <motion.section
+        <Motion.section
 
             className="home-merch-container"
 
@@ -72,7 +72,7 @@ const HomeMerch = () => {
 
             <div className="merch-wrapper">
 
-                <motion.h2
+                <Motion.h2
 
                     variants={titleVariants}
 
@@ -80,9 +80,9 @@ const HomeMerch = () => {
 
                     Merchandising
 
-                </motion.h2>
+                </Motion.h2>
 
-                <motion.div
+                <Motion.div
 
                     className="merch-grid"
 
@@ -94,7 +94,7 @@ const HomeMerch = () => {
 
                         featuredMerch.map(item => (
 
-                            <motion.div
+                            <Motion.div
 
                                 key={item.id}
 
@@ -108,17 +108,17 @@ const HomeMerch = () => {
 
                                 />
 
-                            </motion.div>
+                            </Motion.div>
 
                         ))
 
                     }
 
-                </motion.div>
+                </Motion.div>
 
             </div>
 
-        </motion.section>
+        </Motion.section>
 
     );
 

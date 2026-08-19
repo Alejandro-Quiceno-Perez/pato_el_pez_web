@@ -11,15 +11,6 @@ const AlbumSection = ({ album }) => {
 
             <div className="album-header">
 
-                {/* <div className="album-cover">
-
-                    <img
-                        src={album.cover}
-                        alt={album.title}
-                    />
-
-                </div> */}
-
                 <div className="album-info">
 
                     <span className="album-year">

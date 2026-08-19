@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react'
+import { lazy, Suspense } from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import PageLoader from '../components/UI/PageLoader';
@@ -10,15 +10,6 @@ const PressKit = lazy(() => import("../pages/PressKit"));
 const Recorrido = lazy(() => import('../pages/Recorrido'));
 const Layout = lazy(() => import('../components/layouts/layout'));
 const Fans = lazy(() => import('../pages/Fans'));
-
-// import Music from "../pages/Music";
-// import Merch from "../pages/Merch";
-// import Videos from "../pages/Videos";
-// import PressKit from "../pages/PressKit";
-// import Recorrido from '../pages/Recorrido';
-// import Layout from '../components/layouts/layout';
-// import Fans from '../pages/Fans';
-
 
 const AppRoutes = () => {
     return (

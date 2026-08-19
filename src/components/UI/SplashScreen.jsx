@@ -5,8 +5,6 @@ const DISPLAY_DURATION = 7200;
 const FADE_DURATION = 800;
 
 const SplashScreen = ({ onFinish }) => {
-    // const splashScreem = '/videos/splashScreem.mp4';
-
     const [fadeOut, setFadeOut] = useState(false);
 
     useEffect(() => {

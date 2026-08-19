@@ -8,10 +8,7 @@ const MerchCard = ({ merch }) => {
 
     useEffect(() => {
 
-        if (!merch.image2) {
-            setSecondaryLoaded(true)
-            return
-        }
+        if (!merch.image2) return
 
         const image = new Image()
 
@@ -37,7 +34,7 @@ const MerchCard = ({ merch }) => {
 
         <article
             className={`merch-card ${
-                secondaryLoaded ? 'merch-ready' : ''
+                secondaryLoaded || !merch.image2 ? 'merch-ready' : ''
             }`}
         >
 

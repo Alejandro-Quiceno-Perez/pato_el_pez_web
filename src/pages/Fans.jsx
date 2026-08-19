@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import FanForm from "../utils/FanForm";
 import SuccessModal from "../utils/SuccessModal";
