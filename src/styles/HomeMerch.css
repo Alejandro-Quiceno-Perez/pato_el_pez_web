@@ -1,0 +1,201 @@
+/* ==========================================
+   HOME MERCH SECTION
+========================================== */
+
+.home-merch-container{
+
+    width:100%;
+
+    padding:10rem 0;
+
+    background:var(--black);
+
+}
+
+.merch-wrapper{
+
+    width:85%;
+
+    margin:0 auto;
+
+}
+
+.merch-wrapper h2{
+
+    font-size:6rem;
+
+    color:var(--white);
+
+    text-transform:uppercase;
+
+    text-align:center;
+
+    margin-bottom:5rem;
+
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.merch-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:3rem;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+/* ==========================
+   LAPTOP
+========================== */
+
+@media (max-width:1200px){
+
+    .merch-wrapper{
+
+        width:90%;
+
+    }
+
+    .merch-wrapper h2{
+
+        font-size:5rem;
+
+    }
+
+    .merch-grid{
+
+        gap:2.5rem;
+
+    }
+
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width:992px){
+
+    .home-merch-container{
+
+        padding:7rem 0;
+
+    }
+
+    .merch-wrapper{
+
+        width:92%;
+
+    }
+
+    .merch-wrapper h2{
+
+        font-size:3.8rem;
+
+        line-height:1.1;
+
+    }
+
+    .merch-grid{
+
+        gap:2rem;
+
+    }
+
+}
+
+/* ==========================
+   TABLET VERTICAL
+========================== */
+
+@media (max-width:768px){
+
+    .home-merch-container{
+
+        padding:6rem 0;
+
+    }
+
+    .merch-wrapper{
+
+        width:94%;
+
+    }
+
+    .merch-wrapper h2{
+
+        font-size:3.2rem;
+
+    }
+
+    .merch-grid{
+
+        gap:1.5rem;
+
+    }
+
+}
+
+/* ==========================
+   CELULAR
+========================== */
+
+@media (max-width:576px){
+
+    .merch-wrapper{
+
+        width:95%;
+
+    }
+
+    .merch-wrapper h2{
+
+        font-size:2.6rem;
+
+        margin-bottom:3rem;
+
+    }
+
+    .merch-grid{
+
+        display:grid;
+
+        grid-template-columns:repeat(2,1fr);
+
+        justify-items:center;
+
+        gap:1.5rem;
+
+    }
+
+}
+
+/* ==========================
+   CELULARES PEQUEÑOS
+========================== */
+
+@media (max-width:400px){
+
+    .merch-wrapper h2{
+
+        font-size:2.3rem;
+
+    }
+
+    .merch-grid{
+
+        gap:1rem;
+
+    }
+
+}

@@ -1,0 +1,748 @@
+/* ======================================================
+   ABOUT SECTION
+====================================================== */
+
+.about-section-container {
+
+    width: 100%;
+
+    background: var(--black);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 2rem;
+
+    padding: 6rem 0;
+
+}
+
+/* ======================================================
+   COLUMNAS
+====================================================== */
+
+.about-section-title-container,
+.about-section-slider-container {
+
+    width: 45%;
+
+}
+
+/* ======================================================
+   ABOUT TITLE
+====================================================== */
+
+.about-section-title {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 3rem;
+
+}
+
+/* ======================================================
+   LOGO
+====================================================== */
+
+.about-section-logo {
+
+    width: 30rem;
+
+    max-width: 100%;
+
+    object-fit: contain;
+
+    filter: drop-shadow(0 0 8px var(--red));
+
+}
+
+/* ======================================================
+   SLOGAN
+====================================================== */
+
+.about-section-slogan {
+
+    color: var(--red);
+
+    text-align: center;
+
+    font-family: var(--font-title);
+
+    font-size: 2rem;
+
+    font-weight: var(--font-600);
+
+    line-height: 1.4;
+
+    text-shadow: 0 0 15px rgba(136,16,20,.25);
+
+}
+
+/* ======================================================
+   DESCRIPTION
+====================================================== */
+
+.about-section-description {
+
+    width: 100%;
+
+    max-width: 90rem;
+
+    color: var(--white);
+
+    text-align: justify;
+
+    font-family: var(--font-text);
+
+    font-size: var(--size-min);
+
+    line-height: 1.9;
+
+}
+
+/* ======================================================
+   INFO
+====================================================== */
+
+.about-section-info {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 1.5rem;
+
+    color: var(--white);
+
+    font-family: var(--font-title);
+
+    font-size: 1.4rem;
+
+    letter-spacing: .2rem;
+
+    text-transform: uppercase;
+
+}
+
+.separator {
+
+    color: var(--red);
+
+    font-size: 1.8rem;
+
+}
+
+/* ======================================================
+   SLIDER
+====================================================== */
+
+.slider-container {
+
+    width: 100%;
+
+}
+
+/* ======================================================
+   CARD MEMBER
+====================================================== */
+
+.card-member-container {
+
+    width: 100%;
+
+    height: 550px;
+
+    display: flex;
+
+    gap: 4rem;
+
+    padding: 3rem;
+
+    background: rgba(255,255,255,.03);
+
+    border-radius: 2rem;
+
+    overflow: hidden;
+
+}
+
+/* ======================================================
+   IMAGE
+====================================================== */
+
+.member-image {
+
+    width: 40%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.member-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 1.5rem;
+
+}
+
+/* ======================================================
+   INFO
+====================================================== */
+
+.member-info {
+
+    width: 60%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1.5rem;
+
+}
+
+/* ======================================================
+   NAME
+====================================================== */
+
+.member-info h2 {
+
+    color: var(--white);
+
+    font-size: 3.8rem;
+
+    font-family: var(--font-title);
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+}
+
+/* ======================================================
+   NICKNAME
+====================================================== */
+
+.member-info h3 {
+
+    color: var(--red);
+
+    font-size: 2.2rem;
+
+    font-style: italic;
+
+}
+
+/* ======================================================
+   ROLE
+====================================================== */
+
+.member-info h4 {
+
+    color: rgb(180,180,180);
+
+    font-size: 1.6rem;
+
+    letter-spacing: .2rem;
+
+    text-transform: uppercase;
+
+}
+
+/* ======================================================
+   DESCRIPTION
+====================================================== */
+
+.member-info p {
+
+    flex: 1;
+
+    color: rgba(255,255,255,.85);
+
+    font-size: 1.5rem;
+
+    line-height: 1.8;
+
+    text-align: justify;
+
+    overflow-y: auto;
+
+    padding-right: 1rem;
+
+}
+
+/* ======================================================
+   SCROLL
+====================================================== */
+
+.member-info p::-webkit-scrollbar {
+
+    width: 2px;
+
+}
+
+.member-info p::-webkit-scrollbar-track {
+
+    background: transparent;
+
+}
+
+.member-info p::-webkit-scrollbar-thumb {
+
+    background: var(--red);
+
+    border-radius: 2rem;
+
+}
+
+/* ======================================================
+   MINIATURAS DEL SLIDER
+====================================================== */
+
+.slick-thumb {
+
+    display: flex !important;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-top: 2rem;
+
+    list-style: none;
+
+}
+
+.slick-thumb li {
+
+    width: auto !important;
+
+    height: auto !important;
+
+}
+
+.slick-thumb li img {
+
+    width: 100%;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+    filter: grayscale(100%);
+
+    opacity: .6;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+}
+
+.slick-thumb li img:hover {
+
+    opacity: 1;
+
+    transform: scale(1.02);
+
+}
+
+.slick-thumb li.slick-active img {
+
+    filter: grayscale(0);
+
+    opacity: 1;
+
+    box-shadow: 0 0 10px var(--red);
+
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+/* ==========================
+   LAPTOP
+========================== */
+
+@media (max-width:1400px){
+
+    .about-section-title-container,
+    .about-section-slider-container{
+
+        width:47%;
+
+    }
+
+}
+
+/* ==========================
+   TABLET HORIZONTAL
+========================== */
+
+@media (max-width:1200px){
+
+    .about-section-container{
+
+        padding:5rem 3rem;
+
+    }
+
+    .about-section-title-container,
+    .about-section-slider-container{
+
+        width:100%;
+
+    }
+
+    .about-section-title{
+
+        padding:2rem 0;
+
+    }
+
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width:992px){
+
+    .card-member-container{
+
+        height:500px;
+
+        gap:2rem;
+
+    }
+
+    .member-image{
+
+        width:35%;
+
+    }
+
+    .member-info{
+
+        width:65%;
+
+    }
+
+    .member-info h2{
+
+        font-size:3rem;
+
+    }
+
+    .member-info h3{
+
+        font-size:1.9rem;
+
+    }
+
+}
+
+/* ==========================
+   TABLET VERTICAL
+========================== */
+
+@media (max-width:768px){
+
+    .about-section-container{
+
+        padding:4rem 2rem;
+
+    }
+
+    .about-section-title-container{
+/* background:turquoise; */
+        width:100%;
+
+    }
+
+    .about-section-slider-container{
+        width:80%;
+    }
+
+    .about-section-logo{
+
+        width:22rem;
+
+    }
+
+    .about-section-slogan{
+
+        font-size:1.8rem;
+
+    }
+
+    .about-section-description{
+
+        text-align:justify;
+
+    }
+
+    .card-member-container{
+
+        height:100%;
+
+        /* flex-direction:column; */
+
+        gap:2rem;
+
+    }
+
+    /* GIF */
+
+    .member-image{
+
+        width:100%;
+
+        height:100%;
+
+    }
+
+    .member-image img{
+
+        width:auto;
+
+        height:100%;
+
+        object-fit:contain;
+
+    }
+
+    .member-info{
+
+        width:100%;
+        height:100%;
+
+        gap:1rem;
+
+    }
+
+    .member-info h2{
+
+        font-size:var(--size-subtitle);
+
+        text-align:center;
+
+    }
+
+    .member-info h3{
+
+        font-size:var(--size-subtitle);
+
+        text-align:center;
+
+    }
+
+    .member-info h4{
+
+        text-align:center;
+
+    }
+
+    .member-info p{
+
+        max-height:350px;
+        font-size:var(--size-min);
+        flex:none;
+
+    }
+
+    /* Miniaturas */
+
+    .slick-thumb{
+
+        margin-top: 2rem;
+
+        gap:.6rem;
+
+    }
+
+    .slick-thumb li img{
+
+        height:90px;
+
+    }
+
+}
+
+/* ==========================
+   CELULARES
+========================== */
+
+@media (max-width:576px){
+
+    .about-section-container{
+
+        padding:4rem 1.5rem;
+
+    }
+
+    .about-section-logo{
+
+        width:18rem;
+
+    }
+
+    .about-section-slogan{
+
+        font-size:1.6rem;
+
+    }
+
+    .about-section-description{
+
+        font-size:var(--size-min);
+
+        line-height:1.8;
+
+    }
+
+    .about-section-info{
+
+        gap:1rem;
+
+        font-size:1.2rem;
+
+    }
+
+    .separator{
+
+        display:none;
+
+    }
+
+    .card-member-container{
+
+        flex-direction:column;
+        /* background:pink; */
+
+        height:100%;
+
+        padding:2rem;
+
+    }
+
+    .member-image{
+
+        height:240px;
+
+    }
+
+    .member-info h2{
+
+        font-size:var(--size-text);
+
+    }
+
+    .member-info h4{
+
+        font-size:1.3rem;
+
+    }
+
+    .member-info p{
+
+        font-size:1.35rem;
+
+        max-height:300px;
+
+    }
+
+    .slick-thumb{
+
+        /* background:pink; */
+
+        margin-top: 2rem;
+
+    }
+
+    .slick-thumb li img{
+
+        height:70px;
+
+    }
+
+}
+
+/* ==========================
+   CELULARES PEQUEÑOS
+========================== */
+
+@media (max-width:400px){
+
+    .about-section-logo{
+
+        width:15rem;
+
+    }
+
+    .card-member-container{
+
+        height:650px;
+
+    }
+
+    .member-image{
+
+        height:200px;
+
+    }
+
+    .member-info h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .member-info h3{
+
+        font-size:1.5rem;
+
+    }
+
+    .member-info p{
+
+        font-size:1.3rem;
+
+    }
+
+    .slick-thumb li img{
+
+        height:58px;
+
+    }
+
+}

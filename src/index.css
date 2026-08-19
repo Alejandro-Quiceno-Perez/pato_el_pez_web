@@ -2,30 +2,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-  --red: #881014;
-  --black: #000000;
-  --white: #FCFCFC;
-  --azul: #254184;
-  --font-text: "Poppins", sans-serif;
-  --font-title: "Inter", sans-serif;
-  --font-400: 400;
-  --font-500: 700;
-  --font-600: 900;
-  --size-title: 4rem;
-  --size-text: 3rem;
-  --size-subtitle: 2rem;
-  --size-min: 1.5rem;
+
+    --color-red:#881014;
+    --color-black:#000000;
+    --color-white:#FCFCFC;
+    --color-blue:#254184;
+
+    --font-family-text:"Poppins",sans-serif;
+    --font-family-title:"Inter",sans-serif;
+
+    --font-weight-regular:400;
+    --font-weight-medium:700;
+    --font-weight-bold:900;
+
+    --size-title:4rem;
+    --size-text:3rem;
+    --size-subtitle:2rem;
+    --size-min:1.4rem;
+    --size-icon-large:2rem;
+
+    --red:var(--color-red);
+    --black:var(--color-black);
+    --white:var(--color-white);
+    --blanco:var(--color-white);
+    --negro:var(--color-black);
+    --azul:var(--color-blue);
+
+    --font-text:var(--font-family-text);
+    --font-title:var(--font-family-title);
+
+    --font-400:var(--font-weight-regular);
+    --font-500:var(--font-weight-medium);
+    --font-600:var(--font-weight-bold);
+
+    --font-size-extra-large:var(--size-icon-large);
 
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
+*,
+*::before,
+*::after{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
 }
 
-html {
-  font-size: 62.5%;
-  font-family: var(--font-title);
+html{
+
+    font-size:62.5%;
+
+    scroll-behavior:smooth;
+
+    background:var(--black);
+
+}
+
+body{
+
+    min-height:100vh;
+
+    background:var(--black);
+
+    color:var(--white);
+
+    font-family:var(--font-title);
+
+    overflow-x:hidden;
+
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+}
+
+#root{
+
+    min-height:100vh;
+
+    background:var(--black);
+
+}
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+video{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+button,
+input,
+textarea,
+select{
+
+    font:inherit;
+
+}
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+html::-webkit-scrollbar{
+
+    width:0;
+
 }

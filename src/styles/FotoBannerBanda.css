@@ -1,0 +1,134 @@
+.foto-banner-banda-container {
+    background: rgb(255, 253, 253);
+    width: 100%;
+    height: 500px;
+
+}
+
+.foto-banner-banda {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-banner-banda img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ======================================================
+   FOTO BANNER BANDA
+====================================================== */
+
+.foto-banner-banda-container{
+
+    width:100%;
+
+    height:500px;
+
+    background:var(--black);
+
+}
+
+.foto-banner-banda{
+
+    width:100%;
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.foto-banner-banda img{
+
+    display:block;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/* ======================================================
+   LAPTOP
+====================================================== */
+
+@media (max-width:1200px){
+
+    .foto-banner-banda-container{
+
+        height:420px;
+
+    }
+
+}
+
+/* ======================================================
+   TABLET
+====================================================== */
+
+@media (max-width:992px){
+
+    .foto-banner-banda-container{
+
+        height:350px;
+
+    }
+
+}
+
+/* ======================================================
+   TABLET VERTICAL
+====================================================== */
+
+@media (max-width:768px){
+
+    .foto-banner-banda-container{
+
+        height:auto;
+
+    }
+
+    .foto-banner-banda img{
+
+        width:100%;
+
+        height:auto;
+
+        object-fit:contain;
+
+    }
+
+}
+
+/* ======================================================
+   CELULARES
+====================================================== */
+
+@media (max-width:480px){
+
+    .foto-banner-banda-container{
+
+        height:auto;
+
+    }
+
+    .foto-banner-banda img{
+
+        width:100%;
+
+        height:auto;
+
+    }
+
+}
