@@ -52,25 +52,25 @@ const AlbumSection = ({ album }) => {
 
                     <div className="album-buttons">
 
-                        <BtnButton
-                            component="a"
-                            href={album.spotify}
-                            target="_blank"
-                            className="btn btn-red"
-                        >
-                            Escuchar en Spotify
-                        </BtnButton>
+    <BtnButton
+        component="a"
+        href={album.spotify}
+        target="_blank"
+        className="music-btn music-btn-primary"
+    >
+        Escuchar en Spotify
+    </BtnButton>
 
-                        <BtnButton
-                            component="a"
-                            href={album.youtube}
-                            target="_blank"
-                            className="btn btn-outline"
-                        >
-                            YouTube
-                        </BtnButton>
+    <BtnButton
+        component="a"
+        href={album.youtube}
+        target="_blank"
+        className="music-btn music-btn-outline"
+    >
+        YouTube
+    </BtnButton>
 
-                    </div>
+</div>
 
                 </div>
 

@@ -57,7 +57,7 @@ const MusicCard = ({ song, number }) => {
                     component="a"
                     href={song.spotify}
                     target="_blank"
-                    className="btn btn-spotify"
+                    className="music-btn music-btn-spotify"
                 >
                     Spotify
                 </BtnButton>
@@ -66,7 +66,7 @@ const MusicCard = ({ song, number }) => {
                     component="a"
                     href={song.youtube}
                     target="_blank"
-                    className="btn btn-youtube"
+                    className="music-btn music-btn-youtube"
                 >
                     YouTube
                 </BtnButton>

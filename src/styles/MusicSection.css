@@ -231,54 +231,191 @@
 
 
 /* ==========================================
-   BUTTONS
+   BOTONES DEL ALBUM
 ========================================== */
 
-.song-actions,
-.album-buttons {
-    display: flex;
-    gap: 2rem;
-    margin-top: 1rem;
+.album-buttons{
+
+    display:flex;
+
+    gap:1.5rem;
+
+    margin-top:1rem;
+
 }
 
-.song-actions a,
-.album-buttons a {
-    text-decoration: none;
-    padding: 1.5rem 3rem;
-    border-radius: 1rem;
 
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    font-weight: 700;
+/* ==========================================
+   BOTON BASE
+========================================== */
 
-    transition: .3s;
+.music-btn{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    padding:1.3rem 2.5rem;
+
+    border-radius:1rem;
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    line-height:1;
+
+    white-space:nowrap;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease,
+        border-color .3s ease,
+        color .3s ease;
+
 }
 
-.song-actions a:first-child,
-.album-buttons a:first-child {
-    background: var(--red);
-    color: white;
+
+/* ==========================================
+   BOTON PRINCIPAL
+========================================== */
+
+.music-btn-primary{
+
+    background:var(--red);
+
+    color:white;
+
+    border:2px solid var(--red);
+
 }
 
-.song-actions a:first-child:hover,
-.album-buttons a:first-child:hover {
-    transform: translateY(-5px);
+.music-btn-primary:hover{
+
+    transform:translateY(-4px);
 
     box-shadow:
-        0 10px 30px rgba(136, 16, 20, .4);
+        0 10px 30px rgba(136,16,20,.4);
+
 }
 
-.song-actions a:last-child,
-.album-buttons a:last-child {
-    border: 2px solid rgba(255, 255, 255, .2);
-    color: white;
+
+/* ==========================================
+   BOTON OUTLINE
+========================================== */
+
+.music-btn-outline{
+
+    background:transparent;
+
+    color:white;
+
+    border:2px solid rgba(255,255,255,.2);
+
 }
 
-.song-actions a:last-child:hover,
-.album-buttons a:last-child:hover {
-    border-color: var(--red);
-    color: var(--red);
-    transform: translateY(-5px);
+.music-btn-outline:hover{
+
+    border-color:var(--red);
+
+    color:var(--red);
+
+    transform:translateY(-4px);
+
+}
+
+
+/* ==========================================
+   BOTONES DE CANCIONES
+========================================== */
+
+.song-actions{
+
+    display:flex;
+
+    gap:1rem;
+
+    opacity:0;
+
+    transform:translateX(20px);
+
+    transition:
+        opacity .35s ease,
+        transform .35s ease;
+
+}
+
+
+/* Mostrar al pasar sobre la canción */
+
+.song-card:hover .song-actions{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+
+/* ==========================================
+   SPOTIFY
+========================================== */
+
+.music-btn-spotify{
+
+    background:var(--red);
+
+    color:white;
+
+    border:1px solid var(--red);
+    
+
+}
+
+
+/* ==========================================
+   YOUTUBE
+========================================== */
+
+.music-btn-youtube{
+
+    background:transparent;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.2);
+
+}
+
+
+/* ==========================================
+   HOVER CANCIONES
+========================================== */
+
+.music-btn-spotify:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(136,16,20,.35);
+
+}
+
+.music-btn-youtube:hover{
+
+    color:var(--red);
+
+    border-color:var(--red);
+
+    transform:translateY(-3px);
+
 }
 
 /* =====================================================
@@ -412,7 +549,7 @@
 
     overflow: hidden;
 
-    border-radius: 1.4rem;
+    border-radius: 5rem;
 
     flex-shrink: 0;
 
@@ -519,443 +656,868 @@
 
 
 /* ======================================================
-   RESPONSIVE MUSIC
+   RESPONSIVE
 ====================================================== */
 
-/* ==========================
+
+/* ======================================================
    LAPTOP
-========================== */
+====================================================== */
 
-@media (max-width:1200px) {
+@media (max-width:1200px){
 
-    .music-container {
+    .music-container{
 
-        width: 90%;
-
-    }
-
-    .album-section {
-
-        gap: 4rem;
+        width:90%;
 
     }
 
-    .album-cover {
+    /* ==================================================
+       ALBUM
+    ================================================== */
 
-        width: 32%;
+    .album-section{
 
-        height: 52rem;
-
-    }
-
-    .album-header {
-
-        width: 68%;
+        gap:4rem;
 
     }
 
-    .album-title {
+    .album-header{
 
-        font-size: 4.8rem;
+        width:60%;
 
     }
 
-    .album-description {
+    .album-cover{
 
-        font-size: 1.6rem;
+        width:35%;
+
+        height:50rem;
+
+    }
+
+    .album-title{
+
+        font-size:clamp(3rem,5vw,5rem);
+
+    }
+
+    .album-description{
+
+        font-size:1.6rem;
+
+    }
+
+    /* ==================================================
+       DETAILS
+    ================================================== */
+
+    .album-details{
+
+        gap:.8rem;
+
+    }
+
+    .album-details span{
+
+        padding:.8rem 1.4rem;
+
+        font-size:1.2rem;
+
+    }
+
+    /* ==================================================
+       ALBUM BUTTONS
+    ================================================== */
+
+    .album-buttons{
+
+        gap:1.5rem;
+
+    }
+
+    .music-btn{
+
+        padding:1.2rem 2.5rem;
+
+        font-size:1.3rem;
+
+    }
+
+    /* ==================================================
+       SONG CARD
+    ================================================== */
+
+    .music-container .song-card{
+
+        grid-template-columns:
+            60px
+            80px
+            1fr
+            auto;
+
+        gap:1.5rem;
+
+        padding:1.5rem 1.8rem;
+
+    }
+
+    .song-cover{
+
+        width:80px;
+
+        height:80px;
+
+    }
+
+    .song-info h3{
+
+        font-size:2rem;
+
+    }
+
+    .song-meta{
+
+        gap:1.5rem;
+
+    }
+
+    .song-meta span{
+
+        font-size:1.3rem;
+
+    }
+
+    .song-actions{
+
+        gap:.7rem;
 
     }
 
 }
 
 
-/* ==========================
+/* ======================================================
    TABLET
-========================== */
+====================================================== */
 
-@media (max-width:992px) {
+@media (max-width:992px){
 
-    .music-container {
+    .music-page{
 
-        width: 94%;
-
-    }
-
-    .album-section {
-
-        gap: 3rem;
+        padding-top:4rem;
 
     }
 
-    .album-cover {
+    .music-container{
 
-        width: 35%;
-
-        height: 45rem;
+        width:92%;
 
     }
 
-    .album-header {
+    /* ==================================================
+       ALBUM
+    ================================================== */
 
-        width: 65%;
+    .album-section{
 
-    }
+        flex-direction:column;
 
-    .album-title {
-
-        font-size: 4rem;
-
-    }
-
-    .album-description {
-
-        font-size: 1.5rem;
+        gap:3rem;
 
     }
 
-    .album-details span {
+    .album-header{
 
-        font-size: 1.2rem;
-
-    }
-
-    .music-container .song-card {
-
-        grid-template-columns: 60px 75px 1fr auto;
-
-        gap: 1.5rem;
-
-        padding: 1.5rem;
+        width:100%;
 
     }
 
-    .song-cover {
+    .album-info{
 
-        width: 75px;
-
-        height: 75px;
+        gap:1.5rem;
 
     }
 
-    .song-info h3 {
+    .album-title{
 
-        font-size: 1.9rem;
+        font-size:4rem;
+
+    }
+
+    .album-description{
+
+        font-size:1.5rem;
+
+        line-height:1.7;
+
+    }
+
+    /* ==================================================
+       DETAILS
+    ================================================== */
+
+    .album-details{
+
+        gap:.8rem;
+
+    }
+
+    .album-details span{
+
+        padding:.7rem 1.3rem;
+
+        font-size:1.1rem;
+
+    }
+
+    /* ==================================================
+       ALBUM BUTTONS
+    ================================================== */
+
+    .album-buttons{
+
+        gap:1rem;
+
+    }
+
+    .music-btn{
+
+        padding:1rem 1.8rem;
+
+        font-size:1.1rem;
+
+    }
+
+    /* ==================================================
+       SONG CARD
+    ================================================== */
+
+    .music-container .song-card{
+
+        grid-template-columns:
+            50px
+            75px
+            1fr;
+
+        gap:1.2rem;
+
+        padding:1.1rem 1.3rem;
+
+        min-height:160px;
+
+    }
+
+    .song-number span{
+
+        font-size:1.8rem;
+
+    }
+
+    .song-cover{
+
+        width:75px;
+
+        height:75px;
+
+    }
+
+    .song-info{
+
+        gap:.5rem;
+
+    }
+
+    .song-info h3{
+
+        font-size:1.8rem;
+
+    }
+
+    .song-meta{
+
+        gap:1rem;
+
+    }
+
+    .song-meta span{
+
+        font-size:1.2rem;
+
+    }
+
+    /* ==================================================
+       SONG BUTTONS
+    ================================================== */
+
+    .song-actions{
+
+        grid-column:2 / -1;
+
+        display:flex;
+
+        gap:.5rem;
+
+        opacity:1;
+
+        transform:none;
+
+        margin-top:0;
+
+    }
+
+    .song-actions .music-btn{
+
+        flex:1;
+
+        padding:.65rem .9rem;
+
+        font-size:.95rem;
 
     }
 
 }
 
 
-/* ==========================
+/* ======================================================
    TABLET VERTICAL
-========================== */
+====================================================== */
 
-@media (max-width:768px) {
+@media (max-width:768px){
 
-    .music-page {
+    .music-page{
 
-        padding-top: 4rem;
-
-    }
-
-    .music-container {
-
-        width: 94%;
+        padding-top:3rem;
 
     }
 
-    .album-section {
+    .music-container{
 
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 3rem;
+        width:94%;
 
     }
 
-    .album-cover {
+    /* ==================================================
+       TITULO
+    ================================================== */
 
-        width: 320px;
+    .music-title span{
 
-        height: auto;
+        font-size:1.2rem;
 
-    }
-
-    .album-header {
-
-        width: 100%;
+        letter-spacing:.3rem;
 
     }
 
-    .album-title {
+    /* ==================================================
+       ALBUM
+    ================================================== */
 
-        font-size: 3.5rem;
+    .album-section{
 
-        text-align: center;
-
-    }
-
-    .album-year {
-
-        text-align: center;
+        gap:2.5rem;
 
     }
 
-    .album-description {
+    .album-info{
 
-        text-align: center;
-
-    }
-
-    .album-details {
-
-        justify-content: center;
+        gap:1.2rem;
 
     }
 
-    .album-buttons {
+    .album-year{
 
-        justify-content: center;
+        font-size:1.2rem;
 
-        flex-wrap: wrap;
-
-    }
-
-    .music-container .song-card {
-
-        grid-template-columns: 55px 70px 1fr;
+        letter-spacing:.25rem;
 
     }
 
-    .song-actions {
+    .album-title{
 
-        grid-column: 1/-1;
+        font-size:3.4rem;
 
-        justify-content: flex-end;
-
-        opacity: 1;
-
-        transform: none;
-
-        margin-top: 1rem;
+        line-height:1;
 
     }
 
-    .song-cover {
+    .album-description{
 
-        width: 70px;
+        font-size:1.4rem;
 
-        height: 70px;
-
-    }
-
-    .song-info h3 {
-
-        font-size: 1.7rem;
+        line-height:1.7;
 
     }
 
-    .song-actions a,
-    .album-buttons a {
+    /* ==================================================
+       DETAILS
+    ================================================== */
 
-        padding: 1rem 1.8rem;
+    .album-details{
 
-        font-size: 1.2rem;
+        gap:.7rem;
+
+    }
+
+    .album-details span{
+
+        padding:.6rem 1.1rem;
+
+        font-size:1rem;
+
+    }
+
+    /* ==================================================
+       ALBUM BUTTONS
+    ================================================== */
+
+    .album-buttons{
+
+        gap:.7rem;
+
+    }
+
+    .music-btn{
+
+        padding:.9rem 1.3rem;
+
+        font-size:1rem;
+
+    }
+
+    /* ==================================================
+       SONG CARD
+    ================================================== */
+
+    .music-container .song-card{
+
+        grid-template-columns:
+            40px
+            65px
+            1fr;
+
+        gap:1rem;
+
+        padding:1rem 1.2rem;
+
+        min-height:160px;
+
+    }
+
+    .song-number span{
+
+        font-size:1.6rem;
+
+    }
+
+    .song-cover{
+
+        width:65px;
+
+        height:65px;
+
+    }
+
+    .song-info{
+
+        gap:.4rem;
+
+    }
+
+    .song-info h3{
+
+        font-size:1.5rem;
+
+        line-height:1.2;
+
+    }
+
+    .song-meta{
+
+        gap:.7rem;
+
+    }
+
+    .song-meta span{
+
+        font-size:1rem;
+
+    }
+
+    /* ==================================================
+       SONG BUTTONS
+    ================================================== */
+
+    .song-actions{
+
+        grid-column:1 / -1;
+
+        display:flex;
+
+        gap:.4rem;
+
+        opacity:1;
+
+        transform:none;
+
+        margin-top:0;
+
+    }
+
+    .song-actions .music-btn{
+
+        flex:1;
+
+        width:auto;
+
+        padding:.6rem .8rem;
+
+        font-size:.9rem;
 
     }
 
 }
 
 
-/* ==========================
+/* ======================================================
    CELULAR
-========================== */
+====================================================== */
 
-@media (max-width:576px) {
+@media (max-width:576px){
 
-    .music-container {
+    .music-page{
 
-        width: 92%;
+        padding-top:2.5rem;
 
-    }
-
-    .album-cover {
-
-        width: 260px;
+        padding-bottom:3rem;
 
     }
 
-    .album-title {
+    .music-container{
 
-        font-size: 2.8rem;
-
-    }
-
-    .album-description {
-
-        font-size: 1.35rem;
-
-        line-height: 1.8;
+        width:92%;
 
     }
 
-    .album-details {
+    /* ==================================================
+       TITULO
+    ================================================== */
 
-        justify-content: center;
+    .music-title{
 
-    }
-
-    .album-details span {
-
-        font-size: 1.1rem;
+        margin-bottom:0;
 
     }
 
-    .album-buttons {
+    .music-title span{
 
-        flex-direction: column;
+        font-size:1.1rem;
 
-    }
-
-    .album-buttons a {
-
-        width: 100%;
-
-        text-align: center;
+        letter-spacing:.25rem;
 
     }
 
-    .music-container .song-card {
+    /* ==================================================
+       ALBUM
+    ================================================== */
 
-        grid-template-columns: 60px 1fr;
+    .album-section{
 
-        gap: 1rem;
-
-    }
-
-    .song-number {
-
-        display: none;
+        gap:2rem;
 
     }
 
-    .song-cover {
+    .album-info{
 
-        width: 60px;
-
-        height: 60px;
+        gap:1rem;
 
     }
 
-    .song-info {
+    .album-year{
 
-        gap: .5rem;
-
-    }
-
-    .song-info h3 {
-
-        font-size: 1.5rem;
+        font-size:1.1rem;
 
     }
 
-    .song-meta {
+    .album-title{
 
-        gap: 1rem;
-
-    }
-
-    .song-meta span {
-
-        font-size: 1.2rem;
+        font-size:2.7rem;
 
     }
 
-    .song-actions,
-.album-buttons{
+    .album-description{
 
-    width:100%;
+        font-size:1.25rem;
 
-    display:flex;
+        line-height:1.7;
 
-    gap:.8rem;
+    }
+
+    /* ==================================================
+       DETAILS
+    ================================================== */
+
+    .album-details{
+
+        gap:.5rem;
+
+    }
+
+    .album-details span{
+
+        padding:.5rem .8rem;
+
+        font-size:.9rem;
+
+    }
+
+    /* ==================================================
+       ALBUM BUTTONS
+    ================================================== */
+
+    .album-buttons{
+
+        gap:.6rem;
+
+    }
+
+    .music-btn{
+
+        padding:.8rem 1rem;
+
+        font-size:.9rem;
+
+    }
+
+    /* ==================================================
+       SONG CARD
+    ================================================== */
+
+    .album-songs{
+
+        gap:.8rem;
+
+    }
+
+    .music-container .song-card{
+
+        grid-template-columns:
+            32px
+            55px
+            1fr;
+
+        gap:.8rem;
+
+        padding:.8rem 1rem;
+
+        min-height:130px;
+
+    }
+
+    .song-number span{
+
+        font-size:1.4rem;
+
+    }
+
+    .song-cover{
+
+        width:55px;
+
+        height:55px;
+
+    }
+
+    .song-info{
+
+        gap:.3rem;
+
+        min-width:0;
+
+    }
+
+    .song-info h3{
+
+        font-size:1.3rem;
+
+        line-height:1.2;
+
+    }
+
+    .song-meta{
+
+        gap:.5rem;
+
+    }
+
+    .song-meta span{
+
+        font-size:.85rem;
+
+    }
+
+    /* ==================================================
+       SONG BUTTONS
+    ================================================== */
+
+    .song-actions{
+
+        grid-column:1 / -1;
+
+        display:flex;
+
+        gap:.35rem;
+
+        opacity:1;
+
+        transform:none;
+
+        margin-top:0;
+
+    }
+
+    .song-actions .music-btn{
+
+        flex:1;
+
+        width:100%;
+
+        padding:.55rem .7rem;
+
+        font-size:.8rem;
+
+    }
 
 }
 
-.song-actions a,
-.album-buttons a{
 
-    flex:1;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    padding:.9rem 1rem;
-
-    font-size:1rem;
-
-    font-weight:600;
-
-    text-align:center;
-
-    border-radius:.8rem;
-
-}
-
-    
-
-}
-
-
-/* ==========================
+/* ======================================================
    CELULARES PEQUEÑOS
-========================== */
+====================================================== */
 
-@media (max-width:400px) {
+@media (max-width:400px){
 
-    .album-cover {
+    .music-container{
 
-        width: 220px;
-
-    }
-
-    .album-title {
-
-        font-size: 2.4rem;
+        width:94%;
 
     }
 
-    .album-description {
+    /* ==================================================
+       ALBUM
+    ================================================== */
 
-        font-size: 1.25rem;
+    .album-title{
 
-    }
-
-    .song-cover {
-
-        width: 55px;
-
-        height: 55px;
+        font-size:2.4rem;
 
     }
 
-    .song-info h3 {
+    .album-description{
 
-        font-size: 1.35rem;
+        font-size:1.15rem;
 
     }
 
-    .song-actions a,
-.album-buttons a{
+    /* ==================================================
+       DETAILS
+    ================================================== */
 
-    padding:.8rem 1rem;
+    .album-details{
 
-    font-size:.95rem;
+        gap:.4rem;
 
-}
+    }
+
+    .album-details span{
+
+        padding:.45rem .7rem;
+
+        font-size:.8rem;
+
+    }
+
+    /* ==================================================
+       ALBUM BUTTONS
+    ================================================== */
+
+    .music-btn{
+
+        padding:.7rem .7rem;
+
+        font-size:.8rem;
+
+    }
+
+    /* ==================================================
+       SONG CARD
+    ================================================== */
+
+    .music-container .song-card{
+
+        grid-template-columns:
+            28px
+            50px
+            1fr;
+
+        gap:.6rem;
+
+        padding:.7rem .8rem;
+
+        min-height:110px;
+
+    }
+
+    .song-number span{
+
+        font-size:1.3rem;
+
+    }
+
+    .song-cover{
+
+        width:50px;
+
+        height:50px;
+
+    }
+
+    .song-info{
+
+        gap:.25rem;
+
+    }
+
+    .song-info h3{
+
+        font-size:1.15rem;
+
+    }
+
+    .song-meta span{
+
+        font-size:.75rem;
+
+    }
+
+    /* ==================================================
+       SONG BUTTONS
+    ================================================== */
+
+    .song-actions{
+
+        gap:.3rem;
+
+        margin-top:0;
+
+    }
+
+    .song-actions .music-btn{
+
+        padding:.5rem .6rem;
+
+        font-size:.75rem;
+
+    }
 
 }

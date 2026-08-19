@@ -62,14 +62,14 @@ const Merch = [
         "image2": "/public/images/Merch/termo2.webp",
         "sizes": ["No Aplica"]
     },
-    {
-        "id": 8,
-        "name": "Llaveros",
-        "descripcion": "Llaveros Logo Pato El Pez",
-        "price": 30000,
-        "image": "/public/images/",
-        "sizes": ["No Aplica"]
-    },
+    // {
+    //     "id": 8,
+    //     "name": "Llaveros",
+    //     "descripcion": "Llaveros Logo Pato El Pez",
+    //     "price": 30000,
+    //     "image": "/public/images/",
+    //     "sizes": ["No Aplica"]
+    // },
     {
         "id": 9,
         "name": "Gorro Beanie",
@@ -133,15 +133,15 @@ const Merch = [
         "image2": "/public/images/Merch/lat_rojo.webp",
         "sizes": ["S", "M", "L","XL"]
     },
-    {
-        "id": 16,
-        "name": "Cadena",
-        "descripcion": "Cadena Logo de Pato El Pez",
-        "price": 25000,
-        "image": "/public/images/Merch/cadena.png",
-        "image2": "/public/images/Merch/cadena.png",
-        "sizes": ["No Aplica"]
-    },
+    // {
+    //     "id": 16,
+    //     "name": "Cadena",
+    //     "descripcion": "Cadena Logo de Pato El Pez",
+    //     "price": 25000,
+    //     "image": "/public/images/Merch/cadena.png",
+    //     "image2": "/public/images/Merch/cadena.png",
+    //     "sizes": ["No Aplica"]
+    // },
     {
         "id": 17,
         "name": "Camiseta Roja",
