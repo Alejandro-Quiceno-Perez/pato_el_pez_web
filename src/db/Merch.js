@@ -23,7 +23,7 @@ const Merch = [
         "descripcion": "Taza con diseño de pato el pez",
         "price": 25000,
         "image": "/public/images/Merch/mug.webp",
-        "image2": "/public/images/Merch/mug.webp",
+        "image2": "/public/images/Merch/mug_zomm.webp",
         "sizes": ["No Aplica"]
     },
     {
