@@ -1,16 +1,15 @@
 {
   "name": "patoelpezpage",
-  "homepage": "https://Alejandro-Quiceno-Perez.github.io/pato_el_pez_web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/copy-index.cjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap-icons": "^1.13.1",
@@ -30,8 +29,8 @@
     "eslint": "^9.39.4",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
-    "globals": "^17.4.0",
     "gh-pages": "^6.3.0",
+    "globals": "^17.4.0",
     "vite": "^8.0.4"
   }
 }

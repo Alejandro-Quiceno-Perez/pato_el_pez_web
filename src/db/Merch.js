@@ -4,8 +4,8 @@ const Merch = [
         "name": "Camiseta Negra",
         "descripcion": "Diseño Clasico",
         "price": 35000,
-        "image": "/images/Merch/Camisa_Negra.webp",
-        "image2": "/images/Merch/Posterior_camisa.webp",
+        "image": `${import.meta.env.BASE_URL}images/Merch/Camisa_Negra.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/Posterior_camisa.webp`,
         "sizes": ["S", "M", "L","XL"]
     },
     {
@@ -13,8 +13,8 @@ const Merch = [
         "name": "Camiseta Negra OS",
         "descripcion": "Diseño Mejor Que esto",
         "price": 55000,
-        "image": "/images/Merch/camisa_mejor_negro_frente.webp",
-        "image2": "/images/Merch/Posterior_camisa.webp",
+        "image": `${import.meta.env.BASE_URL}images/Merch/camisa_mejor_negro_frente.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/Posterior_camisa.webp`,
         "sizes": ["S", "M", "L","XL"]
     },
     {
@@ -22,8 +22,8 @@ const Merch = [
         "name": "Mug",
         "descripcion": "Taza con diseño de pato el pez",
         "price": 25000,
-        "image": "/images/Merch/mug.webp",
-        "image2": "/images/Merch/mug_zomm.webp",
+        "image": `${import.meta.env.BASE_URL}images/Merch/mug.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/mug_zomm.webp`,
         "sizes": ["No Aplica"]
     },
     {
@@ -31,8 +31,8 @@ const Merch = [
         "name": "Buso Negro",
         "descripcion": "Diseño Mejor Que esto",
         "price": 80000,
-        "image": "/images/Merch/Mejor_que_esto_buso_negro.webp",
-        "image2": "/images/Merch/lat_negro.webp",
+        "image": `${import.meta.env.BASE_URL}images/Merch/Mejor_que_esto_buso_negro.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/lat_negro.webp`,
         "sizes": ["S", "M", "L","XL"]
     },
     {
@@ -40,8 +40,8 @@ const Merch = [
         "name": "Camiseta Roja OS",
         "descripcion": "Diseño Mejor Que esto",
         "price": 55000,
-        "image": "/images/Merch/camisa_mejor_rojo_frente.webp",
-        "image2": "/images/Merch/posterior_camisa_rojo.webp",
+        "image": `${import.meta.env.BASE_URL}images/Merch/camisa_mejor_rojo_frente.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/posterior_camisa_rojo.webp`,
         "sizes": ["No Aplica"]
     },
     {
@@ -49,8 +49,8 @@ const Merch = [
         "name": "Gorras",
         "descripcion": "Gorra Plana Logo Pato El Pez",
         "price": 45000,
-        "image": "/images/Merch/gorra.webp",
-        "image2": "/images/Merch/gorra.webp",
+        "image": `${import.meta.env.BASE_URL}images/Merch/gorra.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/gorra.webp`,
         "sizes": ["No Aplica"]
     },
     {
@@ -58,8 +58,8 @@ const Merch = [
         "name": "Termo",
         "descripcion": "Termo Diseño Pato El Pez",
         "price": 30000,
-        "image": "/images/Merch/termo.webp",
-        "image2": "/images/Merch/termo2.webp",
+        "image": `${import.meta.env.BASE_URL}images/Merch/termo.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/termo2.webp`,
         "sizes": ["No Aplica"]
     },
     {
@@ -67,8 +67,8 @@ const Merch = [
         "name": "Gorro Beanie",
         "descripcion": "Gorro Logo Pato El Pez",
         "price": 35000,
-        "image": "/images/Merch/beanie.webp",
-        "image2": "/images/Merch/beanie.webp",
+        "image": `${import.meta.env.BASE_URL}images/Merch/beanie.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/beanie.webp`,
         "sizes": ["No Aplica"]
     },
     {
@@ -76,8 +76,8 @@ const Merch = [
         "name": "Camiseta Roja",
         "descripcion": "Diseño Mejor Que esto",
         "price": 35000,
-        "image": "/images/Merch/camisa_mejor_rojo_frente.webp",
-        "image2": "/images/Merch/posterior_camisa_rojo.webp",
+        "image": `${import.meta.env.BASE_URL}images/Merch/camisa_mejor_rojo_frente.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/posterior_camisa_rojo.webp`,
         "sizes": ["No Aplica"]
     },
     {
@@ -85,8 +85,8 @@ const Merch = [
         "name": "Buso Rojo",
         "descripcion": "Diseño Mejor Que esto",
         "price": 80000,
-        "image": "/images/Merch/Mejor_que_esto_buso_rojo.webp",
-        "image2": "/images/Merch/lat_rojo.webp",
+        "image": `${import.meta.env.BASE_URL}images/Merch/Mejor_que_esto_buso_rojo.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/lat_rojo.webp`,
         "sizes": ["S", "M", "L","XL"]
     },
     {
@@ -94,8 +94,8 @@ const Merch = [
         "name": "Camiseta Negra OS",
         "descripcion": "Diseño Clasico",
         "price": 35000,
-        "image": "/images/Merch/Camisa_Negra.webp",
-        "image2": "/images/Merch/Posterior_camisa.webp",
+        "image": `${import.meta.env.BASE_URL}images/Merch/Camisa_Negra.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/Posterior_camisa.webp`,
         "sizes": ["S", "M", "L","XL"]
     },
     {
@@ -103,8 +103,8 @@ const Merch = [
         "name": "Camiseta Negra",
         "descripcion": "Diseño Mejor Que esto",
         "price": 55000,
-        "image": "/images/Merch/camisa_mejor_negro_frente.webp",
-        "image2": "/images/Merch/Posterior_camisa.webp",
+        "image": `${import.meta.env.BASE_URL}images/Merch/camisa_mejor_negro_frente.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/Posterior_camisa.webp`,
         "sizes": ["S", "M", "L","XL"]
     },
     {
@@ -112,8 +112,8 @@ const Merch = [
         "name": "Buso Negro",
         "descripcion": "Diseño Clasico",
         "price": 80000,
-        "image": "/images/Merch/Buso_negro_pato.webp",
-        "image2": "/images/Merch/lat_negro.webp",
+        "image": `${import.meta.env.BASE_URL}images/Merch/Buso_negro_pato.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/lat_negro.webp`,
         "sizes": ["S", "M", "L","XL"]
     },
     {
@@ -121,8 +121,8 @@ const Merch = [
         "name": "Buso Rojo",
         "descripcion": "Diseño Clasico",
         "price": 80000,
-        "image": "/images/Merch/Buso_rojo_pato.webp",
-        "image2": "/images/Merch/lat_rojo.webp",
+        "image": `${import.meta.env.BASE_URL}images/Merch/Buso_rojo_pato.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/lat_rojo.webp`,
         "sizes": ["S", "M", "L","XL"]
     },
     {
@@ -130,8 +130,8 @@ const Merch = [
         "name": "Camiseta Roja",
         "descripcion": "Diseño Clasico",
         "price": 35000,
-        "image": "/images/Merch/camisa_pato_rojo_frente.webp",
-        "image2": "/images/Merch/posterior_camisa_rojo.webp",
+        "image": `${import.meta.env.BASE_URL}images/Merch/camisa_pato_rojo_frente.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/posterior_camisa_rojo.webp`,
         "sizes": ["No Aplica"]
     },
     {
@@ -139,8 +139,8 @@ const Merch = [
         "name": "Camiseta Roja OS",
         "descripcion": "Diseño Mejor Que esto",
         "price": 35000,
-        "image": "/images/Merch/camisa_pato_rojo_frente.webp",
-        "image2": "/images/Merch/posterior_camisa_rojo.webp",
+        "image": `${import.meta.env.BASE_URL}images/Merch/camisa_pato_rojo_frente.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/posterior_camisa_rojo.webp`,
         "sizes": ["No Aplica"]
     },
 ]

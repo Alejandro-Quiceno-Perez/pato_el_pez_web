@@ -4,7 +4,7 @@ import { HiOutlineBars3, HiOutlineXMark } from "react-icons/hi2";
 
 import "../../styles/header.css";
 
-import logo from "/logo_letras_blanco.webp";
+const logo = `${import.meta.env.BASE_URL}logo_letras_blanco.webp`;
 
 const leftNav = [
     { name: "Videos", path: "/videos" },

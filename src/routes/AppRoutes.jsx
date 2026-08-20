@@ -13,7 +13,7 @@ const Fans = lazy(() => import('../pages/Fans'));
 
 const AppRoutes = () => {
     return (
-        <Router>
+        <Router basename={import.meta.env.BASE_URL}>
 
             <Suspense fallback={<PageLoader />}>
 

@@ -15,7 +15,7 @@ const Recorrido = [
 
         featured: false,
 
-        image: "/images/Recorrido/C7Festival.webp",
+        image: `${import.meta.env.BASE_URL}images/Recorrido/C7Festival.webp`,
 
         instagram: "https://www.instagram.com/p/CTKv-xiHLce/?img_index=1",
 
@@ -41,7 +41,7 @@ const Recorrido = [
 
         featured: false,
 
-        image: "/images/Recorrido/ShamaFest.webp",
+        image: `${import.meta.env.BASE_URL}images/Recorrido/ShamaFest.webp`,
 
         instagram: "https://www.instagram.com/p/CVwk97psHJy/?img_index=2",
 
@@ -71,7 +71,7 @@ const Recorrido = [
 
         featured: false,
 
-        image: "/images/Recorrido/ToquePuesParce.webp",
+        image: `${import.meta.env.BASE_URL}images/Recorrido/ToquePuesParce.webp`,
 
         instagram: "https://www.instagram.com/p/Ci_R5fvJTYh/?img_index=1",
 
@@ -97,7 +97,7 @@ const Recorrido = [
 
         featured: false,
 
-        image: "/images/Recorrido/FinDeAno3DC.webp",
+        image: `${import.meta.env.BASE_URL}images/Recorrido/FinDeAno3DC.webp`,
 
         instagram: "https://www.instagram.com/p/C02SCxtRGCm/?img_index=1",
 
@@ -123,7 +123,7 @@ const Recorrido = [
 
         featured: false,
 
-        image: "/images/Recorrido/RockNBirthday.webp",
+        image: `${import.meta.env.BASE_URL}images/Recorrido/RockNBirthday.webp`,
 
         instagram: "https://www.instagram.com/p/C2NiXU2RF9U/?img_index=1",
 
@@ -149,7 +149,7 @@ const Recorrido = [
 
         featured: false,
 
-        image: "/images/Recorrido/DiaDeLaPereza.webp",
+        image: `${import.meta.env.BASE_URL}images/Recorrido/DiaDeLaPereza.webp`,
 
         instagram: "https://www.instagram.com/p/C--0J8zR7Lj/?img_index=1",
 
@@ -174,7 +174,7 @@ const Recorrido = [
 
         featured: true,
 
-        image: "/images/Recorrido/Altavoz2024.webp",
+        image: `${import.meta.env.BASE_URL}images/Recorrido/Altavoz2024.webp`,
 
         instagram: "https://www.instagram.com/p/DBZGMy7uqmb/?img_index=1",
 
@@ -206,7 +206,7 @@ const Recorrido = [
 
         featured: true,
 
-        image: "/images/Recorrido/LaOvejaNegra.webp",
+        image: `${import.meta.env.BASE_URL}images/Recorrido/LaOvejaNegra.webp`,
 
         instagram: "https://www.instagram.com/p/DPaEHCjjLqH/?img_index=1",
 
@@ -234,7 +234,7 @@ const Recorrido = [
 
         featured: false,
 
-        image: "/images/Recorrido/BoulevardAsorock.webp",
+        image: `${import.meta.env.BASE_URL}images/Recorrido/BoulevardAsorock.webp`,
 
         instagram: "https://www.instagram.com/p/DPfH20Ckh2Y/?img_index=1",
 
@@ -262,7 +262,7 @@ const Recorrido = [
 
         featured: false,
 
-        image: "/images/Recorrido/AltavistaRockFest.webp",
+        image: `${import.meta.env.BASE_URL}images/Recorrido/AltavistaRockFest.webp`,
 
         instagram: "https://www.instagram.com/p/DQaViFfEoI9/?img_index=1",
 
@@ -290,7 +290,7 @@ const Recorrido = [
 
         featured: false,
 
-        image: "/images/Recorrido/FiestaFriki.webp",
+        image: `${import.meta.env.BASE_URL}images/Recorrido/FiestaFriki.webp`,
 
         instagram: "https://www.instagram.com/p/DQu6xwXkpqj/?img_index=1",
 
@@ -320,7 +320,7 @@ const Recorrido = [
 
         featured: true,
 
-        image: "/images/Recorrido/SeedFest.webp",
+        image: `${import.meta.env.BASE_URL}images/Recorrido/SeedFest.webp`,
 
         instagram: "https://www.instagram.com/p/DYz4TTlliya/?img_index=1",
 

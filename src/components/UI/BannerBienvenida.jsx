@@ -8,7 +8,7 @@ const BannerBienvenida = () => {
     return (
         <div className="bannerBienvenida-container">
             <img
-                src="/images/BannerBienvenida/portada-arriba2.webp"
+                src={`${import.meta.env.BASE_URL}images/BannerBienvenida/portada-arriba2.webp`}
                 alt="Pato el Pez"
             />
         </div>
