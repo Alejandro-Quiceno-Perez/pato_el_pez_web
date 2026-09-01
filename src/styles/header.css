@@ -5,21 +5,34 @@
 .header {
 
     width: 100%;
+
     height: 6rem;
+
     background: var(--black);
+
     position: relative;
+
     z-index: 1000;
 
 }
 
+
+/* ======================================================
+   NAV
+====================================================== */
+
 .container-header {
 
     width: 80%;
+
     height: 100%;
+
     margin: 0 auto;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     gap: 3rem;
@@ -27,6 +40,7 @@
     padding: 0 3rem;
 
 }
+
 
 /* ======================================================
    NAV
@@ -38,16 +52,21 @@
     width: 35%;
 
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 
     gap: 3rem;
 
     font-size: var(--size-subtitle);
+
     font-family: var(--font-title);
+
     font-weight: var(--font-500);
 
 }
+
 
 /* ======================================================
    NAV LINKS
@@ -63,21 +82,32 @@
 
     font-size: 1.5rem;
 
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
 
-    transition: .3s;
+    transition: 0.3s;
 
-    padding: .5rem 0;
+    padding: 0.5rem 0;
 
 }
+
+
+/* ======================================================
+   HOVER ESCRITORIO
+====================================================== */
 
 .nav-link:hover {
 
     color: var(--red);
 
-    text-shadow: 0 0 8px rgba(136, 16, 20, .35);
+    text-shadow:
+        0 0 8px rgba(136, 16, 20, 0.35);
 
 }
+
+
+/* ======================================================
+   LÍNEA INFERIOR
+====================================================== */
 
 .nav-link::after {
 
@@ -86,18 +116,25 @@
     position: absolute;
 
     left: 0;
-    bottom: -.3rem;
+
+    bottom: -0.3rem;
 
     width: 0%;
-    height: .2rem;
+
+    height: 0.2rem;
 
     background: var(--red);
 
     border-radius: 2rem;
 
-    transition: .35s;
+    transition: 0.35s;
 
 }
+
+
+/* ======================================================
+   HOVER ESCRITORIO
+====================================================== */
 
 .nav-link:hover::after {
 
@@ -105,19 +142,27 @@
 
 }
 
+
+/* ======================================================
+   ACTIVE LINK
+====================================================== */
+
 .active-link {
 
     color: var(--red);
 
-    text-shadow: 0 0 10px rgba(136, 16, 20, .45);
+    text-shadow:
+        0 0 10px rgba(136, 16, 20, 0.45);
 
 }
+
 
 .active-link::after {
 
     width: 100%;
 
 }
+
 
 /* ======================================================
    LOGO
@@ -126,15 +171,19 @@
 .logo {
 
     width: 30%;
+
     height: 100%;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     overflow: hidden;
 
 }
+
 
 .logo a {
 
@@ -150,10 +199,8 @@
 
 }
 
-.logo-img {
-    /* background: pink; */
 
-    /* width: auto; */
+.logo-img {
 
     max-width: 100%;
 
@@ -161,17 +208,24 @@
 
     object-fit: contain;
 
-    transition: .35s;
+    transition: 0.35s;
 
 }
+
+
+/* ======================================================
+   HOVER LOGO ESCRITORIO
+====================================================== */
 
 .logo-img:hover {
 
     transform: scale(1.04);
 
-    filter: drop-shadow(0 0 2px var(--red));
+    filter:
+        drop-shadow(0 0 2px var(--red));
 
 }
+
 
 /* ======================================================
    BOTÓN HAMBURGUESA
@@ -191,15 +245,21 @@
 
     font-size: 3rem;
 
-    transition: .3s;
+    transition: 0.3s;
 
 }
+
+
+/* ======================================================
+   HOVER ESCRITORIO
+====================================================== */
 
 .menu-toggle:hover {
 
     color: var(--red);
 
 }
+
 
 /* ======================================================
    OVERLAY
@@ -211,13 +271,14 @@
 
     inset: 0;
 
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, 0.6);
 
     backdrop-filter: blur(4px);
 
     z-index: 998;
 
 }
+
 
 /* ======================================================
    MENÚ MÓVIL
@@ -237,7 +298,7 @@
 
     background: var(--black);
 
-    transition: left .4s ease;
+    transition: left 0.4s ease;
 
     z-index: 999;
 
@@ -249,11 +310,13 @@
 
 }
 
+
 .mobile-menu.open {
 
     left: 0;
 
 }
+
 
 /* ======================================================
    HEADER MENÚ
@@ -265,7 +328,10 @@
 
     margin-bottom: 3rem;
 
+    position: relative;
+
 }
+
 
 .mobile-header img {
 
@@ -275,21 +341,79 @@
 
 }
 
+
 .mobile-header p {
 
-    margin-top: .6rem;
+    margin-top: 0.6rem;
 
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, 0.6);
 
     font-size: 1.2rem;
 
     font-family: var(--font-title);
 
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
 
     text-transform: uppercase;
 
 }
+
+
+/* ======================================================
+   BOTÓN CERRAR MENÚ MÓVIL
+====================================================== */
+
+.mobile-close {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    top: 1rem;
+
+    right: 0;
+
+    width: 4rem;
+
+    height: 4rem;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid var(--red);
+
+    background: transparent;
+
+    color: var(--white);
+
+    font-size: 2.8rem;
+
+    cursor: pointer;
+
+    transition:
+        color .3s ease,
+        transform .3s ease;
+
+}
+
+
+/* ======================================================
+   HOVER BOTÓN CERRAR ESCRITORIO
+====================================================== */
+
+.mobile-close:hover {
+
+    color: var(--red);
+
+    transform: rotate(90deg);
+
+}
+
 
 /* ======================================================
    NAV MÓVIL
@@ -305,6 +429,7 @@
 
 }
 
+
 .mobile-nav .nav-link {
 
     font-size: 1.5rem;
@@ -313,15 +438,25 @@
 
     font-weight: var(--font-500);
 
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
 
 }
+
 
 /* ======================================================
    RESPONSIVE
 ====================================================== */
 
-@media(max-width:1024px) {
+
+/* ======================================================
+   TABLET / MOBILE
+====================================================== */
+
+@media (max-width: 1024px) {
+
+    /* ==============================================
+       NAV DESKTOP
+    ============================================== */
 
     .nav-left,
     .nav-right {
@@ -329,6 +464,11 @@
         display: none;
 
     }
+
+
+    /* ==============================================
+       HEADER
+    ============================================== */
 
     .container-header {
 
@@ -339,6 +479,11 @@
         position: relative;
 
     }
+
+
+    /* ==============================================
+       BOTÓN HAMBURGUESA
+    ============================================== */
 
     .menu-toggle {
 
@@ -358,15 +503,104 @@
 
     }
 
+
+    /* ==============================================
+       LOGO
+    ============================================== */
+
     .logo {
 
         width: 30%;
 
     }
 
+
+    /* ==============================================
+       DESACTIVAR HOVER NAV
+    ============================================== */
+
+    .nav-link:hover {
+
+        color: var(--white);
+
+        text-shadow: none;
+
+    }
+
+
+    .nav-link:hover::after {
+
+        width: 0;
+
+    }
+
+
+    /* ==============================================
+       DESACTIVAR HOVER LOGO
+    ============================================== */
+
+    .logo-img:hover {
+
+        transform: none;
+
+        filter: none;
+
+    }
+
+
+    /* ==============================================
+       DESACTIVAR HOVER HAMBURGUESA
+    ============================================== */
+
+    .menu-toggle:hover {
+
+        color: var(--white);
+
+    }
+
+
+    /* ==============================================
+       DESACTIVAR HOVER BOTÓN CERRAR
+    ============================================== */
+
+    .mobile-close:hover {
+
+        color: var(--white);
+
+        transform: none;
+
+        border-color: var(--red);
+
+    }
+
+
+    /* ==============================================
+       DESACTIVAR HOVER NAV MÓVIL
+    ============================================== */
+
+    .mobile-nav .nav-link:hover {
+
+        color: var(--white);
+
+        text-shadow: none;
+
+    }
+
+
+    .mobile-nav .nav-link:hover::after {
+
+        width: 0;
+
+    }
+
 }
 
-@media(max-width:768px) {
+
+/* ======================================================
+   TABLET VERTICAL
+====================================================== */
+
+@media (max-width: 768px) {
 
     .container-header {
 
@@ -376,11 +610,13 @@
 
     }
 
+
     .logo {
 
         width: auto;
 
     }
+
 
     .logo-img {
 
@@ -390,14 +626,77 @@
 
     }
 
+
+    /* ==============================================
+       HOVER COMPLETAMENTE DESACTIVADO
+    ============================================== */
+
+    .nav-link:hover {
+
+        color: var(--white);
+
+        text-shadow: none;
+
+    }
+
+
+    .nav-link:hover::after {
+
+        width: 0;
+
+    }
+
+
     .logo-img:hover {
 
-        transform: scale(1);
+        transform: none;
+
+        filter: none;
+
+    }
+
+
+    .menu-toggle:hover {
+
+        color: var(--white);
+
+    }
+
+
+    .mobile-close:hover {
+
+        color: var(--white);
+
+        transform: none;
+
+        border-color: var(--red);
+
+    }
+
+
+    .mobile-nav .nav-link:hover {
+
+        color: var(--white);
+
+        text-shadow: none;
+
+    }
+
+
+    .mobile-nav .nav-link:hover::after {
+
+        width: 0;
+
     }
 
 }
 
-@media(max-width:480px) {
+
+/* ======================================================
+   CELULAR
+====================================================== */
+
+@media (max-width: 480px) {
 
     .logo {
 
@@ -405,15 +704,80 @@
 
     }
 
+
     .logo-img {
 
         height: 38px;
 
     }
 
+
     .mobile-menu {
 
         width: 100%;
+
+    }
+
+
+    /* ==============================================
+       HOVER COMPLETAMENTE DESACTIVADO
+    ============================================== */
+
+    .nav-link:hover {
+
+        color: var(--white);
+
+        text-shadow: none;
+
+    }
+
+
+    .nav-link:hover::after {
+
+        width: 0;
+
+    }
+
+
+    .logo-img:hover {
+
+        transform: none;
+
+        filter: none;
+
+    }
+
+
+    .menu-toggle:hover {
+
+        color: var(--white);
+
+    }
+
+
+    .mobile-close:hover {
+
+        color: var(--white);
+
+        transform: none;
+
+        border-color: var(--red);
+
+    }
+
+
+    .mobile-nav .nav-link:hover {
+
+        color: var(--white);
+
+        text-shadow: none;
+
+    }
+
+
+    .mobile-nav .nav-link:hover::after {
+
+        width: 0;
 
     }
 

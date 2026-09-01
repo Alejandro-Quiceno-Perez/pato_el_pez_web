@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
+
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { HiOutlineBars3, HiOutlineXMark } from "react-icons/hi2";
+
+import {
+    HiOutlineBars3,
+    HiOutlineXMark
+} from "react-icons/hi2";
 
 import "../../styles/header.css";
 
@@ -27,35 +32,22 @@ const NavGroup = ({ items, onClick }) => {
         <>
 
             {
-
                 items.map((item) => (
 
                     <NavLink
-
                         key={item.path}
-
                         to={item.path}
-
                         onClick={onClick}
-
                         className={({ isActive }) =>
-
                             isActive
-
                                 ? "nav-link active-link"
-
                                 : "nav-link"
-
                         }
-
                     >
-
                         {item.name}
-
                     </NavLink>
 
                 ))
-
             }
 
         </>
@@ -70,6 +62,7 @@ const Header = () => {
 
     const location = useLocation();
 
+
     // ============================
     // CERRAR AL CAMBIAR DE PÁGINA
     // ============================
@@ -77,12 +70,15 @@ const Header = () => {
     useEffect(() => {
 
         const closeMenuFrame = requestAnimationFrame(() => {
+
             setMenuOpen(false);
+
         });
 
         return () => cancelAnimationFrame(closeMenuFrame);
 
     }, [location.pathname]);
+
 
     // ============================
     // CERRAR CON ESC
@@ -110,6 +106,7 @@ const Header = () => {
 
     }, []);
 
+
     // ============================
     // BLOQUEAR SCROLL
     // ============================
@@ -117,18 +114,24 @@ const Header = () => {
     useEffect(() => {
 
         document.body.style.overflow = menuOpen
-
             ? "hidden"
-
             : "auto";
 
+        return () => {
+
+            document.body.style.overflow = "auto";
+
+        };
+
     }, [menuOpen]);
+
 
     return (
 
         <header className="header">
 
             <div className="container-header">
+
 
                 {/* ==========================
                     NAV IZQUIERDO
@@ -140,6 +143,7 @@ const Header = () => {
 
                 </nav>
 
+
                 {/* ==========================
                     LOGO
                 ========================== */}
@@ -149,22 +153,17 @@ const Header = () => {
                     <Link to="/">
 
                         <img
-
                             className="logo-img"
-
                             src={logo}
-
                             alt="Pato el Pez"
-
                             loading="lazy"
-
                             decoding="async"
-
                         />
 
                     </Link>
 
                 </div>
+
 
                 {/* ==========================
                     NAV DERECHO
@@ -176,98 +175,109 @@ const Header = () => {
 
                 </nav>
 
+
                 {/* ==========================
                     BOTÓN HAMBURGUESA
                 ========================== */}
 
                 <button
-
+                    type="button"
                     className="menu-toggle"
-
                     onClick={() => setMenuOpen(!menuOpen)}
-
-                    aria-label="Abrir menú"
-
+                    aria-label={
+                        menuOpen
+                            ? "Cerrar menú"
+                            : "Abrir menú"
+                    }
+                    aria-expanded={menuOpen}
                 >
 
                     {
-
                         menuOpen
-
                             ? <HiOutlineXMark />
-
                             : <HiOutlineBars3 />
-
                     }
 
                 </button>
 
             </div>
 
+
             {/* ==========================
                 OVERLAY
             ========================== */}
 
             {
-
                 menuOpen && (
 
                     <div
-
                         className="menu-overlay"
-
                         onClick={() => setMenuOpen(false)}
-
                     />
 
                 )
-
             }
+
 
             {/* ==========================
                 MENÚ MÓVIL
             ========================== */}
 
             <aside
-
                 className={
-
                     menuOpen
-
                         ? "mobile-menu open"
-
                         : "mobile-menu"
-
                 }
-
             >
+
+                {/* ==========================
+                    CABECERA MENÚ
+                ========================== */}
 
                 <div className="mobile-header">
 
-                    <img
+                    <div>
 
-                        src={logo}
+                        <img
+                            src={logo}
+                            alt="Pato el Pez"
+                        />
 
-                        alt="Pato el Pez"
+                        <p>
+                            Punk Rock Colombiano
+                        </p>
 
-                    />
+                    </div>
 
-                    <p>
 
-                        Punk Rock Colombiano
+                    {/* ==========================
+                        BOTÓN CERRAR MENÚ
+                    ========================== */}
 
-                    </p>
+                    <button
+                        type="button"
+                        className="mobile-close"
+                        onClick={() => setMenuOpen(false)}
+                        aria-label="Cerrar menú"
+                    >
+
+                        <HiOutlineXMark />
+
+                    </button>
 
                 </div>
+
+
+                {/* ==========================
+                    NAVEGACIÓN
+                ========================== */}
 
                 <nav className="mobile-nav">
 
                     <NavGroup
-
                         items={mobileNav}
-
                         onClick={() => setMenuOpen(false)}
-
                     />
 
                 </nav>
