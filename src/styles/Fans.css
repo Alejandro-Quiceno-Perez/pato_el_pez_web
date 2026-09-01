@@ -3,44 +3,58 @@
 ====================================================== */
 
 .fans-page {
+
     width: 100%;
+
     height: 100%;
 
     background: var(--black);
 
     padding: 5rem 0;
+
 }
 
+
 .fans-container {
-    /* background:pink; */
+
     width: 85%;
+
     margin: auto;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     gap: 8rem;
 
 }
+
 
 /* ======================================================
    INFORMACIÓN
 ====================================================== */
 
 .fans-content {
+
     width: 48%;
 
     display: flex;
+
     flex-direction: column;
+
     gap: 2.5rem;
 
 }
+
 
 .fans-subtitle {
 
     color: var(--red);
 
     font-size: 1.4rem;
+
     font-weight: 700;
 
     letter-spacing: .45rem;
@@ -48,6 +62,7 @@
     text-transform: uppercase;
 
 }
+
 
 .fans-content h1 {
 
@@ -61,6 +76,7 @@
 
 }
 
+
 .fans-content p {
 
     color: rgba(255, 255, 255, .7);
@@ -73,6 +89,7 @@
 
 }
 
+
 /* ======================================================
    BENEFICIOS
 ====================================================== */
@@ -80,19 +97,24 @@
 .fans-benefits {
 
     display: flex;
+
     flex-direction: column;
+
     gap: 1.6rem;
 
     margin-top: 1rem;
 
 }
 
+
 .fans-benefits li {
 
     list-style: none;
 
     display: flex;
+
     align-items: center;
+
     gap: 1.4rem;
 
     color: rgba(255, 255, 255, .85);
@@ -103,15 +125,19 @@
 
 }
 
+
 .fans-benefits li::before {
 
     content: "✓";
 
     width: 3rem;
+
     height: 3rem;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     border-radius: 50%;
@@ -126,6 +152,9 @@
 
 }
 
+
+/* Hover escritorio */
+
 .fans-benefits li:hover {
 
     transform: translateX(8px);
@@ -133,6 +162,7 @@
     color: white;
 
 }
+
 
 /* ======================================================
    FORMULARIO
@@ -144,12 +174,15 @@
 
 }
 
+
 .fan-form {
 
     width: 100%;
 
     display: flex;
+
     flex-direction: column;
+
     gap: 2rem;
 
     padding: 4rem;
@@ -157,9 +190,11 @@
     border-radius: 2rem;
 
     background:
-        linear-gradient(180deg,
+        linear-gradient(
+            180deg,
             rgba(255, 255, 255, .04),
-            rgba(255, 255, 255, .02));
+            rgba(255, 255, 255, .02)
+        );
 
     border: 1px solid rgba(255, 255, 255, .08);
 
@@ -170,6 +205,7 @@
 
 }
 
+
 /* ======================================================
    HEADER
 ====================================================== */
@@ -177,12 +213,15 @@
 .form-header {
 
     display: flex;
+
     flex-direction: column;
+
     gap: 1rem;
 
     margin-bottom: 1rem;
 
 }
+
 
 .form-header span {
 
@@ -198,6 +237,7 @@
 
 }
 
+
 .form-header h2 {
 
     color: white;
@@ -208,6 +248,7 @@
 
 }
 
+
 /* ======================================================
    INPUTS
 ====================================================== */
@@ -217,6 +258,7 @@
     width: 100%;
 
 }
+
 
 .form-group input {
 
@@ -240,11 +282,13 @@
 
 }
 
+
 .form-group input::placeholder {
 
     color: rgba(255, 255, 255, .45);
 
 }
+
 
 .form-group input:focus {
 
@@ -257,9 +301,6 @@
 
 }
 
-/* ======================================================
-   CHECKBOX
-====================================================== */
 
 /* ======================================================
    CHECKBOX PERSONALIZADO
@@ -268,7 +309,9 @@
 .checkbox-group {
 
     display: flex;
+
     align-items: flex-start;
+
     gap: 1.5rem;
 
     cursor: pointer;
@@ -279,7 +322,6 @@
 
 }
 
-/* Ocultamos el checkbox original */
 
 .checkbox-group input {
 
@@ -287,11 +329,11 @@
 
 }
 
-/* Caja */
 
 .custom-checkbox {
 
     width: 24px;
+
     height: 24px;
 
     border-radius: .6rem;
@@ -308,19 +350,18 @@
 
 }
 
-/* Hover */
+
+/* Hover escritorio */
 
 .checkbox-group:hover .custom-checkbox {
 
     border-color: var(--red);
 
     box-shadow:
-
         0 0 12px rgba(136, 16, 20, .25);
 
 }
 
-/* Check */
 
 .custom-checkbox::after {
 
@@ -329,9 +370,12 @@
     position: absolute;
 
     left: 50%;
+
     top: 48%;
 
-    transform: translate(-50%, -50%) scale(0);
+    transform:
+        translate(-50%, -50%)
+        scale(0);
 
     color: white;
 
@@ -343,27 +387,27 @@
 
 }
 
-/* Estado seleccionado */
 
-.checkbox-group input:checked+.custom-checkbox {
+.checkbox-group input:checked + .custom-checkbox {
 
     background: var(--red);
 
     border-color: var(--red);
 
     box-shadow:
-
         0 0 18px rgba(136, 16, 20, .45);
 
 }
 
-.checkbox-group input:checked+.custom-checkbox::after {
 
-    transform: translate(-50%, -50%) scale(1);
+.checkbox-group input:checked + .custom-checkbox::after {
+
+    transform:
+        translate(-50%, -50%)
+        scale(1);
 
 }
 
-/* Texto */
 
 .checkbox-text {
 
@@ -377,30 +421,39 @@
 
 }
 
+
+/* Hover escritorio */
+
 .checkbox-group:hover .checkbox-text {
 
     color: white;
 
 }
 
-.checkbox-group input:checked~.checkbox-text {
+
+.checkbox-group input:checked ~ .checkbox-text {
 
     color: white;
 
 }
+
 
 /* ======================================================
    BOTÓN
 ====================================================== */
 
 .btn-register {
+
     text-decoration: none;
+
     text-align: center;
+
     margin-top: 1rem;
 
     border: none;
 
     background: var(--red);
+
     color: var(--white);
 
     padding: 1.4rem 2rem;
@@ -408,8 +461,11 @@
     border-radius: 1rem;
 
     font-size: 1.5rem;
+
     font-weight: 700;
+
     letter-spacing: .1rem;
+
     text-transform: uppercase;
 
     cursor: pointer;
@@ -418,15 +474,19 @@
         transform .3s ease,
         box-shadow .3s ease,
         background .3s ease;
+
 }
 
+
+/* Hover escritorio */
+
 .btn-register:hover {
-    /* transform:
-        translateY(-4px); */
 
     box-shadow:
         0 1px 25px rgba(255, 255, 255, 0.205);
+
 }
+
 
 /* ======================================================
    EFECTOS
@@ -434,7 +494,8 @@
 
 .fan-form:hover {
 
-    border-color: rgba(136, 16, 20, .25);
+    border-color:
+        rgba(136, 16, 20, .25);
 
     box-shadow:
 
@@ -443,7 +504,6 @@
         0 0 30px rgba(136, 16, 20, .08);
 
 }
-
 
 
 /* ======================================================
@@ -457,7 +517,9 @@
     inset: 0;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     background: rgba(0, 0, 0, .82);
@@ -470,6 +532,7 @@
 
 }
 
+
 /* ======================================================
    MODAL
 ====================================================== */
@@ -481,25 +544,34 @@
     padding: 5rem 4rem;
 
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
     gap: 2.5rem;
 
-    background: linear-gradient(180deg,
+    background:
+        linear-gradient(
+            180deg,
             rgba(28, 28, 28, .98),
-            rgba(12, 12, 12, .98));
+            rgba(12, 12, 12, .98)
+        );
 
     border: 1px solid rgba(136, 16, 20, .35);
 
     border-radius: 2rem;
 
     box-shadow:
+
         0 35px 80px rgba(0, 0, 0, .65),
+
         0 0 35px rgba(136, 16, 20, .12);
 
     animation: modalPop .45s ease;
 
 }
+
 
 /* ======================================================
    ICONO
@@ -508,10 +580,13 @@
 .success-icon {
 
     width: 9rem;
+
     height: 9rem;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     border-radius: 50%;
@@ -530,40 +605,41 @@
 
 }
 
-.success-icon.success{
 
-    background:rgba(30,215,96,.15);
+.success-icon.success {
 
-    border-color:#1ED760;
+    background:
+        rgba(30, 215, 96, .15);
 
-    color:#1ED760;
+    border-color: #1ED760;
+
+    color: #1ED760;
 
     box-shadow:
-
-        0 0 30px rgba(30,215,96,.18);
+        0 0 30px rgba(30, 215, 96, .18);
 
 }
+
 
 /* ======================================================
    ERROR / WARNING
 ====================================================== */
 
-.success-icon.error{
+.success-icon.error {
 
-    background:rgba(136,16,20,.15);
+    background:
+        rgba(136, 16, 20, .15);
 
-    border-color:var(--red);
+    border-color: var(--red);
 
-    color:var(--red);
+    color: var(--red);
 
     box-shadow:
-
-        0 0 30px rgba(136,16,20,.18);
+        0 0 30px rgba(136, 16, 20, .18);
 
     animation: pulseError 1.5s infinite;
 
 }
-
 
 
 /* ======================================================
@@ -584,6 +660,7 @@
 
 }
 
+
 /* ======================================================
    TEXTO
 ====================================================== */
@@ -602,13 +679,15 @@
 
 }
 
+
 .success-modal strong {
 
     color: var(--red);
 
 }
 
-.privacy-text{
+
+.privacy-text {
 
     margin-top: .5rem;
 
@@ -616,11 +695,11 @@
 
     border-radius: 1rem;
 
-    background: rgba(255,255,255,.025);
+    background: rgba(255, 255, 255, .025);
 
-    border: 1px solid rgba(255,255,255,.06);
+    border: 1px solid rgba(255, 255, 255, .06);
 
-    color: rgba(255,255,255,.55);
+    color: rgba(255, 255, 255, .55);
 
     font-size: 1.2rem;
 
@@ -632,6 +711,7 @@
 
 }
 
+
 /* ======================================================
    BOTONES
 ====================================================== */
@@ -641,6 +721,7 @@
     width: 100%;
 
     display: flex;
+
     flex-direction: column;
 
     gap: 1.5rem;
@@ -649,24 +730,31 @@
 
 }
 
+
 .success-buttons a,
 .success-buttons button {
 
     width: 100%;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
 }
+
 
 /* ======================================================
    BOTÓN WHATSAPP
 ====================================================== */
 
 .btn-whatsapp {
+
     text-decoration: none;
+
     text-align: center;
+
     margin-top: 1rem;
 
     background: #25D366 !important;
@@ -680,7 +768,9 @@
     border-radius: 1rem;
 
     font-size: 1.5rem;
+
     font-weight: 700;
+
     text-transform: uppercase;
 
     cursor: pointer;
@@ -689,30 +779,34 @@
         transform .3s ease,
         box-shadow .3s ease,
         background .3s ease;
+
 }
 
+
 .btn-whatsapp:hover {
+
     transform:
         translateY(-4px);
 
-
 }
+
 
 /* ======================================================
    BOTÓN CERRAR
 ====================================================== */
 
-
-
-
 .btn-close {
+
     text-decoration: none;
+
     text-align: center;
+
     margin-top: 1rem;
 
     border: none;
 
     background: var(--red);
+
     color: var(--white);
 
     padding: 1.4rem 2rem;
@@ -720,7 +814,9 @@
     border-radius: 1rem;
 
     font-size: 1.5rem;
+
     font-weight: 700;
+
     text-transform: uppercase;
 
     cursor: pointer;
@@ -729,15 +825,17 @@
         transform .3s ease,
         box-shadow .3s ease,
         background .3s ease;
+
 }
 
+
 .btn-close:hover {
-    /* transform:
-        translateY(-4px); */
 
     box-shadow:
         0 1px 25px rgba(36, 36, 36, 0.205);
+
 }
+
 
 /* ======================================================
    ANIMACIONES
@@ -758,6 +856,7 @@
     }
 
 }
+
 
 @keyframes modalPop {
 
@@ -785,45 +884,53 @@
 
 }
 
+
 @keyframes pulse {
 
     0% {
 
-        box-shadow: 0 0 0 0 rgba(0, 128, 0, 0.459);
+        box-shadow:
+            0 0 0 0 rgba(0, 128, 0, 0.459);
 
     }
 
     70% {
 
-        box-shadow: 0 0 0 18px rgba(136, 16, 20, 0);
+        box-shadow:
+            0 0 0 18px rgba(136, 16, 20, 0);
 
     }
 
     100% {
 
-        box-shadow: 0 0 0 0 rgba(136, 16, 20, 0);
+        box-shadow:
+            0 0 0 0 rgba(136, 16, 20, 0);
 
     }
 
 }
 
+
 @keyframes pulseError {
 
     0% {
 
-        box-shadow: 0 0 0 0 rgba(128, 0, 0, 0.459);
+        box-shadow:
+            0 0 0 0 rgba(128, 0, 0, 0.459);
 
     }
 
     70% {
 
-        box-shadow: 0 0 0 18px rgba(136, 16, 20, 0);
+        box-shadow:
+            0 0 0 18px rgba(136, 16, 20, 0);
 
     }
 
     100% {
 
-        box-shadow: 0 0 0 0 rgba(136, 16, 20, 0);
+        box-shadow:
+            0 0 0 0 rgba(136, 16, 20, 0);
 
     }
 
@@ -834,283 +941,286 @@
    RESPONSIVE
 ====================================================== */
 
+
 /* ==========================
    LAPTOP
 ========================== */
 
-@media (max-width:1200px){
+@media (max-width:1200px) {
 
-    .fans-container{
+    .fans-container {
 
-        width:92%;
+        width: 92%;
 
-        gap:5rem;
-
-    }
-
-    .fans-content{
-
-        width:50%;
+        gap: 5rem;
 
     }
 
-    .fans-form-container{
+    .fans-content {
 
-        width:45%;
-
-    }
-
-    .fans-content h1{
-
-        font-size:4.8rem;
+        width: 50%;
 
     }
 
-    .fans-content p{
+    .fans-form-container {
 
-        font-size:1.6rem;
-
-    }
-
-    .fans-benefits li{
-
-        font-size:1.5rem;
+        width: 45%;
 
     }
 
-    .fan-form{
+    .fans-content h1 {
 
-        padding:3rem;
+        font-size: 4.8rem;
 
     }
 
-    .form-header h2{
+    .fans-content p {
 
-        font-size:3rem;
+        font-size: 1.6rem;
+
+    }
+
+    .fans-benefits li {
+
+        font-size: 1.5rem;
+
+    }
+
+    .fan-form {
+
+        padding: 3rem;
+
+    }
+
+    .form-header h2 {
+
+        font-size: 3rem;
 
     }
 
 }
+
 
 /* ==========================
    TABLET
 ========================== */
 
-@media (max-width:992px){
+@media (max-width:992px) {
 
-    .fans-page{
+    .fans-page {
 
-        padding:4rem 0;
-
-    }
-
-    .fans-container{
-
-        width:94%;
-
-        gap:3rem;
+        padding: 4rem 0;
 
     }
 
-    .fans-content{
+    .fans-container {
 
-        width:52%;
+        width: 94%;
 
-    }
-
-    .fans-form-container{
-
-        width:48%;
+        gap: 3rem;
 
     }
 
-    .fans-subtitle{
+    .fans-content {
 
-        font-size:1.2rem;
-
-        letter-spacing:.3rem;
+        width: 52%;
 
     }
 
-    .fans-content h1{
+    .fans-form-container {
 
-        font-size:3.8rem;
-
-    }
-
-    .fans-content p{
-
-        font-size:1.5rem;
-
-        line-height:1.8;
+        width: 48%;
 
     }
 
-    .fans-benefits{
+    .fans-subtitle {
 
-        gap:1.2rem;
+        font-size: 1.2rem;
 
-    }
-
-    .fans-benefits li{
-
-        font-size:1.4rem;
+        letter-spacing: .3rem;
 
     }
 
-    .fans-benefits li::before{
+    .fans-content h1 {
 
-        width:2.5rem;
-
-        height:2.5rem;
-
-        font-size:1.2rem;
+        font-size: 3.8rem;
 
     }
 
-    .fan-form{
+    .fans-content p {
 
-        padding:2.8rem;
+        font-size: 1.5rem;
 
-        gap:1.6rem;
-
-    }
-
-    .form-header h2{
-
-        font-size:2.7rem;
+        line-height: 1.8;
 
     }
 
-    .form-group input{
+    .fans-benefits {
 
-        padding:1.5rem;
-
-        font-size:1.4rem;
+        gap: 1.2rem;
 
     }
 
-    .checkbox-text{
+    .fans-benefits li {
 
-        font-size:1.3rem;
+        font-size: 1.4rem;
 
     }
 
-    .btn-register{
+    .fans-benefits li::before {
 
-        padding:1.1rem;
+        width: 2.5rem;
 
-        font-size:1.2rem;
+        height: 2.5rem;
+
+        font-size: 1.2rem;
+
+    }
+
+    .fan-form {
+
+        padding: 2.8rem;
+
+        gap: 1.6rem;
+
+    }
+
+    .form-header h2 {
+
+        font-size: 2.7rem;
+
+    }
+
+    .form-group input {
+
+        padding: 1.5rem;
+
+        font-size: 1.4rem;
+
+    }
+
+    .checkbox-text {
+
+        font-size: 1.3rem;
+
+    }
+
+    .btn-register {
+
+        padding: 1.1rem;
+
+        font-size: 1.2rem;
 
     }
 
 }
 
+
 /* ==========================
    TABLET VERTICAL
 ========================== */
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .fans-page{
+    .fans-page {
 
-        padding:5rem 0;
-
-    }
-
-    .fans-container{
-
-        width:92%;
-
-        flex-direction:column;
-
-        gap:4rem;
+        padding: 5rem 0;
 
     }
 
-    .fans-content{
+    .fans-container {
 
-        width:100%;
+        width: 92%;
 
-        text-align:center;
+        flex-direction: column;
 
-        align-items:center;
-
-    }
-
-    .fans-form-container{
-
-        width:100%;
-
-        max-width:600px;
+        gap: 4rem;
 
     }
 
-    .fans-content h1{
+    .fans-content {
 
-        font-size:3.3rem;
+        width: 100%;
 
-    }
+        text-align: center;
 
-    .fans-content p{
-
-        font-size:1.4rem;
+        align-items: center;
 
     }
 
-    .fans-benefits{
+    .fans-form-container {
 
-        width:100%;
+        width: 100%;
 
-        align-items:flex-start;
-
-    }
-
-    .fans-benefits li{
-
-        font-size:1.35rem;
+        max-width: 600px;
 
     }
 
-    .fan-form{
+    .fans-content h1 {
 
-        padding:2.5rem;
-
-    }
-
-    .form-header{
-
-        text-align:center;
+        font-size: 3.3rem;
 
     }
 
-    .form-header h2{
+    .fans-content p {
 
-        font-size:2.5rem;
-
-    }
-
-    .form-group input{
-
-        padding:1.4rem;
-
-        font-size:1.35rem;
+        font-size: 1.4rem;
 
     }
 
-    .checkbox-text{
+    .fans-benefits {
 
-        font-size:1.25rem;
+        width: 100%;
+
+        align-items: flex-start;
 
     }
 
-    .btn-register{
+    .fans-benefits li {
 
-        width:100%;
+        font-size: 1.35rem;
 
-        padding:1.2rem;
+    }
 
-        font-size:1.2rem;
+    .fan-form {
+
+        padding: 2.5rem;
+
+    }
+
+    .form-header {
+
+        text-align: center;
+
+    }
+
+    .form-header h2 {
+
+        font-size: 2.5rem;
+
+    }
+
+    .form-group input {
+
+        padding: 1.4rem;
+
+        font-size: 1.35rem;
+
+    }
+
+    .checkbox-text {
+
+        font-size: 1.25rem;
+
+    }
+
+    .btn-register {
+
+        width: 100%;
+
+        padding: 1.2rem;
+
+        font-size: 1.2rem;
 
     }
 
@@ -1121,121 +1231,121 @@
    CELULAR
 ========================== */
 
-@media (max-width:576px){
+@media (max-width:576px) {
 
-    .fans-container{
+    .fans-container {
 
-        width:92%;
-
-    }
-
-    .fans-subtitle{
-
-        font-size:1.1rem;
+        width: 92%;
 
     }
 
-    .fans-content h1{
+    .fans-subtitle {
 
-        font-size:2.8rem;
-
-    }
-
-    .fans-content p{
-
-        font-size:1.3rem;
-
-        line-height:1.8;
+        font-size: 1.1rem;
 
     }
 
-    .fans-benefits{
+    .fans-content h1 {
 
-        gap:1rem;
-
-    }
-
-    .fans-benefits li{
-
-        font-size:1.25rem;
-
-        gap:1rem;
+        font-size: 2.8rem;
 
     }
 
-    .fans-benefits li::before{
+    .fans-content p {
 
-        width:2.2rem;
+        font-size: 1.3rem;
 
-        height:2.2rem;
-
-        font-size:1rem;
+        line-height: 1.8;
 
     }
 
-    .fan-form{
+    .fans-benefits {
 
-        padding:2rem 1.8rem;
-
-        border-radius:1.5rem;
+        gap: 1rem;
 
     }
 
-    .form-header span{
+    .fans-benefits li {
 
-        font-size:1.1rem;
+        font-size: 1.25rem;
 
-    }
-
-    .form-header h2{
-
-        font-size:2.2rem;
+        gap: 1rem;
 
     }
 
-    .form-group input{
+    .fans-benefits li::before {
 
-        padding:1.2rem 1.4rem;
+        width: 2.2rem;
 
-        font-size:1.25rem;
+        height: 2.2rem;
 
-    }
-
-    .checkbox-group{
-
-        gap:1rem;
+        font-size: 1rem;
 
     }
 
-    .custom-checkbox{
+    .fan-form {
 
-        width:20px;
+        padding: 2rem 1.8rem;
 
-        height:20px;
-
-    }
-
-    .checkbox-text{
-
-        font-size:1.15rem;
+        border-radius: 1.5rem;
 
     }
 
-    .privacy-text{
+    .form-header span {
 
-        padding:1.2rem;
-
-        font-size:1.05rem;
-
-        line-height:1.7;
+        font-size: 1.1rem;
 
     }
 
-    .btn-register{
+    .form-header h2 {
 
-        padding:1.1rem;
+        font-size: 2.2rem;
 
-        font-size:1.1rem;
+    }
+
+    .form-group input {
+
+        padding: 1.2rem 1.4rem;
+
+        font-size: 1.25rem;
+
+    }
+
+    .checkbox-group {
+
+        gap: 1rem;
+
+    }
+
+    .custom-checkbox {
+
+        width: 20px;
+
+        height: 20px;
+
+    }
+
+    .checkbox-text {
+
+        font-size: 1.15rem;
+
+    }
+
+    .privacy-text {
+
+        padding: 1.2rem;
+
+        font-size: 1.05rem;
+
+        line-height: 1.7;
+
+    }
+
+    .btn-register {
+
+        padding: 1.1rem;
+
+        font-size: 1.1rem;
 
     }
 
@@ -1246,145 +1356,243 @@
    MODAL
 ========================== */
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .success-modal{
+    .success-modal {
 
-        width:92%;
+        width: 92%;
 
-        padding:3rem 2.2rem;
+        padding: 3rem 2.2rem;
 
-        gap:2rem;
-
-    }
-
-    .success-icon{
-
-        width:7rem;
-
-        height:7rem;
-
-        font-size:3.4rem;
+        gap: 2rem;
 
     }
 
-    .success-modal h2{
+    .success-icon {
 
-        font-size:2.8rem;
+        width: 7rem;
+
+        height: 7rem;
+
+        font-size: 3.4rem;
 
     }
 
-    .success-modal p{
+    .success-modal h2 {
 
-        font-size:1.45rem;
+        font-size: 2.8rem;
+
+    }
+
+    .success-modal p {
+
+        font-size: 1.45rem;
 
     }
 
     .btn-whatsapp,
+    .btn-close {
 
-    .btn-close{
+        padding: 1.2rem;
 
-        padding:1.2rem;
-
-        font-size:1.2rem;
+        font-size: 1.2rem;
 
     }
 
 }
 
-@media (max-width:576px){
 
-    .success-modal{
+@media (max-width:576px) {
 
-        width:92%;
+    .success-modal {
 
-        padding:2.5rem 1.8rem;
+        width: 92%;
 
-    }
-
-    .success-icon{
-
-        width:6rem;
-
-        height:6rem;
-
-        font-size:3rem;
+        padding: 2.5rem 1.8rem;
 
     }
 
-    .success-modal h2{
+    .success-icon {
 
-        font-size:2.2rem;
+        width: 6rem;
 
-    }
+        height: 6rem;
 
-    .success-modal p{
-
-        font-size:1.3rem;
-
-        line-height:1.7;
+        font-size: 3rem;
 
     }
 
-    .success-buttons{
+    .success-modal h2 {
 
-        gap:1rem;
+        font-size: 2.2rem;
+
+    }
+
+    .success-modal p {
+
+        font-size: 1.3rem;
+
+        line-height: 1.7;
+
+    }
+
+    .success-buttons {
+
+        gap: 1rem;
 
     }
 
     .btn-whatsapp,
+    .btn-close {
 
-    .btn-close{
+        padding: 1rem;
 
-        padding:1rem;
-
-        font-size:1.1rem;
+        font-size: 1.1rem;
 
     }
 
 }
 
-@media (max-width:400px){
 
-    .fans-content h1{
+@media (max-width:400px) {
 
-        font-size:2.4rem;
+    .fans-content h1 {
 
-    }
-
-    .fans-content p{
-
-        font-size:1.2rem;
+        font-size: 2.4rem;
 
     }
 
-    .form-header h2{
+    .fans-content p {
 
-        font-size:2rem;
-
-    }
-
-    .form-group input{
-
-        font-size:1.2rem;
+        font-size: 1.2rem;
 
     }
 
-    .checkbox-text{
+    .form-header h2 {
 
-        font-size:1.05rem;
-
-    }
-
-    .success-modal h2{
-
-        font-size:2rem;
+        font-size: 2rem;
 
     }
 
-    .success-modal p{
+    .form-group input {
 
-        font-size:1.2rem;
+        font-size: 1.2rem;
+
+    }
+
+    .checkbox-text {
+
+        font-size: 1.05rem;
+
+    }
+
+    .success-modal h2 {
+
+        font-size: 2rem;
+
+    }
+
+    .success-modal p {
+
+        font-size: 1.2rem;
+
+    }
+
+}
+
+
+/* ======================================================
+   DESACTIVAR HOVER EN TABLETS Y CELULARES
+   NO CAMBIA EL DISEÑO
+====================================================== */
+
+@media (max-width:1024px) {
+
+
+    /* ==================================================
+       BENEFICIOS
+    ================================================== */
+
+    .fans-benefits li:hover {
+
+        transform: none;
+
+        color: rgba(255, 255, 255, .85);
+
+    }
+
+
+    /* ==================================================
+       CHECKBOX
+    ================================================== */
+
+    .checkbox-group:hover .custom-checkbox {
+
+        border-color:
+            rgba(255, 255, 255, .18);
+
+        box-shadow: none;
+
+    }
+
+
+    .checkbox-group:hover .checkbox-text {
+
+        color: rgba(255, 255, 255, .75);
+
+    }
+
+
+    /* ==================================================
+       BOTÓN REGISTER
+    ================================================== */
+
+    .btn-register:hover {
+
+        box-shadow: none;
+
+        transform: none;
+
+    }
+
+
+    /* ==================================================
+       FORMULARIO
+    ================================================== */
+
+    .fan-form:hover {
+
+        border-color:
+            rgba(255, 255, 255, .08);
+
+        box-shadow:
+            0 20px 60px rgba(0, 0, 0, .45);
+
+    }
+
+
+    /* ==================================================
+       WHATSAPP
+    ================================================== */
+
+    .btn-whatsapp:hover {
+
+        transform: none;
+
+        box-shadow: none;
+
+    }
+
+
+    /* ==================================================
+       BOTÓN CERRAR
+    ================================================== */
+
+    .btn-close:hover {
+
+        box-shadow: none;
+
+        transform: none;
 
     }
 

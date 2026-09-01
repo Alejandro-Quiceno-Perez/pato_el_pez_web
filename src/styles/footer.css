@@ -10,6 +10,7 @@
 
 }
 
+
 /* ======================================================
    CONTAINER
 ====================================================== */
@@ -34,6 +35,7 @@
 
 }
 
+
 /* ======================================================
    COLUMNAS
 ====================================================== */
@@ -48,6 +50,7 @@
 
 }
 
+
 .footer-column h3 {
 
     color: var(--white);
@@ -59,6 +62,7 @@
     position: relative;
 
 }
+
 
 .footer-column h3::after {
 
@@ -78,6 +82,7 @@
 
 }
 
+
 /* ======================================================
    LINKS
 ====================================================== */
@@ -95,6 +100,9 @@
 
 }
 
+
+/* Hover escritorio */
+
 .footer-column a:hover {
 
     color: var(--red);
@@ -102,6 +110,7 @@
     transform: translateX(4px);
 
 }
+
 
 /* ======================================================
    BRAND
@@ -113,6 +122,7 @@
 
 }
 
+
 .footer-logo {
 
     width: 24rem;
@@ -122,6 +132,7 @@
     margin-bottom: 1rem;
 
 }
+
 
 .footer-brand p {
 
@@ -133,6 +144,7 @@
 
 }
 
+
 .footer-brand-name {
 
     color: var(--red);
@@ -140,6 +152,7 @@
     font-weight: 700;
 
 }
+
 
 /* ======================================================
    FOOTER BOTTOM
@@ -155,6 +168,7 @@
 
 }
 
+
 .footer-bottom p {
 
     color: rgba(255,255,255,.5);
@@ -162,6 +176,7 @@
     font-size: 1.3rem;
 
 }
+
 
 /* ======================================================
    TABLETS
@@ -179,7 +194,21 @@
 
     }
 
+
+    /* ==================================================
+       DESACTIVAR HOVER
+    ================================================== */
+
+    .footer-column a:hover{
+
+        color:var(--white);
+
+        transform:none;
+
+    }
+
 }
+
 
 /* ======================================================
    TABLET VERTICAL
@@ -199,11 +228,13 @@
 
     }
 
+
     .footer-column{
 
         align-items:center;
 
     }
+
 
     .footer-column h3::after{
 
@@ -211,11 +242,13 @@
 
     }
 
+
     .footer-brand{
 
         align-items:center;
 
     }
+
 
     .footer-logo{
 
@@ -223,7 +256,21 @@
 
     }
 
+
+    /* ==================================================
+       DESACTIVAR HOVER
+    ================================================== */
+
+    .footer-column a:hover{
+
+        color:var(--white);
+
+        transform:none;
+
+    }
+
 }
+
 
 /* ======================================================
    CELULARES
@@ -239,17 +286,20 @@
 
     }
 
+
     .footer-logo{
 
         width:16rem;
 
     }
 
+
     .footer-column h3{
 
         font-size:1.6rem;
 
     }
+
 
     .footer-column a,
     .footer-column span{
@@ -258,11 +308,13 @@
 
     }
 
+
     .footer-brand p{
 
         font-size:1.35rem;
 
     }
+
 
     .footer-bottom{
 
@@ -270,9 +322,23 @@
 
     }
 
+
     .footer-bottom p{
 
         font-size:1.2rem;
+
+    }
+
+
+    /* ==================================================
+       DESACTIVAR HOVER
+    ================================================== */
+
+    .footer-column a:hover{
+
+        color:var(--white);
+
+        transform:none;
 
     }
 

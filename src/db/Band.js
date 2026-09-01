@@ -42,8 +42,8 @@ const Band = {
     },
     {
       id: 2,
-      nombre: "patodelpez@gmail.com",
-      url: "mailto:patodelpez@gmail.com"
+      nombre: "Correo Electrónico",
+      url: "mailto:punkrock.patoelpez@gmail.com"
     }
   ]
 }

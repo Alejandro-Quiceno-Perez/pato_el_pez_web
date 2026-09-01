@@ -93,7 +93,7 @@ const Merch = [
         "id": 12,
         "name": "Camiseta Negra OS",
         "descripcion": "Diseño Clasico",
-        "price": 35000,
+        "price": 55000,
         "image": `${import.meta.env.BASE_URL}images/Merch/Camisa_Negra.webp`,
         "image2": `${import.meta.env.BASE_URL}images/Merch/Posterior_camisa.webp`,
         "sizes": ["S", "M", "L","XL"]
@@ -102,7 +102,7 @@ const Merch = [
         "id": 13,
         "name": "Camiseta Negra",
         "descripcion": "Diseño Mejor Que esto",
-        "price": 55000,
+        "price": 35000,
         "image": `${import.meta.env.BASE_URL}images/Merch/camisa_mejor_negro_frente.webp`,
         "image2": `${import.meta.env.BASE_URL}images/Merch/Posterior_camisa.webp`,
         "sizes": ["S", "M", "L","XL"]
@@ -138,7 +138,7 @@ const Merch = [
         "id": 18,
         "name": "Camiseta Roja OS",
         "descripcion": "Diseño Mejor Que esto",
-        "price": 35000,
+        "price": 55000,
         "image": `${import.meta.env.BASE_URL}images/Merch/camisa_pato_rojo_frente.webp`,
         "image2": `${import.meta.env.BASE_URL}images/Merch/posterior_camisa_rojo.webp`,
         "sizes": ["No Aplica"]
