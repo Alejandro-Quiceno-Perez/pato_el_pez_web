@@ -3,44 +3,60 @@
 ========================================== */
 
 .home-music-container {
+
     width: 100%;
+
     padding: 5rem 0;
+
     background: #000;
 
-
 }
+
 
 /* ==========================================
    TOP SECTION
 ========================================== */
 
 .music-wrapper {
+
     width: 85%;
-    /* height: 100%; */
+
     margin: 0 auto;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     flex-wrap: wrap;
+
     gap: 5rem;
 
-    /* background:#1DB954 */
 }
+
 
 /* ==========================================
    ALBUM
 ========================================== */
 
 .album-cover {
-    /* background: rgba(0, 247, 255, 0.801); */
+
     width: 30%;
+
     height: 60rem;
+
 }
 
+
 .album-cover img {
+
     width: 100%;
+
     height: 100%;
+
     aspect-ratio: 1/1;
+
     object-fit: cover;
 
     border-radius: 2rem;
@@ -49,115 +65,194 @@
         0 20px 40px rgba(0, 0, 0, .6);
 
     transition: .4s;
+
 }
 
+
+/* ==========================================
+   HOVER ALBUM - ESCRITORIO
+========================================== */
+
 .album-cover img:hover {
+
     transform: scale(1.03);
+
 }
+
 
 /* ==========================================
    INFO
 ========================================== */
 
 .music-section-title {
+
     width: 60%;
+
     display: flex;
+
     flex-direction: column;
+
     gap: 2rem;
+
 }
 
+
 .music-section-title span {
+
     color: var(--red);
 
     font-size: 1.4rem;
+
     text-transform: uppercase;
+
     letter-spacing: .5rem;
+
     font-weight: 700;
+
 }
+
 
 .music-section-title h2 {
+
     font-size: 6rem;
+
     line-height: .95;
+
     color: var(--white);
+
     text-transform: uppercase;
+
 }
 
+
 .music-section-title p {
+
     font-size: 1.8rem;
+
     line-height: 1.8;
+
     color: rgba(255, 255, 255, .7);
 
     max-width: 650px;
+
 }
+
 
 /* ==========================================
    BUTTONS
 ========================================== */
 
 .music-section-link {
+
     display: flex;
+
     gap: 2rem;
+
     margin-top: 1rem;
+
 }
 
+
 .music-section-link a {
+
     text-decoration: none;
+
     padding: 1.5rem 3rem;
+
     border-radius: 1rem;
 
     font-size: 1.4rem;
+
     text-transform: uppercase;
+
     font-weight: 700;
 
     transition: .3s;
+
 }
+
 
 .music-section-link a:first-child {
+
     background: var(--red);
+
     color: white;
+
 }
 
+
+/* ==========================================
+   HOVER BOTÓN PRINCIPAL - ESCRITORIO
+========================================== */
+
 .music-section-link a:first-child:hover {
+
     transform: translateY(-5px);
 
     box-shadow:
         0 10px 30px rgba(136, 16, 20, .4);
+
 }
+
 
 .music-section-link a:last-child {
+
     border: 2px solid rgba(255, 255, 255, .2);
+
     color: white;
+
 }
 
+
+/* ==========================================
+   HOVER BOTÓN SECUNDARIO - ESCRITORIO
+========================================== */
+
 .music-section-link a:last-child:hover {
+
     border-color: var(--red);
+
     color: var(--red);
+
     transform: translateY(-5px);
+
 }
+
 
 /* ==========================================
    SONGS SECTION
 ========================================== */
 
 .songs-grid {
-    /* background: #09ff00;   */
+
     margin-top: 5rem;
 
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 2rem;
+
 }
 
+
 .song-card {
+
     width: 14rem;
+
     height: 14rem;
 
     border-radius: 50%;
+
 }
 
+
 .song-card a img {
+
     width: 100%;
+
     height: 100%;
+
     object-fit: cover;
 
     border-radius: 50%;
@@ -168,17 +263,29 @@
         transform .3s ease,
         box-shadow .5s ease,
         border-color .5s ease;
+
 }
 
+
+/* ==========================================
+   HOVER SONG CARD - ESCRITORIO
+========================================== */
+
 .song-card:hover img {
+
     transform: scale(1.08);
+
 }
+
 
 /* ==========================================
    RESPONSIVE
 ========================================== */
 
-/* LAPTOP */
+
+/* ==========================================
+   LAPTOP
+========================================== */
 
 @media (max-width:1200px) {
 
@@ -190,6 +297,7 @@
 
     }
 
+
     .album-cover {
 
         width: 28%;
@@ -197,6 +305,7 @@
         height: 48rem;
 
     }
+
 
     .music-section-title {
 
@@ -206,7 +315,10 @@
 
 }
 
-/* TABLET */
+
+/* ==========================================
+   TABLET
+========================================== */
 
 @media (max-width:992px) {
 
@@ -216,11 +328,13 @@
 
     }
 
+
     .music-section-title {
 
         width: 100%;
 
     }
+
 
     .music-wrapper {
 
@@ -228,9 +342,50 @@
 
     }
 
+
+    /* ======================================
+       DESACTIVAR HOVER
+    ====================================== */
+
+    .album-cover img:hover {
+
+        transform: none;
+
+    }
+
+
+    .music-section-link a:first-child:hover {
+
+        transform: none;
+
+        box-shadow: none;
+
+    }
+
+
+    .music-section-link a:last-child:hover {
+
+        border-color: rgba(255, 255, 255, .2);
+
+        color: white;
+
+        transform: none;
+
+    }
+
+
+    .song-card:hover img {
+
+        transform: none;
+
+    }
+
 }
 
-/* TABLET VERTICAL */
+
+/* ==========================================
+   TABLET VERTICAL
+========================================== */
 
 @media (max-width:768px) {
 
@@ -240,11 +395,13 @@
 
     }
 
+
     .music-wrapper {
 
         width: 94%;
 
     }
+
 
     .music-section-title h2 {
 
@@ -252,11 +409,13 @@
 
     }
 
+
     .music-section-title p {
 
         font-size: 1.6rem;
 
     }
+
 
     .music-section-link {
 
@@ -265,6 +424,7 @@
         margin-top: .5rem;
 
     }
+
 
     .music-section-link a {
 
@@ -276,6 +436,7 @@
 
     }
 
+
     .songs-grid {
 
         justify-content: center;
@@ -283,6 +444,7 @@
         gap: 1.5rem;
 
     }
+
 
     .song-card {
 
@@ -292,9 +454,50 @@
 
     }
 
+
+    /* ======================================
+       HOVER DESACTIVADO
+    ====================================== */
+
+    .album-cover img:hover {
+
+        transform: none;
+
+    }
+
+
+    .music-section-link a:first-child:hover {
+
+        transform: none;
+
+        box-shadow: none;
+
+    }
+
+
+    .music-section-link a:last-child:hover {
+
+        border-color: rgba(255, 255, 255, .2);
+
+        color: white;
+
+        transform: none;
+
+    }
+
+
+    .song-card:hover img {
+
+        transform: none;
+
+    }
+
 }
 
-/* CELULAR */
+
+/* ==========================================
+   CELULAR
+========================================== */
 
 @media (max-width:576px) {
 
@@ -304,6 +507,7 @@
 
     }
 
+
     .music-section-title span {
 
         font-size: 1.2rem;
@@ -312,11 +516,13 @@
 
     }
 
+
     .music-section-title h2 {
 
         font-size: 3.5rem;
 
     }
+
 
     .music-section-title p {
 
@@ -325,6 +531,7 @@
         line-height: 1.7;
 
     }
+
 
     .music-section-link {
 
@@ -335,6 +542,7 @@
         width: 100%;
 
     }
+
 
     .music-section-link a {
 
@@ -350,11 +558,13 @@
 
     }
 
+
     .songs-grid {
 
         gap: 1rem;
 
     }
+
 
     .song-card {
 
@@ -364,9 +574,50 @@
 
     }
 
+
+    /* ======================================
+       HOVER DESACTIVADO
+    ====================================== */
+
+    .album-cover img:hover {
+
+        transform: none;
+
+    }
+
+
+    .music-section-link a:first-child:hover {
+
+        transform: none;
+
+        box-shadow: none;
+
+    }
+
+
+    .music-section-link a:last-child:hover {
+
+        border-color: rgba(255, 255, 255, .2);
+
+        color: white;
+
+        transform: none;
+
+    }
+
+
+    .song-card:hover img {
+
+        transform: none;
+
+    }
+
 }
 
-/* CELULARES PEQUEÑOS */
+
+/* ==========================================
+   CELULARES PEQUEÑOS
+========================================== */
 
 @media (max-width:400px) {
 
@@ -376,11 +627,50 @@
 
     }
 
+
     .song-card {
 
         width: 9rem;
 
         height: 9rem;
+
+    }
+
+
+    /* ======================================
+       HOVER DESACTIVADO
+    ====================================== */
+
+    .album-cover img:hover {
+
+        transform: none;
+
+    }
+
+
+    .music-section-link a:first-child:hover {
+
+        transform: none;
+
+        box-shadow: none;
+
+    }
+
+
+    .music-section-link a:last-child:hover {
+
+        border-color: rgba(255, 255, 255, .2);
+
+        color: white;
+
+        transform: none;
+
+    }
+
+
+    .song-card:hover img {
+
+        transform: none;
 
     }
 

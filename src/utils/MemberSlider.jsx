@@ -44,9 +44,9 @@ const MemberSlider = () => {
 
         arrows: false,
 
-        autoplay: true,
+        // autoplay: true,
 
-        autoplaySpeed: 10000
+        // autoplaySpeed: 10000
 
     }), []);
     return (

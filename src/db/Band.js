@@ -5,8 +5,8 @@ const Band = {
   city: "Colombia",
   founded: 2020,
   genre: "Punk Rock",
-  coverImage: "/images/Members/Banda.webp",
-  logo: "/logo_letras_blanco.webp",
+  coverImage: `${import.meta.env.BASE_URL}images/Members/Banda.webp`,
+  logo: `${import.meta.env.BASE_URL}logo_letras_blanco.webp`,
   redes: [
     {
       id: 1,
@@ -42,8 +42,8 @@ const Band = {
     },
     {
       id: 2,
-      nombre: "patodelpez@gmail.com",
-      url: "mailto:patodelpez@gmail.com"
+      nombre: "Correo Electrónico",
+      url: "mailto:punkrock.patoelpez@gmail.com"
     }
   ]
 }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import '../styles/btnTop.css'
+import '../styles/BtnTop.css'
 
 const BtnTop = () => {
     const [isVisible, setIsVisible] = useState(false);

@@ -118,8 +118,6 @@
 
     /* border-radius: 2rem; */
 
-
-
     transition: .45s ease;
 }
 
@@ -227,7 +225,6 @@
     color: var(--white);
 
 }
-
 
 
 /* ==========================================
@@ -375,7 +372,6 @@
     color:white;
 
     border:1px solid var(--red);
-    
 
 }
 
@@ -976,6 +972,20 @@
 
     }
 
+    /* ==================================================
+       SPOTIFY / YOUTUBE
+       UN POCO MÁS GRANDES
+    ================================================== */
+
+    .song-actions .music-btn-spotify,
+    .song-actions .music-btn-youtube {
+
+        padding:.8rem 1.1rem;
+
+        font-size:1rem;
+
+    }
+
 }
 
 
@@ -1173,6 +1183,123 @@
         padding:.6rem .8rem;
 
         font-size:.9rem;
+
+    }
+
+    /* ==================================================
+       SPOTIFY / YOUTUBE
+       UN POCO MÁS GRANDES
+    ================================================== */
+
+    .song-actions .music-btn-spotify,
+    .song-actions .music-btn-youtube {
+
+        padding:.75rem 1rem;
+
+        font-size:1rem;
+
+    }
+
+
+    /* ==================================================
+       DESACTIVAR HOVER
+    ================================================== */
+
+    .album-cover img:hover {
+
+        transform:none;
+
+    }
+
+    .album-details span:hover {
+
+        background:rgba(255,255,255,.05);
+
+        border-color:rgba(255,255,255,.08);
+
+        color:rgba(255,255,255,.8);
+
+    }
+
+    .music-btn-primary:hover {
+
+        transform:none;
+
+        box-shadow:none;
+
+    }
+
+    .music-btn-outline:hover {
+
+        border-color:rgba(255,255,255,.2);
+
+        color:white;
+
+        transform:none;
+
+    }
+
+    .music-btn-spotify:hover {
+
+        transform:none;
+
+        box-shadow:none;
+
+    }
+
+    .music-btn-youtube:hover {
+
+        color:white;
+
+        border-color:rgba(255,255,255,.2);
+
+        transform:none;
+
+    }
+
+    .music-container .song-card:hover {
+
+        background:rgba(255,255,255,.02);
+
+        border-color:rgba(255,255,255,.06);
+
+        transform:none;
+
+        box-shadow:none;
+
+    }
+
+    .music-container .song-card:hover::before {
+
+        transform:scaleY(0);
+
+    }
+
+    .song-card:hover .song-number span {
+
+        color:rgba(255,255,255,.35);
+
+    }
+
+    .song-card:hover .song-cover img {
+
+        transform:none;
+
+        filter:none;
+
+    }
+
+    .song-card:hover .song-info h3 {
+
+        color:var(--white);
+
+    }
+
+    .song-card:hover .song-actions {
+
+        opacity:1;
+
+        transform:none;
 
     }
 
@@ -1388,6 +1515,20 @@
 
     }
 
+    /* ==================================================
+       SPOTIFY / YOUTUBE
+       UN POCO MÁS GRANDES
+    ================================================== */
+
+    .song-actions .music-btn-spotify,
+    .song-actions .music-btn-youtube {
+
+        padding:.65rem .85rem;
+
+        font-size:.9rem;
+
+    }
+
 }
 
 
@@ -1517,6 +1658,20 @@
         padding:.5rem .6rem;
 
         font-size:.75rem;
+
+    }
+
+    /* ==================================================
+       SPOTIFY / YOUTUBE
+       UN POCO MÁS GRANDES
+    ================================================== */
+
+    .song-actions .music-btn-spotify,
+    .song-actions .music-btn-youtube {
+
+        padding:.8rem .7rem;
+
+        font-size:1rem;
 
     }
 

@@ -4,7 +4,7 @@ const FotoBannerBanda = () => {
     return (
         <div className="foto-banner-banda-container">
             <div className="foto-banner-banda">
-                <img src="/images/BannerBienvenida/portada3.webp" alt="Banda" />
+                <img src={`${import.meta.env.BASE_URL}images/BannerBienvenida/portada3.webp`} alt="Banda" />
             </div>
         </div>
     )

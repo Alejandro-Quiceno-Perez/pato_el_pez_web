@@ -34,7 +34,7 @@ const SplashScreen = ({ onFinish }) => {
                 playsInline
             >
                 <source
-                    src="/videos/splashScreem.mp4"
+                    src={`${import.meta.env.BASE_URL}videos/splashScreem.mp4`}
                     type="video/mp4"
                 />
             </video>
@@ -48,7 +48,7 @@ const SplashScreen = ({ onFinish }) => {
                 playsInline
             >
                 <source
-                    src="/videos/SplashScreemCelular.mp4"
+                    src={`${import.meta.env.BASE_URL}videos/SplashScreemCelular.mp4`}
                     type="video/mp4"
                 />
             </video>

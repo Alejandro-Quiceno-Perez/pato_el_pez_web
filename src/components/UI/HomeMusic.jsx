@@ -5,7 +5,7 @@ import SongCard from '../../utils/SongCard';
 import '../../styles/HomeMusic.css';
 import BtnButton from '../../utils/BtnButton';
 
-const imgAlbum = '/img_music/Caratula_disco.jpg';
+const imgAlbum = `${import.meta.env.BASE_URL}img_music/Caratula_disco.jpg`;
 
 const container = {
     hidden: {},

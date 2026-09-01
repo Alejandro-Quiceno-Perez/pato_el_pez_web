@@ -8,7 +8,7 @@ const Music = [
 
         genre:"Punk Rock",
 
-        cover:"/img_music/Caratula_disco.jpg",
+        cover:`${import.meta.env.BASE_URL}img_music/Caratula_disco.jpg`,
 
         spotify:"https://open.spotify.com/artist/4pbnupXCtNilC05RqeFrCO?si=ENr9i_a8Royd1osd2oJseQ",
 
@@ -19,7 +19,7 @@ const Music = [
             {
                 "id": 1,
                 "title": "Mejor Que Esto",
-                "cover": "/img_music/Mejor_que_esto.png",
+                "cover": `${import.meta.env.BASE_URL}img_music/Mejor_que_esto.png`,
                 "spotify": "https://open.spotify.com/track/4D08jaNalP8Gly6OTE3nT1?si=8f60008101cf42d9",
                 "youtube": "https://www.youtube.com/watch?v=DXW0O16KTOM&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4",
                 "releaseDate": "2025-09-06",
@@ -39,7 +39,7 @@ const Music = [
             {
                 "id": 2,
                 "title": "Xiomi",
-                "cover": "/img_music/xiomi.png",
+                "cover": `${import.meta.env.BASE_URL}img_music/xiomi.png`,
                 "spotify": "https://open.spotify.com/track/4Pey9BUhHCDsPosPSNDTSU?si=5209791ff64f4042",
                 "youtube": "https://www.youtube.com/watch?v=0NT6QWsMQhQ&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=2",
                 "releaseDate": "2025-09-06",
@@ -71,7 +71,7 @@ const Music = [
             {
                 "id": 4,
                 "title": "Dejarte Ir",
-                "cover": "/img_music/Dejarte_ir.png",
+                "cover": `${import.meta.env.BASE_URL}img_music/Dejarte_ir.png`,
                 "spotify": "https://open.spotify.com/track/0Tm2MhdoLyuAfbLAk1349v?si=cdf7306e54674a8f",
                 "youtube": "https://www.youtube.com/watch?v=25qJ1sfA0zE&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=3",
                 "releaseDate": "2025-09-06",
@@ -105,7 +105,7 @@ const Music = [
             {
                 "id": 5,
                 "title": "Rutina",
-                "cover": "/img_music/Rutina.png",
+                "cover": `${import.meta.env.BASE_URL}img_music/Rutina.png`,
                 "spotify": "https://open.spotify.com/track/22PXqMI55HPDfYNEQX87RH?si=d5394edb7d004d8c",
                 "youtube": "https://www.youtube.com/watch?v=tmuRKaiJDMM&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=4",
                 "releaseDate": "2025-09-06",
@@ -136,7 +136,7 @@ const Music = [
             {
                 "id": 6,
                 "title": "Cuando Sea Grande",
-                "cover": "/img_music/Cuando_sea_grande.png",
+                "cover": `${import.meta.env.BASE_URL}img_music/Cuando_sea_grande.png`,
                 "spotify": "https://open.spotify.com/track/1vDrhK6jS1XgPZ17vCov3t?si=5001fcda9e924810",
                 "youtube": "https://www.youtube.com/watch?v=GoTvxAWzrFk&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=5",
                 "releaseDate": "2025-09-06",
@@ -168,7 +168,7 @@ const Music = [
             {
                 "id": 7,
                 "title": "La Bestia",
-                "cover": "/img_music/La_bestia.png",
+                "cover": `${import.meta.env.BASE_URL}img_music/La_bestia.png`,
                 "spotify": "https://open.spotify.com/track/21jwBg0dbMEDrdLnCIYHdP?si=8efcf8cb5a2f43c2",
                 "youtube": "https://www.youtube.com/watch?v=CmDb8bRmaRs&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=6",
                 "releaseDate": "2025-09-06",
@@ -192,7 +192,7 @@ const Music = [
             {
                 "id": 8,
                 "title": "La Oveja Negra",
-                "cover": "/img_music/La_oveja_negra.png",
+                "cover": `${import.meta.env.BASE_URL}img_music/La_oveja_negra.png`,
                 "spotify": "https://open.spotify.com/track/2UnhzBC1Ve0emTfBa92BxI?si=d6c62b91074c4eb5",
                 "youtube": "https://www.youtube.com/watch?v=2BpG4y_Xr-s&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=7",
                 "releaseDate": "2025-09-06",
@@ -217,7 +217,7 @@ const Music = [
             {
                 "id": 9,
                 "title": "22",
-                "cover": "/img_music/22.png",
+                "cover": `${import.meta.env.BASE_URL}img_music/22.png`,
                 "spotify": "https://open.spotify.com/track/2dPxQMY4YflfkZC25IsnOP?si=98bfc5e54a9542d7",
                 "youtube": "https://www.youtube.com/watch?v=cRLwvtleWq8&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=8",
                 "releaseDate": "2025-09-06",
@@ -258,7 +258,7 @@ const Music = [
             {
                 "id": 10,
                 "title": "Esto Es Pato",
-                "cover": "/img_music/Esto_es_pato.png",
+                "cover": `${import.meta.env.BASE_URL}img_music/Esto_es_pato.png`,
                 "spotify": "https://open.spotify.com/track/6PldJmmHyKWFFBsmPLgOm4?si=54148df23a6f49e2",
                 "youtube": "https://www.youtube.com/watch?v=m5Rm3QE2dFE&list=OLAK5uy_lw1RNjgOFAmA5R-FLCN1v2Kz1gP80xox4&index=9",
                 "releaseDate": "2025-09-06",
@@ -283,7 +283,7 @@ const Music = [
             {
                 "id": 3,
                 "title": "El Pobre Sebas",
-                "cover": "/img_music/El_pobre_sebas.png",
+                "cover": `${import.meta.env.BASE_URL}img_music/El_pobre_sebas.png`,
                 "spotify": "https://open.spotify.com/track/6lTVZMXa4CPrZFj4G21kPg?si=7856a721ef4f488f",
                 "youtube": "https://www.youtube.com/watch?v=7ydRMuSXzNo",
                 "releaseDate": "2025-09-06",
