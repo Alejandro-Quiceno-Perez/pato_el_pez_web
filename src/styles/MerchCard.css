@@ -41,6 +41,7 @@
     left: 0;
 
     width: 100%;
+
     height: .4rem;
 
     background: var(--red);
@@ -54,8 +55,8 @@
 
 
 /* ==========================================
-   CARD HOVER
-   SOLAMENTE PC
+   HOVER TARJETA
+   PC SOLAMENTE
 ========================================== */
 
 @media (min-width: 993px) {
@@ -67,17 +68,6 @@
 
         box-shadow:
             0 20px 40px rgba(0, 0, 0, .5);
-    }
-
-
-    /* ======================================
-       CAMBIO DE IMAGEN EN PC
-    ====================================== */
-
-    .merch-card.merch-ready:hover .secondary-image {
-
-        opacity: 1;
-
     }
 
 }
@@ -102,7 +92,7 @@
 
 
 /* ==========================================
-   TODAS LAS IMÁGENES
+   IMÁGENES
 ========================================== */
 
 .merch-image img {
@@ -131,7 +121,8 @@
 
     z-index: 1;
 
-    transition: opacity .35s ease;
+    transition:
+        opacity .35s ease;
 }
 
 
@@ -147,37 +138,50 @@
 
     pointer-events: none;
 
-    transition: opacity .35s ease;
+    transition:
+        opacity .35s ease;
 }
 
 
 /* ==========================================
-   BOTÓN CAMBIAR IMAGEN
-
-   OCULTO EN PC
+   HOVER CAMBIO DE IMAGEN
+   PC SOLAMENTE
 ========================================== */
 
-.merch-image-toggle {
+@media (min-width: 993px) {
 
-    display: none;
+    .merch-card:hover .secondary-image {
+
+        opacity: 1;
+    }
 
 }
 
 
 /* ==========================================
-   CLASES CONTROLADAS POR REACT
+   ESTADOS CONTROLADOS POR REACT
+   TABLET / CELULAR
 ========================================== */
 
 .mobile-hidden {
 
     opacity: 0;
-
 }
 
 .mobile-visible {
 
     opacity: 1;
+}
 
+
+/* ==========================================
+   BOTÓN CAMBIAR IMAGEN
+   PC OCULTO
+========================================== */
+
+.merch-image-toggle {
+
+    display: none;
 }
 
 
@@ -251,7 +255,7 @@
 
 
 /* ==========================================
-   BUTTON
+   BOTÓN COMPRAR
 ========================================== */
 
 .merch-btn {
@@ -289,7 +293,7 @@
 
 /* ==========================================
    COMPRAR HOVER
-   SOLAMENTE PC
+   PC SOLAMENTE
 ========================================== */
 
 @media (min-width: 993px) {
@@ -304,72 +308,18 @@
 
 
 /* ======================================================
-   RESPONSIVE
+   TABLET
 ====================================================== */
 
-
-/* ==========================
-   LAPTOP
-========================== */
-
-@media (max-width:1200px) {
-
-    .merch-card {
-
-        width:270px;
-
-    }
-
-    .merch-image {
-
-        height:31rem;
-
-    }
-
-    .merch-info {
-
-        padding:2rem;
-
-        gap:1.2rem;
-
-    }
-
-    .merch-info h3 {
-
-        font-size:2rem;
-
-    }
-
-    .merch-description {
-
-        font-size:1.2rem !important;
-
-        letter-spacing:.08rem;
-
-    }
-
-    .merch-price {
-
-        font-size:1.8rem;
-
-    }
-
-}
-
-
-/* ==========================
-   TABLET
-========================== */
-
-@media (max-width:992px) {
+@media (max-width: 992px) {
 
     /* ======================================
-       DESACTIVAR TODO HOVER
+       ELIMINAR EFECTOS DE TARJETA
     ====================================== */
 
     .merch-card {
 
-        transition: none;
+        transition: none !important;
 
         cursor: default;
     }
@@ -382,60 +332,84 @@
 
         box-shadow: none;
 
+        transform: none;
     }
 
 
     .merch-card::before {
 
         display: none;
-
-    }
-
-
-    .merch-card:hover::before {
-
-        transform: none;
-
     }
 
 
     /* ======================================
        IMÁGENES
-       
        SIN TRANSICIÓN
-       SIN HOVER
     ====================================== */
 
-    .merch-image img {
-
-        transition: none !important;
-
-    }
-
-
+    .merch-image img,
     .primary-image,
     .secondary-image {
 
         transition: none !important;
-
     }
 
 
     /* ======================================
-       REGLA IMPORTANTE
-       
-       El hover NO cambia la imagen.
+       IMPORTANTE
+
+       El hover de PC queda completamente
+       desactivado en tablet/celular.
     ====================================== */
 
-    .merch-card.merch-ready:hover .secondary-image {
+    .merch-card:hover .secondary-image {
+
+        opacity: 0;
+    }
+
+
+    /* ======================================
+       ESTADO NORMAL
+    ====================================== */
+
+    .primary-image {
+
+        opacity: 1;
+
+        z-index: 1;
+    }
+
+
+    .secondary-image {
 
         opacity: 0;
 
+        z-index: 2;
     }
 
 
     /* ======================================
-       BOTÓN VER IMAGEN 2
+       CAMBIO CONTROLADO POR REACT
+    ====================================== */
+
+    .primary-image.mobile-hidden {
+
+        opacity: 0 !important;
+
+        z-index: 1;
+    }
+
+
+    .secondary-image.mobile-visible {
+
+        opacity: 1 !important;
+
+        z-index: 2;
+    }
+
+
+    /* ======================================
+       BOTÓN VER IMAGEN
     ====================================== */
 
     .merch-image-toggle {
@@ -448,8 +422,8 @@
 
         margin-top: .5rem;
 
-        border: 1px solid
-            rgba(255,255,255,.15);
+        border:
+            1px solid rgba(255,255,255,.15);
 
         border-radius: 1rem;
 
@@ -465,10 +439,13 @@
 
         cursor: pointer;
 
-        transition: none;
-
+        transition: none !important;
     }
 
+
+    /* ======================================
+       SIN HOVER BOTÓN IMAGEN
+    ====================================== */
 
     .merch-image-toggle:hover {
 
@@ -480,64 +457,19 @@
             rgba(255,255,255,.15);
 
         transform: none;
-
-    }
-
-
-    /* ======================================
-       CAMBIO DIRECTO DE IMAGEN
-       
-       React controla la visibilidad.
-       NO HAY OPACITY TRANSITION.
-    ====================================== */
-
-    .primary-image.mobile-hidden {
-
-        opacity: 0;
-
-        z-index: 1;
-
-    }
-
-
-    .primary-image:not(.mobile-hidden) {
-
-        opacity: 1;
-
-        z-index: 2;
-
-    }
-
-
-    .secondary-image.mobile-visible {
-
-        opacity: 1;
-
-        z-index: 2;
-
-    }
-
-
-    .secondary-image:not(.mobile-visible) {
-
-        opacity: 0;
-
-        z-index: 1;
-
     }
 
 
     /* ======================================
        BOTÓN COMPRAR
-       
-       CONSERVA SU DISEÑO.
-       SOLAMENTE SE ELIMINA EL HOVER.
+
+       MISMO DISEÑO
+       SIN HOVER
     ====================================== */
 
     .merch-btn {
 
-        transition: none;
-
+        transition: none !important;
     }
 
 
@@ -545,12 +477,11 @@
 
         transform: none;
 
-        box-shadow: none;
-
         background: var(--red);
 
         color: var(--white);
 
+        box-shadow: none;
     }
 
 
@@ -560,242 +491,235 @@
 
     .merch-card {
 
-        width:220px;
-
+        width: 220px;
     }
+
 
     .merch-image {
 
-        height:24rem;
-
+        height: 24rem;
     }
+
 
     .merch-info {
 
-        padding:1.6rem;
+        padding: 1.6rem;
 
-        gap:1rem;
-
+        gap: 1rem;
     }
+
 
     .merch-info h3 {
 
-        font-size:1.8rem;
-
+        font-size: 1.8rem;
     }
+
 
     .merch-description {
 
-        font-size:1.1rem !important;
+        font-size: 1.1rem !important;
 
-        letter-spacing:.06rem;
-
+        letter-spacing: .06rem;
     }
+
 
     .merch-price {
 
-        font-size:1.6rem;
-
+        font-size: 1.6rem;
     }
+
 
     .merch-btn {
 
-        padding:1rem;
+        padding: 1rem;
 
-        font-size:1.2rem;
-
+        font-size: 1.2rem;
     }
 
 }
 
 
-/* ==========================
+/* ======================================================
    TABLET VERTICAL
-========================== */
+====================================================== */
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
     .merch-card {
 
-        width:190px;
-
+        width: 190px;
     }
+
 
     .merch-image {
 
-        height:21rem;
-
+        height: 21rem;
     }
+
 
     .merch-info {
 
-        padding:1.4rem;
+        padding: 1.4rem;
 
-        gap:.8rem;
-
+        gap: .8rem;
     }
+
 
     .merch-info h3 {
 
-        font-size:1.6rem;
-
+        font-size: 1.6rem;
     }
+
 
     .merch-description {
 
-        font-size:1rem !important;
-
+        font-size: 1rem !important;
     }
+
 
     .merch-price {
 
-        font-size:1.5rem;
-
+        font-size: 1.5rem;
     }
+
 
     .merch-btn {
 
-        padding:.9rem;
+        padding: .9rem;
 
-        font-size:1.1rem;
-
+        font-size: 1.1rem;
     }
 
 
     .merch-image-toggle {
 
-        padding:.9rem;
+        padding: .9rem;
 
-        font-size:1.1rem;
-
+        font-size: 1.1rem;
     }
 
 }
 
 
-/* ==========================
+/* ======================================================
    CELULAR
-========================== */
+====================================================== */
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
 
     .merch-card {
 
-        width:100%;
+        width: 100%;
 
-        max-width:180px;
-
+        max-width: 180px;
     }
+
 
     .merch-image {
 
-        height:19rem;
-
+        height: 19rem;
     }
+
 
     .merch-info {
 
-        padding:1.3rem;
+        padding: 1.3rem;
 
-        gap:.8rem;
-
+        gap: .8rem;
     }
+
 
     .merch-info h3 {
 
-        font-size:1.5rem;
-
+        font-size: 1.5rem;
     }
+
 
     .merch-description {
 
-        font-size:.95rem !important;
+        font-size: .95rem !important;
 
-        letter-spacing:.05rem;
-
+        letter-spacing: .05rem;
     }
+
 
     .merch-price {
 
-        font-size:1.4rem;
-
+        font-size: 1.4rem;
     }
+
 
     .merch-btn {
 
-        width:100%;
+        width: 100%;
 
-        padding:.9rem;
+        padding: .9rem;
 
-        font-size:1.1rem;
-
+        font-size: 1.1rem;
     }
 
 
     .merch-image-toggle {
 
-        width:100%;
+        width: 100%;
 
-        padding:.9rem;
+        padding: .9rem;
 
-        font-size:1.1rem;
-
+        font-size: 1.1rem;
     }
 
 }
 
 
-/* ==========================
+/* ======================================================
    CELULARES PEQUEÑOS
-========================== */
+====================================================== */
 
-@media (max-width:400px) {
+@media (max-width: 400px) {
 
     .merch-card {
 
-        max-width:160px;
-
+        max-width: 160px;
     }
+
 
     .merch-image {
 
-        height:17rem;
-
+        height: 17rem;
     }
+
 
     .merch-info h3 {
 
-        font-size:1.3rem;
-
+        font-size: 1.3rem;
     }
+
 
     .merch-description {
 
-        font-size:.9rem !important;
-
+        font-size: .9rem !important;
     }
+
 
     .merch-price {
 
-        font-size:1.3rem;
-
+        font-size: 1.3rem;
     }
+
 
     .merch-btn {
 
-        font-size:1rem;
+        font-size: 1rem;
 
-        padding:.8rem;
-
+        padding: .8rem;
     }
 
 
     .merch-image-toggle {
 
-        font-size:1rem;
+        font-size: 1rem;
 
-        padding:.8rem;
-
+        padding: .8rem;
     }
 
 }

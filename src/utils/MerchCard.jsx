@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import BtnButton from './BtnButton'
 import '../styles/MerchCard.css'
 
@@ -11,16 +11,12 @@ const MerchCard = ({ merch = {} }) => {
     const productDescription = merch?.descripcion || ''
     const productPrice = merch?.price ?? 0
 
-
     /*
     ======================================================
-       CONTROL DE IMAGEN
-       
+       ESTADO
+
        false = imagen principal
        true  = imagen secundaria
-
-       Este estado se utiliza únicamente para
-       tabletas y celulares.
     ======================================================
     */
 
@@ -29,15 +25,50 @@ const MerchCard = ({ merch = {} }) => {
 
     /*
     ======================================================
+       PRECARGAR IMAGEN SECUNDARIA
+
+       La descarga comienza inmediatamente cuando
+       aparece la tarjeta.
+
+       fetchPriority = high ayuda a darle prioridad
+       a la segunda imagen.
+    ======================================================
+    */
+
+    useEffect(() => {
+
+        if (!imageSecondary) return
+
+        const preloadImage = new Image()
+
+        preloadImage.fetchPriority = 'high'
+        preloadImage.decoding = 'async'
+
+        preloadImage.src = imageSecondary
+
+        return () => {
+
+            preloadImage.onload = null
+            preloadImage.onerror = null
+
+        }
+
+    }, [imageSecondary])
+
+
+    /*
+    ======================================================
        CAMBIAR IMAGEN
+
+       SOLO SE UTILIZA EN TABLET Y CELULAR.
+
+       En PC el cambio continúa siendo mediante CSS hover.
     ======================================================
     */
 
     const toggleImage = () => {
 
-        if (!imageSecondary) {
-            return
-        }
+        if (!imageSecondary) return
 
         setShowSecondary(prev => !prev)
 
@@ -48,46 +79,38 @@ const MerchCard = ({ merch = {} }) => {
 
         <article className="merch-card">
 
-
             {/* ======================================================
                IMÁGENES
             ====================================================== */}
 
             <div className="merch-image">
 
-
-                {/* ==================================================
-                   IMAGEN PRINCIPAL
-                ================================================== */}
+                {/* IMAGEN PRINCIPAL */}
 
                 <img
                     className={`primary-image ${
-                        showSecondary
-                            ? 'mobile-hidden'
-                            : ''
+                        showSecondary ? 'mobile-hidden' : ''
                     }`}
                     src={imagePrimary}
                     alt={productName}
                     loading="eager"
+                    fetchPriority="high"
                     decoding="async"
                 />
 
 
-                {/* ==================================================
-                   IMAGEN SECUNDARIA
-                ================================================== */}
+                {/* IMAGEN SECUNDARIA */}
 
                 {imageSecondary && (
 
                     <img
                         className={`secondary-image ${
-                            showSecondary
-                                ? 'mobile-visible'
-                                : ''
+                            showSecondary ? 'mobile-visible' : ''
                         }`}
                         src={imageSecondary}
                         alt={`${productName} Posterior`}
                         loading="eager"
+                        fetchPriority="high"
                         decoding="async"
                     />
 
@@ -101,7 +124,6 @@ const MerchCard = ({ merch = {} }) => {
             ====================================================== */}
 
             <div className="merch-info">
-
 
                 <h3>
                     {productName}
@@ -118,12 +140,11 @@ const MerchCard = ({ merch = {} }) => {
                 </p>
 
 
-                {/* ==================================================
-                   BOTÓN VER IMAGEN 2
+                {/* ======================================================
+                   BOTÓN CAMBIAR IMAGEN
 
-                   Solamente será visible mediante CSS
-                   en tabletas y celulares.
-                ================================================== */}
+                   SOLAMENTE TABLET Y CELULAR
+                ====================================================== */}
 
                 {imageSecondary && (
 
@@ -141,11 +162,11 @@ const MerchCard = ({ merch = {} }) => {
                 )}
 
 
-                {/* ==================================================
+                {/* ======================================================
                    BOTÓN COMPRAR
 
-                   SE MANTIENE SIN MODIFICACIONES
-                ================================================== */}
+                   CONSERVADO
+                ====================================================== */}
 
                 <BtnButton
                     component="a"
@@ -156,7 +177,6 @@ const MerchCard = ({ merch = {} }) => {
                 >
                     Comprar
                 </BtnButton>
-
 
             </div>
 
