@@ -1,196 +1,168 @@
-import { useEffect, useState } from 'react'
-
+import { useState } from 'react'
 import BtnButton from './BtnButton'
-
 import '../styles/MerchCard.css'
 
 const MerchCard = ({ merch = {} }) => {
 
     const imagePrimary = merch?.image
     const imageSecondary = merch?.image2
+
     const productName = merch?.name || 'Producto'
     const productDescription = merch?.descripcion || ''
     const productPrice = merch?.price ?? 0
 
-    const [secondaryLoaded, setSecondaryLoaded] = useState(false)
 
-    // Controla la imagen en tablet y celular
+    /*
+    ======================================================
+       CONTROL DE IMAGEN
+       
+       false = imagen principal
+       true  = imagen secundaria
+
+       Este estado se utiliza únicamente para
+       tabletas y celulares.
+    ======================================================
+    */
+
     const [showSecondary, setShowSecondary] = useState(false)
 
 
     /*
     ======================================================
-       PRECARGAR IMAGEN SECUNDARIA
+       CAMBIAR IMAGEN
     ======================================================
     */
 
-    useEffect(() => {
+    const toggleImage = () => {
 
         if (!imageSecondary) {
-
-            setSecondaryLoaded(false)
-
             return
-
         }
 
-        const image = new Image()
+        setShowSecondary(prev => !prev)
 
-        image.src = imageSecondary
-
-        image.onload = () => {
-
-            setSecondaryLoaded(true)
-
-        }
-
-        image.onerror = () => {
-
-            setSecondaryLoaded(true)
-
-        }
-
-        return () => {
-
-            image.onload = null
-            image.onerror = null
-
-        }
-
-    }, [imageSecondary])
+    }
 
 
-/*
-======================================================
-   CAMBIAR IMAGEN EN TABLET Y CELULAR
-======================================================
-*/
+    return (
 
-const toggleImage = () => {
-
-    if (!imageSecondary) return
-
-    setShowSecondary(prev => !prev)
-
-}
+        <article className="merch-card">
 
 
-return (
+            {/* ======================================================
+               IMÁGENES
+            ====================================================== */}
 
-    <article
-        className={`merch-card ${
-            secondaryLoaded || !merch.image2
-                ? 'merch-ready'
-                : ''
-        }`}
-    >
-
-        {/* ======================================================
-           IMÁGENES
-        ====================================================== */}
-
-        <div className="merch-image">
-
-            {/* IMAGEN PRINCIPAL */}
-
-            <img
-                className={`primary-image ${
-                    showSecondary
-                        ? 'mobile-hidden'
-                        : ''
-                }`}
-                src={imagePrimary}
-                alt={productName}
-                loading="eager"
-                decoding="async"
-            />
+            <div className="merch-image">
 
 
-            {/* IMAGEN SECUNDARIA */}
-
-            {imageSecondary && (
+                {/* ==================================================
+                   IMAGEN PRINCIPAL
+                ================================================== */}
 
                 <img
-                    className={`secondary-image ${
+                    className={`primary-image ${
                         showSecondary
-                            ? 'mobile-visible'
+                            ? 'mobile-hidden'
                             : ''
                     }`}
-                    src={imageSecondary}
-                    alt={`${productName} Posterior`}
+                    src={imagePrimary}
+                    alt={productName}
                     loading="eager"
                     decoding="async"
                 />
 
-            )}
 
-        </div>
+                {/* ==================================================
+                   IMAGEN SECUNDARIA
+                ================================================== */}
 
+                {imageSecondary && (
 
-        {/* ======================================================
-           INFORMACIÓN
-        ====================================================== */}
+                    <img
+                        className={`secondary-image ${
+                            showSecondary
+                                ? 'mobile-visible'
+                                : ''
+                        }`}
+                        src={imageSecondary}
+                        alt={`${productName} Posterior`}
+                        loading="eager"
+                        decoding="async"
+                    />
 
-        <div className="merch-info">
+                )}
 
-            <h3>
-                {productName}
-            </h3>
-
-
-            <p className="merch-description">
-                {productDescription}
-            </p>
-
-
-            <p className="merch-price">
-                ${productPrice.toLocaleString()}
-            </p>
+            </div>
 
 
             {/* ======================================================
-               BOTÓN CAMBIAR IMAGEN
-
-               SOLO TABLET Y CELULAR
+               INFORMACIÓN
             ====================================================== */}
 
-            {imageSecondary && (
+            <div className="merch-info">
 
-                <button
-                    type="button"
-                    className="merch-image-toggle"
-                    onClick={toggleImage}
+
+                <h3>
+                    {productName}
+                </h3>
+
+
+                <p className="merch-description">
+                    {productDescription}
+                </p>
+
+
+                <p className="merch-price">
+                    ${productPrice.toLocaleString()}
+                </p>
+
+
+                {/* ==================================================
+                   BOTÓN VER IMAGEN 2
+
+                   Solamente será visible mediante CSS
+                   en tabletas y celulares.
+                ================================================== */}
+
+                {imageSecondary && (
+
+                    <button
+                        type="button"
+                        className="merch-image-toggle"
+                        onClick={toggleImage}
+                    >
+                        {showSecondary
+                            ? 'Ver imagen 1'
+                            : 'Ver imagen 2'
+                        }
+                    </button>
+
+                )}
+
+
+                {/* ==================================================
+                   BOTÓN COMPRAR
+
+                   SE MANTIENE SIN MODIFICACIONES
+                ================================================== */}
+
+                <BtnButton
+                    component="a"
+                    className="merch-btn"
+                    href={`http://wa.me/573126957657?text=Hola!!%20Deseo%20adquirir%20este%20producto%20😎🤘%20${productName}%20${productDescription}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    {showSecondary
-                        ? 'Ver imagen 1'
-                        : 'Ver imagen 2'
-                    }
-                </button>
-
-            )}
+                    Comprar
+                </BtnButton>
 
 
-            {/* ======================================================
-               BOTÓN COMPRAR
+            </div>
 
-               NO SE MODIFICA
-            ====================================================== */}
+        </article>
 
-            <BtnButton
-                component="a"
-                className="merch-btn"
-                href={`http://wa.me/573126957657?text=Hola!!%20Deseo%20adquirir%20este%20producto%20😎🤘%20${productName}%20${productDescription}`}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Comprar
-            </BtnButton>
-
-        </div>
-
-    </article>
-
-)
+    )
 
 }
 
