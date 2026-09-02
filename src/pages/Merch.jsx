@@ -19,7 +19,7 @@ const Merch = () => {
             <div className="container-merch">
                 <div className="merch-header">
                     <h1>Merch Oficial</h1>
-                    <p><span className='merch-span'>Lleva un pedazo de Pato el Pez contigo.</span><br></br>
+                    <p><span className='merch-span'>Lleva una parte de Pato el Pez contigo.</span><br></br>
                         Camisetas, accesorios y artículos exclusivos.</p>
                     <div className="merch-search-container">
 
