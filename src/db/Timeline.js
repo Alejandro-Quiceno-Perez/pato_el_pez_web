@@ -354,7 +354,7 @@ const Recorrido = [
 
     image: `${import.meta.env.BASE_URL}images/Recorrido/fiestasDeLaPereza.jpeg`,
 
-    instagram: "https://www.instagram.com/p/DYz4TTlliya/?img_index=1",
+    instagram: "https://www.instagram.com/p/DcR5NOgGI4A/?igsi=MTV1bzhwdnl6enJwbg==",
 
     description: `
         En 2026, PATO EL PEZ tuvo el orgullo de ser parte de las Fiestas de la Industria, el Comercio y la Cultura de Itagüí, uno de los escenarios más representativos de nuestra ciudad. Desde el Parque Principal de Itagüí, llevamos nuestra energía y nuestro sonido a cientos de personas, reafirmando nuestro compromiso con la música y con el territorio que nos vio crecer.

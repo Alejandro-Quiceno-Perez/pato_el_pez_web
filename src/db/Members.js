@@ -1,4 +1,4 @@
- const Members = [
+const Members = [
     {
         "id": 1,
         name: "Camilo Grisales",
@@ -14,8 +14,14 @@
         name: "Jaiver Restrepo",
         nickname: "Jai",
         role: "Bajo - Coros",
-        description: `Soy una persona apasionada por la música, el arte y todo lo que transmite emociones reales. Vivo la musica no solo como un arte, sino como una forma de expresar lo que pienso y siento. Hago parte de Pato el Pez, una banda de punk rock  con la que busco conectar con la gente a través de canciones honestas, energía en tarima y momentos que se queden en la memoria
-        También me gusta crear, organizar y mover ideas; desde eventos y shows hasta contenido para redes, siempre buscando que todo tenga identidad propia. Además, disfruto mucho jugar al volley, porque encuentro en el deporte la misma energía, disciplina y adrenalina que vivo en la música. Soy alguien creativo, directo y con ganas de crecer, aprender y hacer que los proyectos en los que creo lleguen cada vez más lejos. Entre ensayos, conciertos, diseño, parches, partidos y sueños, sigo construyendo mi camino a punta de música y pasión.`,
+        description: `Soy un músico empírico y creativo, apasionado por el arte, los colores y los sonidos como formas de expresión. A lo largo de mi camino artístico he encontrado en la música una forma auténtica de comunicar emociones, ideas y experiencias, construyendo una identidad marcada por la energía del punk y la honestidad de sus mensajes.
+        Además de mi faceta musical, soy diseñador gráfico y desarrollo proyectos independientes relacionados con identidad visual, merch y comunicación alternativa. Para mí, la música y el diseño siempre han estado conectados; ambas disciplinas me permiten transformar ideas en experiencias visuales y sonoras con personalidad propia.
+        Dentro de mi trayectoria musical he hecho parte de diferentes proyectos de la escena underground. Participé en la banda Secuestrados Estatales, una agrupación de punk hardcore donde inicié como guitarrista y posteriormente asumí el bajo. Esa experiencia fortaleció mi visión sobre la energía en vivo, la composición y la esencia contestataria del punk.
+        Más adelante integré Mátame Si Puedes como guitarrista, una banda con influencias de ska hardcore y sonidos alternativos que me permitió explorar ritmos más dinámicos, cambios de energía y nuevas formas de expresión dentro de la música pesada y alternativa.
+        Tiempo después entré a Pato el Pez, aproximadamente desde el segundo o tercer ensayo de la banda. Desde entonces he sido parte activa del crecimiento creativo y conceptual del proyecto, aportando no solo desde el bajo y la composición, sino también desde el desarrollo gráfico, visual y estratégico de la banda.
+        Gran parte de mis influencias vienen del punk rock latinoamericano y de la escena punk de Medellín, así como de bandas españolas y europeas que marcaron mi manera de entender la música y la actitud sobre el escenario. Entre ellas destacan agrupaciones como Gatillazo, La Polla Records y Eskorbuto, cuyos mensajes directos, críticos y su sonido crudo han influenciado profundamente mi visión artística.
+        Actualmente continúo desarrollando mi camino entre la música, el diseño y la creación visual, buscando construir proyectos auténticos que conecten con las personas desde la emoción, la rebeldía y la identidad propia.
+`,
         image: `${import.meta.env.BASE_URL}images/Members/Jaiver.webp`,
         gif: `${import.meta.env.BASE_URL}images/GifMembers/JaiGif.gif`
     },
