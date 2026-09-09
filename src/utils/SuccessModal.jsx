@@ -65,7 +65,7 @@ const SuccessModal = ({
 
                             component="a"
 
-                            href="https://chat.whatsapp.com/LRMzRcWFgJpD1ykSm9Pg7r"
+                            href="https://chat.whatsapp.com/L41WHLVORpREr7dREVRMCm"
 
                             target="_blank"
 

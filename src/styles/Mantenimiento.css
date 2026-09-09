@@ -1,0 +1,449 @@
+/* ==========================================
+   MAINTENANCE
+========================================== */
+
+.maintenance {
+  width: 100%;
+  min-height: 100vh;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: var(--black);
+
+  color: var(--white);
+}
+
+/* ==========================================
+   BACKGROUND
+========================================== */
+
+.maintenance-background {
+  position: absolute;
+
+  inset: 0;
+
+  overflow: hidden;
+
+  pointer-events: none;
+}
+
+/* Líneas diagonales */
+
+.maintenance-background span {
+  position: absolute;
+
+  width: 1px;
+  height: 150%;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  transform: rotate(25deg);
+}
+
+/* Posiciones */
+
+.maintenance-background span:nth-child(1) {
+  left: 20%;
+}
+
+.maintenance-background span:nth-child(2) {
+  left: 50%;
+}
+
+.maintenance-background span:nth-child(3) {
+  left: 80%;
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.maintenance-content {
+  width: 90%;
+  max-width: 900px;
+
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.maintenance-logo {
+  margin-bottom: 4rem;
+
+  font-size: 2.2rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.4rem;
+
+  color: var(--white);
+}
+
+.maintenance-logo span {
+  color: var(--red);
+}
+
+/* ==========================================
+   ICON
+========================================== */
+
+.maintenance-icon {
+  width: 7rem;
+  height: 7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 3rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.maintenance-icon span {
+  font-size: 3.2rem;
+
+  color: var(--red);
+
+  animation: maintenance-spin 6s linear infinite;
+}
+
+/* ==========================================
+   LABEL
+========================================== */
+
+.maintenance-label {
+  margin-bottom: 1.5rem;
+
+  color: var(--red);
+
+  font-size: 1.3rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.5rem;
+
+  text-transform: uppercase;
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.maintenance-content h1 {
+  margin: 0;
+
+  color: var(--white);
+
+  font-size: clamp(6rem, 10vw, 11rem);
+
+  font-weight: 900;
+
+  line-height: 0.85;
+
+  letter-spacing: -0.4rem;
+
+  text-transform: uppercase;
+}
+
+.maintenance-content h1 span {
+  color: var(--red);
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.maintenance-description {
+  max-width: 650px;
+
+  margin-top: 3.5rem;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 1.6rem;
+
+  line-height: 1.8;
+
+  letter-spacing: 0.05rem;
+}
+
+/* ==========================================
+   DECORATIVE LINE
+========================================== */
+
+.maintenance-line {
+  width: 180px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.6rem;
+
+  margin: 4rem 0;
+}
+
+.maintenance-line span {
+  display: block;
+
+  height: 2px;
+
+  background: var(--red);
+}
+
+.maintenance-line span:nth-child(1) {
+  width: 25px;
+}
+
+.maintenance-line span:nth-child(2) {
+  width: 70px;
+}
+
+.maintenance-line span:nth-child(3) {
+  width: 25px;
+}
+
+/* ==========================================
+   SOCIAL
+========================================== */
+
+.maintenance-social {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 3rem;
+}
+
+.maintenance-social a {
+  position: relative;
+
+  color: var(--white);
+
+  text-decoration: none;
+
+  font-size: 1.2rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.2rem;
+
+  transition: color 0.3s ease;
+}
+
+.maintenance-social a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -0.7rem;
+
+  width: 0;
+  height: 2px;
+
+  background: var(--red);
+
+  transition: width 0.3s ease;
+}
+
+/* ==========================================
+   SOCIAL HOVER
+   PC SOLAMENTE
+========================================== */
+
+@media (min-width: 993px) {
+  .maintenance-social a:hover {
+    color: var(--red);
+  }
+
+  .maintenance-social a:hover::after {
+    width: 100%;
+  }
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.maintenance-footer {
+  margin-top: 5rem;
+
+  color: rgba(255, 255, 255, 0.3);
+
+  font-size: 1.1rem;
+
+  letter-spacing: 0.15rem;
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+@keyframes maintenance-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 992px) {
+  .maintenance-content {
+    width: 88%;
+  }
+
+  .maintenance-logo {
+    margin-bottom: 3.5rem;
+
+    font-size: 2rem;
+  }
+
+  .maintenance-icon {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  .maintenance-content h1 {
+    font-size: clamp(5rem, 12vw, 8rem);
+  }
+
+  .maintenance-description {
+    font-size: 1.4rem;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+  .maintenance-content {
+    width: 90%;
+  }
+
+  .maintenance-logo {
+    margin-bottom: 3rem;
+
+    font-size: 1.7rem;
+
+    letter-spacing: 0.25rem;
+  }
+
+  .maintenance-icon {
+    width: 6rem;
+    height: 6rem;
+
+    margin-bottom: 2.5rem;
+  }
+
+  .maintenance-icon span {
+    font-size: 2.7rem;
+  }
+
+  .maintenance-label {
+    font-size: 1rem;
+
+    letter-spacing: 0.3rem;
+  }
+
+  .maintenance-content h1 {
+    font-size: clamp(4.5rem, 18vw, 7rem);
+
+    letter-spacing: -0.2rem;
+  }
+
+  .maintenance-description {
+    margin-top: 2.5rem;
+
+    font-size: 1.25rem;
+
+    line-height: 1.7;
+  }
+
+  .maintenance-line {
+    margin: 3rem 0;
+  }
+
+  .maintenance-social {
+    gap: 2rem;
+
+    flex-wrap: wrap;
+  }
+
+  .maintenance-social a {
+    font-size: 1rem;
+  }
+
+  .maintenance-footer {
+    margin-top: 4rem;
+
+    font-size: 1rem;
+  }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 400px) {
+  .maintenance-logo {
+    font-size: 1.5rem;
+  }
+
+  .maintenance-icon {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  .maintenance-label {
+    font-size: 0.9rem;
+
+    letter-spacing: 0.2rem;
+  }
+
+  .maintenance-content h1 {
+    font-size: 4.3rem;
+  }
+
+  .maintenance-description {
+    font-size: 1.1rem;
+  }
+
+  .maintenance-social {
+    gap: 1.5rem;
+  }
+
+  .maintenance-social a {
+    font-size: 0.9rem;
+  }
+}
