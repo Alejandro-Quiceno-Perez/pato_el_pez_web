@@ -91,7 +91,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2026 Pato el Pez · Todos los derechos reservados</p>
+        <p>© 2026 Alejandro Quiceno Pérez · Todos los derechos reservados</p>
       </div>
     </div>
   );

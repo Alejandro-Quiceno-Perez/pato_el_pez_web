@@ -56,7 +56,7 @@ const Merch = [
     {
         "id": 7,
         "name": "Termo",
-        "descripcion": "Termo Diseño Pato El Pez",
+        "descripcion": "Diseño Pato El Pez",
         "price": 30000,
         "image": `${import.meta.env.BASE_URL}images/Merch/termo.webp`,
         "image2": `${import.meta.env.BASE_URL}images/Merch/termo2.webp`,

@@ -171,7 +171,7 @@ const MerchCard = ({ merch = {} }) => {
                 <BtnButton
                     component="a"
                     className="merch-btn"
-                    href={`http://wa.me/573126957657?text=Hola!!%20Deseo%20adquirir%20este%20producto%20😎🤘%20${productName}%20${productDescription}`}
+                    href={`http://wa.me/573016939278?text=Hola!!%20Deseo%20adquirir%20este%20producto%20:)%20${productName}%20${productDescription}%20de%20Pato%20el%20Pez`}
                     target="_blank"
                     rel="noopener noreferrer"
                 >
