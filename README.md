@@ -1,49 +1,82 @@
 # Pato el Pez Web
 
-Official website for Pato el Pez, showcasing the band's story, music, merchandise, and digital presence.
+Sitio oficial de la banda Pato el Pez, con presentación del proyecto, música, merch, recorrido, prensa y comunidad de fans.
 
-## Features
+## Características
 
-- Band presentation
-- Music catalog
-- Merchandise showcase
-- Events section
-- Contact information
-- Responsive design
+- Presentación de la banda
+- Catálogo de música
+- Merchandising
+- Historia y recorrido
+- Sección de fan club
+- Videos y prensa
+- Diseño responsive
 
-## Tech Stack
+## Stack
 
 - React
 - Vite
-- CSS / Tailwind (optional)
-- JSON data structure
-- Future API integration ready
+- React Router
+- CSS modularizado por sección
+- Datos locales en archivos JavaScript
 
-## Project Structure
+## Estructura del proyecto
 
-src/
-components/
-pages/
-data/
-services/
-routes/
+```text
+.
+├── public/
+│   ├── documents/
+│   ├── images/
+│   └── videos/
+├── scripts/
+├── src/
+│   ├── animations/
+│   ├── components/
+│   ├── db/
+│   ├── pages/
+│   ├── routes/
+│   ├── services/
+│   ├── styles/
+│   ├── utils/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── .env.example
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
 
-## Installation
+## Instalación
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Future Improvements
+## Producción
 
-- Admin panel
-- Real database integration
-- Payment gateway
+```bash
+npm run build
+npm run preview
+```
+
+## Variables de entorno
+
+Crea un archivo `.env` a partir de `.env.example` con tu configuración local:
+
+```bash
+VITE_GOOGLE_SCRIPT_URL=tu_url_del_google_script
+```
+
+## Mejoras futuras
+
+- Panel administrativo
+- Base de datos real
+- Integración de pagos
 - Newsletter
-- Fan community
-
-ID de implementacion 
-AKfycbwMOKLn8NNjSQxXjQJUKFkpOu-3f3ZQmWhVxKQ7GfY3SpAKtQAIzJoLOtKeTtjDjwcdOQ
-
-URL 
+- Comunidad de fans

@@ -10,9 +10,6 @@ export const registerFan = async (fan) => {
 
     try {
 
-        console.log("URL:", API_URL);
-        console.log("Datos:", fan);
-
         const response = await fetch(API_URL, {
 
             method: "POST",
@@ -28,8 +25,6 @@ export const registerFan = async (fan) => {
         });
 
         const data = await response.json();
-
-        console.log(data);
 
         return data;
 
