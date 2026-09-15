@@ -137,7 +137,7 @@ const Merch = [
     {
         "id": 18,
         "name": "Camiseta Roja OS",
-        "descripcion": "Diseño Mejor Que esto",
+        "descripcion": "Diseño Clasico",
         "price": 55000,
         "image": `${import.meta.env.BASE_URL}images/Merch/camisa_pato_rojo_frente.webp`,
         "image2": `${import.meta.env.BASE_URL}images/Merch/posterior_camisa_rojo.webp`,
