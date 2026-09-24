@@ -87,7 +87,7 @@ const MerchPromo = () => {
 
                     <span className="merch-promo-ticket">
                         en la boletería del concierto de lanzamiento
-                        del disco.
+                        del <span className="merch-promo-new">Nuevo</span> disco.
                     </span>
 
                     <strong className="merch-promo-product">

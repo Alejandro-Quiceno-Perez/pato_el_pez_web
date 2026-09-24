@@ -125,6 +125,12 @@
     font-size: 12px;
     line-height: 1.5;
 }
+.merch-promo-new {
+    color: var(--red, #881014);
+    font-size: 12px;
+    font-weight: 700;
+}
+
 
 .merch-promo-discount {
     margin-bottom: 5px;
