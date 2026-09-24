@@ -11,11 +11,14 @@ const PressKit = lazy(() => import("../pages/PressKit"));
 const Recorrido = lazy(() => import("../pages/Recorrido"));
 const Layout = lazy(() => import("../components/layouts/layout"));
 const Fans = lazy(() => import("../pages/Fans"));
+import MerchPromo from "../components/UI/MerchPromo/MerchPromo";
 
 const AppRoutes = () => {
   return (
     <Router basename={import.meta.env.BASE_URL}>
       <GoogleAnalytics />
+
+      <MerchPromo />
 
       <Suspense fallback={<PageLoader />}>
         <Routes>

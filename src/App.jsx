@@ -20,6 +20,8 @@ function App() {
   if (loading) return <SplashScreen onFinish={() => setLoading(false)} />;
 
   if (MANTENIMIENTO_MODE) return <Mantenimiento />;
+
+  
   return (
     <div className="App">
       <AppRoutes />
