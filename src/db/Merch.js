@@ -145,6 +145,24 @@ const Merch = [
     },
     {
         "id": 18,
+        "name": "Buso Rojo",
+        "descripcion": "Diseño Buso 22",
+        "price": 80000,
+        "image": `${import.meta.env.BASE_URL}images/Merch/Buso_negro_pato22.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/lat_negro.webp`,
+        "sizes": ["S", "M", "L","XL"]
+    },
+    {
+        "id": 19,
+        "name": "Buso Rojo",
+        "descripcion": "Diseño Buso 22",
+        "price": 80000,
+        "image": `${import.meta.env.BASE_URL}images/Merch/Buso_rojo_pato22.webp`,
+        "image2": `${import.meta.env.BASE_URL}images/Merch/lat_rojo.webp`,
+        "sizes": ["S", "M", "L","XL"]
+    },
+    {
+        "id": 20,
         "name": "Gorro Beanie",
         "descripcion": "Gorro Logo Pato El Pez",
         "price": 35000,
@@ -153,7 +171,7 @@ const Merch = [
         "sizes": ["No Aplica"]
     },
     {
-        "id": 19,
+        "id": 21,
         "name": "Gorras",
         "descripcion": "Gorra Plana Logo Pato El Pez",
         "price": 45000,
@@ -162,7 +180,7 @@ const Merch = [
         "sizes": ["No Aplica"]
     },
     {
-        "id": 20,
+        "id": 22,
         "name": "Mug",
         "descripcion": "Taza con diseño de pato el pez",
         "price": 25000,
@@ -170,11 +188,8 @@ const Merch = [
         "image2": `${import.meta.env.BASE_URL}images/Merch/mug_zomm.webp`,
         "sizes": ["No Aplica"]
     },
-    
-    
-    
     {
-        "id": 21,
+        "id": 23,
         "name": "Termo",
         "descripcion": "Diseño Pato El Pez",
         "price": 30000,
@@ -182,16 +197,7 @@ const Merch = [
         "image2": `${import.meta.env.BASE_URL}images/Merch/termo2.webp`,
         "sizes": ["No Aplica"]
     },
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  
 ]
 
 export default Merch
