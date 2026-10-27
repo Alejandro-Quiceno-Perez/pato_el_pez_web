@@ -1,0 +1,98 @@
+.concert-promo-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(5px);
+}
+
+.concert-promo {
+  position: relative;
+  width: min(100%, 600px);
+  max-height: 92vh;
+  overflow-y: auto;
+  background: #080808;
+  border: 1px solid #292929;
+  border-radius: 12px;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.6);
+}
+
+.concert-promo-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.concert-promo-poster {
+  display: block;
+  width: 100%;
+  max-height: 68vh;
+  object-fit: contain;
+  background: #000;
+}
+
+.concert-promo-actions {
+  padding: 22px;
+  text-align: center;
+  color: #fff;
+}
+
+.concert-promo-actions h2 {
+  margin: 0 0 10px;
+  font-size: clamp(20px, 4vw, 28px);
+  font-weight: 900;
+}
+
+.concert-promo-actions p {
+  margin: 0 0 20px;
+  color: #c5c5c5;
+}
+
+.concert-promo-whatsapp {
+  display: block;
+  width: 100%;
+  padding: 15px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #881014;
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.concert-promo-whatsapp:hover {
+  background: #a51a20;
+}
+
+@media (max-width: 480px) {
+  .concert-promo-overlay {
+    padding: 12px;
+  }
+
+  .concert-promo {
+    max-height: 94vh;
+  }
+
+  .concert-promo-actions {
+    padding: 16px;
+  }
+
+  .concert-promo-whatsapp {
+    font-size: 13px;
+  }
+}

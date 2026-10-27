@@ -12,6 +12,7 @@ const Recorrido = lazy(() => import("../pages/Recorrido"));
 const Layout = lazy(() => import("../components/layouts/layout"));
 const Fans = lazy(() => import("../pages/Fans"));
 import MerchPromo from "../components/UI/MerchPromo/MerchPromo";
+import ConcertPromo from "../components/UI/MerchPromo/ConcertPromo";
 
 const AppRoutes = () => {
   return (
@@ -19,6 +20,7 @@ const AppRoutes = () => {
       <GoogleAnalytics />
 
       <MerchPromo />
+      <ConcertPromo />
 
       <Suspense fallback={<PageLoader />}>
         <Routes>
