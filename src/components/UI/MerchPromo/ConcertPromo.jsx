@@ -3,7 +3,7 @@ import "./ConcertPromo.css";
 
 const WHATSAPP_NUMBER = "573126957657";
 
-const POSTER = `${import.meta.env.BASE_URL}images/Recorrido/ctoLanzamientoNoEraParaTanto.webp`;
+const POSTER = `${import.meta.env.BASE_URL}images/Recorrido/flyer_cto_lanzamiento.webp`;
 
 const ConcertPromo = () => {
   const [visible, setVisible] = useState(false);
