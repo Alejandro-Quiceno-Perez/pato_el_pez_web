@@ -82,7 +82,7 @@
     width: 100%;
 
     display: flex;
-    /* flex-direction: column; */
+    
     gap: 5rem;
 
     padding-bottom: rem;
@@ -94,13 +94,8 @@
 ===================================================== */
 
 .album-header {
-    /* background-color: aqua; */
     width: 60%;
-    /* 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 6rem; */
+    
 }
 
 /* =====================================================
@@ -130,6 +125,7 @@
 ===================================================== */
 
 .album-info {
+    
     flex: 1;
 
     display: flex;
@@ -1675,4 +1671,437 @@
 
     }
 
+}
+
+
+/* ==========================================
+   NO ERA PARA TANTO — COMING SOON
+========================================== */
+
+.album-coming-soon {
+    position: relative;
+    width: 100%;
+    margin: 5rem 0;
+    padding: 4rem;
+    overflow: hidden;
+    isolation: isolate;
+    background:
+        radial-gradient(ellipse at 80% 50%, rgba(136, 16, 20, .20), transparent 55%),
+        linear-gradient(135deg, #111 0%, #080808 65%, #16090a 100%);
+    border: 1px solid rgba(255, 255, 255, .08);
+}
+
+/* Textura decorativa */
+
+.album-coming-soon::before {
+    content: "2026";
+    position: absolute;
+    top: -65px;
+    right: -15px;
+    z-index: -1;
+    color: rgba(255, 255, 255, .025);
+    font-size: clamp(10rem, 25vw, 25rem);
+    font-weight: 900;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.album-coming-soon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: #881014;
+}
+
+/* Contenido principal */
+
+.album-coming-soon-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 1fr);
+    align-items: center;
+    gap: 4rem;
+}
+
+/* Carrusel */
+
+.album-coming-soon-image {
+    position: relative;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #111;
+}
+
+.album-coming-soon-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform .6s ease;
+}
+
+.album-coming-soon-image:hover img {
+    transform: scale(1.04);
+}
+
+/* Etiqueta */
+
+.album-coming-soon-badge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 2;
+    padding: 10px 16px;
+    background: #881014;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    transform: rotate(-3deg);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, .5);
+}
+
+/* Información */
+
+.album-coming-soon-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    color: #fff;
+}
+
+.album-coming-soon-info .album-year {
+    color: #c12a30;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    /* font-weight: 900; */
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+.album-coming-soon-info .album-title {
+    margin: 0;
+    max-width: 650px;
+    color: #fff;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    /* font-weight: 800; */
+    line-height: .95;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+}
+
+.album-coming-soon-info .album-description {
+    margin: 0;
+    color: #bdbdbd;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Detalles del álbum */
+
+.album-coming-soon-info .album-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.album-coming-soon-info .album-details span {
+    padding: 9px 14px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Mensaje de lanzamiento */
+
+.album-coming-soon-message {
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 20px;
+    overflow: hidden;
+    border-left: 4px solid #a51b25;
+    background: rgba(136, 16, 20, .14);
+    color: #fff;
+    font-size: var(--size-min);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* Animaciones */
+
+@keyframes albumReveal {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.album-coming-soon-info > * {
+    animation: albumReveal .7s ease both;
+}
+
+.album-coming-soon-info > *:nth-child(2) {
+    animation-delay: .1s;
+}
+
+.album-coming-soon-info > *:nth-child(3) {
+    animation-delay: .2s;
+}
+
+.album-coming-soon-info > *:nth-child(4) {
+    animation-delay: .3s;
+}
+
+.album-coming-soon-info > *:nth-child(5) {
+    animation-delay: .4s;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .album-coming-soon {
+        padding: 2rem;
+    }
+
+    .album-coming-soon-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .album-coming-soon-image {
+        max-width: 600px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .album-coming-soon-info .album-title {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .album-coming-soon {
+        padding: 1.3rem;
+        margin: 3rem 0;
+    }
+
+    .album-coming-soon-info .album-year {
+        font-size: 3rem;
+    }
+
+    .album-coming-soon-info .album-title {
+        font-size: 2.5rem;
+        letter-spacing: -2px;
+    }
+
+    .album-coming-soon-message {
+        padding: 15px;
+    }
+}
+
+/* Accesibilidad */
+
+@media (prefers-reduced-motion: reduce) {
+    .album-coming-soon-info > * {
+        animation: none;
+    }
+
+    .album-coming-soon-image img {
+        transition: none;
+    }
+}
+
+
+/* ==========================================
+   DISCOGRAFÍA - ACORDEÓN
+========================================== */
+
+.albums-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.album-accordion {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.album-accordion-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    padding: 24px 8px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.album-accordion-cover {
+    width: 110px;
+    height: 110px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #171717;
+}
+
+.album-accordion-cover img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s ease;
+}
+
+.album-accordion-header:hover .album-accordion-cover img {
+    transform: scale(1.05);
+}
+
+.album-accordion-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+}
+
+.album-accordion-info h2 {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.album-accordion-year {
+    color: #c12a30;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.album-accordion-meta {
+    color: #999;
+    font-size: .75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.album-accordion-badge {
+    color: #c12a30;
+    font-size: .65rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.album-accordion-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 22px;
+    transition: transform .3s ease, color .3s ease;
+}
+
+.album-accordion-icon span {
+    display: block;
+    transform: rotate(0deg);
+}
+
+.album-accordion.is-open .album-accordion-icon {
+    color: #c12a30;
+    transform: rotate(180deg);
+}
+
+.album-accordion-content {
+    padding: 0 8px 28px;
+    border-top: 1px solid rgba(255, 255, 255, .08);
+    animation: albumAccordionReveal .35s ease;
+}
+
+.album-accordion-content .album-coming-soon {
+    margin: 24px 0 0;
+}
+
+.album-accordion-content .album-section {
+    margin-top: 24px;
+}
+
+@keyframes albumAccordionReveal {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+    .album-accordion-header {
+        gap: 14px;
+        padding: 18px 4px;
+    }
+
+    .album-accordion-cover {
+        width: 78px;
+        height: 78px;
+    }
+
+    .album-accordion-info h2 {
+        font-size: 1rem;
+    }
+
+    .album-accordion-year {
+        font-size: .85rem;
+    }
+
+    .album-accordion-meta {
+        font-size: .62rem;
+        letter-spacing: .5px;
+    }
+
+    .album-accordion-icon {
+        width: 24px;
+        height: 24px;
+        font-size: 19px;
+    }
+
+    .album-accordion-content {
+        padding: 0 4px 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .album-accordion-cover img,
+    .album-accordion-icon {
+        transition: none;
+    }
+
+    .album-accordion-content {
+        animation: none;
+    }
 }
