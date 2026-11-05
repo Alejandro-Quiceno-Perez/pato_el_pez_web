@@ -1,11 +1,10 @@
 import { useState } from 'react'
-import './App.css'
 import SplashScreen from './components/UI/SplashScreen'
 import Mantenimiento from './components/UI/Mantenimiento'
 import AppRoutes from './routes/AppRoutes';
 
 function App() {
-  const MANTENIMIENTO_MODE = false;
+  const MANTENIMIENTO_MODE = true;
   const [loading, setLoading] = useState(() => {
     const hasShownSplash = sessionStorage.getItem('hasShownSplash') === 'true';
 

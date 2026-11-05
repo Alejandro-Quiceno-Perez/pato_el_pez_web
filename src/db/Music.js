@@ -8,6 +8,9 @@ const Music = [
 
         genre:"Punk Rock",
 
+        comingSoon: false,
+
+
         cover:`${import.meta.env.BASE_URL}img_music/Caratula_disco.jpg`,
 
         spotify:"https://open.spotify.com/artist/4pbnupXCtNilC05RqeFrCO?si=ENr9i_a8Royd1osd2oJseQ",
@@ -314,7 +317,75 @@ const Music = [
                 "duration": "2:21"
             },
         ]
-    }
+    },
+    {
+    id: 2,
+    title: "No era para tanto",
+    year: 2026,
+    genre: "Punk Rock",
+
+    cover: `${import.meta.env.BASE_URL}images/Recorrido/No_Era_Para_Tanto.webp`,
+
+    spotify: "",
+    youtube: "",
+
+    comingSoon: true,
+
+    description: "Nuestro segundo álbum de estudio.",
+
+    songs: [
+        {
+            id: 1,
+            title: "S.A.V",
+            cover: `${import.meta.env.BASE_URL}img_music/Sav.gif`,
+            spotify: "",
+            youtube: "",
+            releaseDate: "2026-12-06",
+            lyrics: "",
+            duration: "2:52"
+        },
+        {
+            id: 2,
+            title: "No puedo más",
+            cover: `${import.meta.env.BASE_URL}img_music/No-puedo-mas.gif`,
+            spotify: "",
+            youtube: "",
+            releaseDate: "2026-12-06",
+            lyrics: "",
+            duration: "4:01"
+        },
+        {
+            id: 3,
+            title: "Sin Rencores",
+            cover: `${import.meta.env.BASE_URL}img_music/Sin-rencores.gif`,
+            spotify: "",
+            youtube: "",
+            releaseDate: "2026-12-06",
+            lyrics: "",
+            duration: "2:57"
+        },
+        {
+            id: 4,
+            title: "Ódiame",
+            cover: `${import.meta.env.BASE_URL}img_music/Odiame.gif`,
+            spotify: "",
+            youtube: "",
+            releaseDate: "2026-12-06",
+            lyrics: "",
+            duration: "3:18"
+        },
+        {
+            id: 5,
+            title: "No Era Para Tanto",
+            cover: `${import.meta.env.BASE_URL}img_music/No-era-para-tanto.gif`,
+            spotify: "",
+            youtube: "",
+            releaseDate: "2026-12-06",
+            lyrics: "",
+            duration: "4:22"
+        }
+    ]
+}
 
 ]
 
